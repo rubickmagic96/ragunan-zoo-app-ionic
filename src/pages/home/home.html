@@ -1,14 +1,107 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color='primary'>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>
-      Ionic Blank
+      Home Page
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+  <div>
+    <ion-slides pager>
+      <ion-slide>
+        <h2 class="carousel-title">Blue Peacock has a very beautiful feather</h2>
+        <img src="assets/imgs/carousel/cover2.jpg" alt="cover 1">
+      </ion-slide>
+      <ion-slide>
+        <h2 class="carousel-title">Blue Peacock has a very beautiful feather</h2>
+        <img src="assets/imgs/carousel/cover3.jpg" alt="cover 2">
+      </ion-slide>
+      <ion-slide>
+        <h2 class="carousel-title">Blue Peacock has a very beautiful feather</h2>
+        <img src="assets/imgs/carousel/cover4.jpg" alt="cover 3">
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <div id="next-attraction">
+    <img src="assets/imgs/icon_nextattraction.png" alt="" width="13px" height="13px">&nbsp;
+    <b>Next Attraction: </b>&nbsp;
+    <span id="yellow-clock">09:00</span>&nbsp;
+    <span>Feeding the Orangutan</span>
+  </div>
+  <ion-row>
+    <ion-col class="remove-padding">
+      <ion-card>
+        <img src="assets/imgs/animals/thumb_13012.jpg" height="80px" alt="">
+        <div class="home-card-banner">
+          <ion-row>
+            <ion-col col-3>
+              <img src="assets/imgs/home_bannermenu_icon_information_satwa.png" alt="">
+            </ion-col>
+            <ion-col>
+              <span class="bannermenu-title">RAGUNAN ANIMAL</span>
+            </ion-col>
+          </ion-row>
+        </div>
+      </ion-card>
+    </ion-col>
+    <ion-col class="remove-padding">
+      <ion-card>
+        <img src="assets/imgs/animals/thumb_11014.jpg" height="80px" alt="">
+        <div class="home-card-banner">
+          <ion-row>
+            <ion-col col-3>
+              <img src="assets/imgs/home_bannermenu_icon_information.png" alt="">
+            </ion-col>
+            <ion-col>
+              <span class="bannermenu-title">ZOO PARK INFORMATION</span>
+            </ion-col>
+          </ion-row>
+        </div>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <div class="add-margin">
+    <img src="assets/imgs/button_ragunanmap.png" alt="">
+  </div>
+  <div class="add-margin">
+    <img src="assets/imgs/photobooth.png" alt="">
+  </div>
+  <div id="fun-facts">
+    <span>FUN FACTS!</span>
+  </div>
+  <!-- <ion-card>
+    <ion-card-header class="remove-padding">
+      <ion-row nowrap>
+        <ion-col col-4 class="remove-padding">
+          <img style="z-index: 0" src="assets/imgs/animals/thumb_11014.jpg" alt="">
+        </ion-col>
+        <ion-col>
+          <div>
+            <ion-row nowrap>
+              <ion-col col-1>
+                <img src="assets/imgs/icon_funfacts.png" alt="">
+              </ion-col>
+              <ion-col>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </ion-col>
+            </ion-row>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-card-header>
+    <ion-row>
+      <ion-col>
+        <span>ABOUT ORANGUTAN</span>
+      </ion-col>
+      <ion-col>
+        <span>SHARE</span>
+      </ion-col>
+    </ion-row>
+  </ion-card> -->
 </ion-content>
