@@ -8,6 +8,8 @@
 }
 
 #next-attraction {
+    top: -5px;
+    position: relative;
     padding: 8px 20px;
     background-color: white;
     box-shadow: 0px 1.3px 2.5px -0.5px rgba(0, 0, 0, 0.5);
@@ -22,14 +24,53 @@
     border-radius: 5px;
 }
 
-.home-card-banner {
-    height: 40px;
-    background-color: #76a755;
+.left-img {
+    margin-left: 5px;
+    margin-top: 5%;
 }
 
-.bannermenu-title {
-    color: #fff;
-    font-size: .8em;
+.left-content {
+    margin-left: 5px;
+    position: relative;
+    top: 25%;
+    text-align: center;
+}
+
+.left-card-margin {
+    margin-right: 4px;
+}
+
+.right-img {
+    margin-left: 5px;
+    margin-top: 5%;
+    margin-right: 5px;
+}
+
+.right-content {
+    margin-left: 5px;
+    position: relative;
+    top: 20%;
+    text-align: left;
+}
+
+.right-card-margin {
+    margin-left: 4px;
+}
+
+.home-card-banner {
+    height: 35px;
+    background-color: #5bc12d;
+
+    img {
+        width: 20px;
+        height: 20px;
+        float: left;
+    }
+
+    .bannermenu-title {
+        color: #fff;
+        font-size: .8em;
+    }
 }
 
 .add-margin {
@@ -42,18 +83,148 @@
 
 #fun-facts {
     padding: 8px 10px;
-    background-color: #a6e040;
+    background-color: #8eda20;
     box-shadow: 0px 1.3px 2.5px -0.5px rgba(0, 0, 0, 0.5);
 }
 
 #fun-facts span {
-    color: #76a755;
+    color: #349003;
     font-weight: 900;
+}
+
+.card-home {
+    ion-card {
+        ion-card-header {
+            img {
+                height: 80px;
+                width: 80px;
+            }
+        }
+
+    }
+}
+
+div {
+    .card-header-md, .card-header-ios {
+        padding: 0px;
+    }
+    ion-card {
+        .label-md, .label-ios {
+            margin: 0px;
+        }
+
+        .item-divider-md, .item-divider-ios {
+            padding: 0px;
+        }
+
+        ion-item-divider {
+            margin: 0px;
+        }
+        .normalin {
+            float: left;
+            width: 30%;
+            height: 30%;
+            max-width: 30%;
+            max-height: 30%;
+        }
+
+        .icon-funfact {
+            padding-top: 5px;
+            float: left;
+            margin-left: 5px;
+            width: 15px;
+        }
+
+        .funfact-content {
+            padding-top: 5px;
+            margin-left: 37%;
+            p {
+                text-align: center;
+                white-space: normal;
+                font-size: 12px;
+            }
+        }
+
+        ion-card-header {
+            width: 100%;
+        }
+
+        ion-card-content {
+            .about-text {
+                margin-right: 10px;
+            }
+
+            .share-text {
+                color: orangered;
+            }
+        }
+    }
+}
+
+.fun-facts-instruction {
+    text-align: center;
+}
+
+.animal-collection {
+    ion-card {
+        ion-card-header {
+            .circle-volume {
+                margin-top: 2px;
+                margin-left: 2px;
+                position: absolute;
+                    height: 25px;
+                    width: 25px;
+                    background-color: rgba(255, 255, 255, 0.9);
+                    border-radius: 50%;
+                    text-align: center;
+                ion-icon {
+                    padding-top: 10%;
+                    color: #000;
+                }
+            }
+        }
+
+        ion-card-content {
+            img {
+                margin-top: 5px;
+                position: relative;
+                left: 20%;
+                width: 60%;
+                height: 60%;
+            }
+
+            p.title {
+                text-align: center;
+                color: #4db0b7;
+                font-weight: 900;
+                font-size: 15px;
+            }
+
+            p.subtitle {
+                text-align: center;
+                font-size: 12px;
+            }
+
+            ion-buttons {
+                text-align: center;
+
+                button {
+                    padding: 0 30px;
+
+                    .button-inner {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
 }
 
 // ionic costumization
 .swiper-pagination-bullet {
     background-color: white;
+    width: 5px;
+    height: 5px;
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
@@ -63,4 +234,22 @@
 ion-slide img {
     position: relative;
     bottom: 0px;
+}
+
+.powered-by {
+    text-align: center;
+    img {
+        margin-top: -10px;
+        height: 25%;
+        width: 25%;
+    }
+}
+
+@media (max-width: 360px) {
+    .right-content {
+        margin-left: 5px;
+        position: relative;
+        top: 10%;
+        text-align: left;
+    }
 }

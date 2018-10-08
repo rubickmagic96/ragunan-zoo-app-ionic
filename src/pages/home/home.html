@@ -9,9 +9,9 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content style="background-color: #f2f2f2;">
   <div>
-    <ion-slides pager>
+    <ion-slides pager autoplay="5000" loop="true" speed="300">
       <ion-slide>
         <h2 class="carousel-title">Blue Peacock has a very beautiful feather</h2>
         <img src="assets/imgs/carousel/cover2.jpg" alt="cover 1">
@@ -32,19 +32,24 @@
     <span id="yellow-clock">09:00</span>&nbsp;
     <span>Feeding the Orangutan</span>
   </div>
+  <!-- <div class="card-home">
+    <ion-card>
+      <ion-card-header>
+        <img src="assets/imgs/animals/thumb_13012.jpg" alt="">
+      </ion-card-header>
+      <ion-card-content>
+        <img src="assets/imgs/home_bannermenu_icon_information_satwa.png" alt="">
+        <span class="bannermenu-title">RAGUNAN ANIMAL</span>
+      </ion-card-content>
+    </ion-card>
+  </div> -->
   <ion-row>
     <ion-col class="remove-padding">
       <ion-card>
         <img src="assets/imgs/animals/thumb_13012.jpg" height="80px" alt="">
         <div class="home-card-banner">
-          <ion-row>
-            <ion-col col-3>
-              <img src="assets/imgs/home_bannermenu_icon_information_satwa.png" alt="">
-            </ion-col>
-            <ion-col>
-              <span class="bannermenu-title">RAGUNAN ANIMAL</span>
-            </ion-col>
-          </ion-row>
+          <img class="left-img" src="assets/imgs/home_bannermenu_icon_information_satwa.png" alt="">
+          <p class="bannermenu-title left-content">RAGUNAN ANIMAL</p>
         </div>
       </ion-card>
     </ion-col>
@@ -52,14 +57,8 @@
       <ion-card>
         <img src="assets/imgs/animals/thumb_11014.jpg" height="80px" alt="">
         <div class="home-card-banner">
-          <ion-row>
-            <ion-col col-3>
-              <img src="assets/imgs/home_bannermenu_icon_information.png" alt="">
-            </ion-col>
-            <ion-col>
-              <span class="bannermenu-title">ZOO PARK INFORMATION</span>
-            </ion-col>
-          </ion-row>
+          <img class="right-img" src="assets/imgs/home_bannermenu_icon_information.png" alt="">
+          <p class="bannermenu-title right-content">ZOO PARK INFORMATION</p>
         </div>
       </ion-card>
     </ion-col>
@@ -73,35 +72,74 @@
   <div id="fun-facts">
     <span>FUN FACTS!</span>
   </div>
-  <!-- <ion-card>
-    <ion-card-header class="remove-padding">
-      <ion-row nowrap>
-        <ion-col col-4 class="remove-padding">
-          <img style="z-index: 0" src="assets/imgs/animals/thumb_11014.jpg" alt="">
-        </ion-col>
-        <ion-col>
-          <div>
-            <ion-row nowrap>
-              <ion-col col-1>
-                <img src="assets/imgs/icon_funfacts.png" alt="">
-              </ion-col>
-              <ion-col>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-              </ion-col>
-            </ion-row>
-          </div>
-        </ion-col>
-      </ion-row>
-    </ion-card-header>
-    <ion-row>
-      <ion-col>
-        <span>ABOUT ORANGUTAN</span>
-      </ion-col>
-      <ion-col>
-        <span>SHARE</span>
-      </ion-col>
-    </ion-row>
-  </ion-card> -->
+  <div>
+    <ion-card>
+      <ion-slides autoplay="5000" loop="true" speed="300">
+        <ion-slide>
+          <ion-card-header>
+            <ion-item-divider>
+              <img class="normalin" src="assets/imgs/animals/thumb_11014.jpg" alt="">
+              <img class="icon-funfact" src="assets/imgs/icon_funfacts.png" alt="">
+              <div class="funfact-content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam velit facilis officiis</p>
+              </div>
+            </ion-item-divider>
+          </ion-card-header>
+        </ion-slide>
+        <ion-slide>
+          <ion-card-header>
+            <ion-item-divider>
+              <img class="normalin" src="assets/imgs/animals/thumb_11014.jpg" alt="">
+              <img class="icon-funfact" src="assets/imgs/icon_funfacts.png" alt="">
+              <div class="funfact-content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam velit facilis officiis</p>
+              </div>
+            </ion-item-divider>
+          </ion-card-header>
+        </ion-slide>
+        <ion-slide>
+          <ion-card-header>
+            <ion-item-divider>
+              <img class="normalin" src="assets/imgs/animals/thumb_11014.jpg" alt="">
+              <img class="icon-funfact" src="assets/imgs/icon_funfacts.png" alt="">
+              <div class="funfact-content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam velit facilis officiis</p>
+              </div>
+            </ion-item-divider>
+          </ion-card-header>
+        </ion-slide>
+      </ion-slides>
+      <ion-card-content>
+        <span class="about-text">ABOUT MONKEY</span>
+        <span class="share-text">SHARE</span>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <div class="fun-facts-instruction">
+      <ion-icon name="arrow-back"></ion-icon>
+      <span style="margin: 0 10px; font-size: 10px;">swipe left or right to see more facts</span>
+      <ion-icon name="arrow-forward"></ion-icon>
+  </div>
+  <div class="animal-collection">
+    <ion-card>
+      <ion-card-header>
+        <div class="circle-volume">
+          <ion-icon name="volume-up"></ion-icon>
+        </div>
+        <img src="assets/imgs/image_badgecollect_samplepic1.png" alt="">
+      </ion-card-header>
+      <ion-card-content>
+        <img src="assets/imgs/image_badgecollect.png" alt="">
+        <p class="title">Collect All Animal Badges Collection</p>
+        <p class="subtitle">and listen to their sound!</p>
+        <ion-buttons>
+          <button color="button-color" ion-button>START HERE!<ion-icon style="color: #ff0; margin-left: 5px;" name="arrow-forward"></ion-icon></button>
+        </ion-buttons>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <div class="powered-by">
+    <p style="text-align: center; font-size: 10px;">Powered By</p>
+    <img src="assets/imgs/isat.png" alt="">
+  </div>
 </ion-content>
