@@ -40,7 +40,9 @@ $colors: (
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222,
-  button-color: #8eda20
+  button-color: #8eda20,
+  button-color2: #c3402e,
+  icon-color: #eb9a0e
 );
 
 
@@ -88,3 +90,14 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+@font-face {
+  font-family: 'Londrina Solid';
+  src: url('../assets/fonts/LondrinaSolid.otf');
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  font-weight: 400;
+  src: url('../assets/fonts/Merriweather.ttf');
+}

@@ -14,3 +14,66 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.menu-icon {
+    height: 10%;
+    width: 10%;
+    margin-right: 12px;
+    float: left;
+}
+
+.title {
+    font-size: 17px;
+    color: #333;
+}
+
+.button-icon {
+    height: 1.5em;
+    width: 1.5em;
+    margin-right: 6px;
+    margin-top: 6px;
+    margin-left: 8px;
+    float: left;
+}
+
+.button-title {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    font-family: 'Londrina Solid' !important;
+}
+
+.text-icon-color {
+    color: #f0a40b;
+}
+
+.fun-center-title {
+    font-size: 13px;
+    margin-bottom: 2px;
+    margin-left: 4px;
+    font-family: 'Londrina Solid' !important;
+    color: #83c766;
+}
+
+.item-md, .item-ios {
+    background-color: #f2f2f2 !important;
+}
+
+ion-buttons {
+    .button-list {
+        .ion-buttons {
+            button {
+                padding: 0 !important;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.button-content {
+    position: absolute;
+    left: 0;
+}
+
+.button-md, .button-ios {
+    border-radius: 4px;
+}

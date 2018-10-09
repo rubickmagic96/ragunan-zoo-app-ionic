@@ -6,11 +6,14 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { GoogleMaps } from '@ionic-native/google-maps';
+import { ZooMapPage } from '../pages/zoo-map/zoo-map';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    ZooMapPage
   ],
   imports: [
     BrowserModule,
@@ -19,11 +22,13 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    ZooMapPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    GoogleMaps,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
