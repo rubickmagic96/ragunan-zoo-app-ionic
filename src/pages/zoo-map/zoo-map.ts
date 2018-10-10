@@ -4,6 +4,8 @@ import {
   GoogleMaps,
   GoogleMap,
   GoogleMapOptions,
+  GroundOverlay,
+  ILatLng,
 } from '@ionic-native/google-maps';
 
 @IonicPage()
@@ -14,6 +16,7 @@ import {
 export class ZooMapPage {
   @ViewChild("map_canvas") mapElement: ElementRef;
   map: GoogleMap;
+  groundOverlay: GroundOverlay;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -24,18 +27,25 @@ export class ZooMapPage {
   }
 
   loadMap() {
+    let bounds: ILatLng[] = [
+      { "lat": -6.311593, "lng": 106.819864 }
+    ];
+
     let mapOptions: GoogleMapOptions = {
       camera: {
-        target: {
-          lat: 43.0741904,
-          lng: -89.3809802
-        },
+        target: bounds,
         zoom: 18,
         tilt: 30
       }
     };
 
     this.map = GoogleMaps.create('map_canvas', mapOptions);
+    this.groundOverlay = this.map.addGroundOverlaySync({
+      'url': 'assets/imgs/zoomap.png',
+      'bounds': bounds,
+      'opacity': 1.0,
+      'clickable': false
+    });
     // this.map = GoogleMaps.create(this.mapElement.nativeElement, mapOptions);
   }
 

@@ -1,0 +1,46 @@
+page-animal-collection {
+    ion-content {
+        .select-md, .select-ios {
+            padding: 10px 5px;
+        }
+
+        .item-md, .item-ios {
+            background-color: #fff !important;
+            padding-left: 10px;
+            box-shadow: 0px 0.3px 2px #aaa !important;
+            margin-bottom: 5px;
+        }
+
+        .select-text {
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        ion-select {
+            width: 100%;
+            max-width: 100%;
+        }
+        ion-grid {
+            ion-row {
+                .col {
+                    margin: 4px;
+                    padding: 0px;
+                    box-shadow: 0px 1px 1px #aaa;
+
+                    .cover {
+                        object-fit: cover;
+                    }
+
+                    .name {
+                        padding: 3px 0;
+                        bottom: 0;
+                        width: 100%;
+                        background-color: white;
+                        position: absolute;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

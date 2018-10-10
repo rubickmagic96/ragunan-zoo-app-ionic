@@ -1,3 +1,6 @@
+import { TriviasPage } from './../pages/trivias/trivias';
+import { BadgeCollectionPage } from './../pages/badge-collection/badge-collection';
+import { AnimalCollectionPage } from './../pages/animal-collection/animal-collection';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -8,12 +11,23 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { GoogleMaps } from '@ionic-native/google-maps';
 import { ZooMapPage } from '../pages/zoo-map/zoo-map';
+import { VisitorInfoPage } from '../pages/visitor-info/visitor-info';
+import { SettingsPage } from '../pages/settings/settings';
+import { PhotoboothPage } from '../pages/photobooth/photobooth';
+import { SplashscreenPage } from '../pages/splashscreen/splashscreen';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ZooMapPage
+    ZooMapPage,
+    AnimalCollectionPage,
+    VisitorInfoPage,
+    SettingsPage,
+    BadgeCollectionPage,
+    PhotoboothPage,
+    TriviasPage,
+    SplashscreenPage
   ],
   imports: [
     BrowserModule,
@@ -23,7 +37,13 @@ import { ZooMapPage } from '../pages/zoo-map/zoo-map';
   entryComponents: [
     MyApp,
     HomePage,
-    ZooMapPage
+    ZooMapPage,
+    AnimalCollectionPage,
+    SettingsPage,
+    BadgeCollectionPage,
+    PhotoboothPage,
+    TriviasPage,
+    SplashscreenPage
   ],
   providers: [
     StatusBar,

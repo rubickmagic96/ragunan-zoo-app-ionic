@@ -6,6 +6,13 @@
     <ion-title>
       Home Page
     </ion-title>
+
+    <!-- only for testing button -->
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openSplashPage()">
+        <ion-icon name="aperture"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
@@ -43,26 +50,28 @@
       </ion-card-content>
     </ion-card>
   </div> -->
-  <ion-row>
-    <ion-col class="remove-padding">
-      <ion-card>
-        <img src="assets/imgs/animals/thumb_13012.jpg" height="80px" alt="">
-        <div class="home-card-banner">
-          <img class="left-img" src="assets/imgs/home_bannermenu_icon_information_satwa.png" alt="">
-          <p class="bannermenu-title left-content">RAGUNAN ANIMAL</p>
-        </div>
-      </ion-card>
-    </ion-col>
-    <ion-col class="remove-padding">
-      <ion-card>
-        <img src="assets/imgs/animals/thumb_11014.jpg" height="80px" alt="">
-        <div class="home-card-banner">
-          <img class="right-img" src="assets/imgs/home_bannermenu_icon_information.png" alt="">
-          <p class="bannermenu-title right-content">ZOO PARK INFORMATION</p>
-        </div>
-      </ion-card>
-    </ion-col>
-  </ion-row>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="remove-padding">
+        <ion-card>
+          <img src="assets/imgs/animals/thumb_13012.jpg" height="80px" alt="">
+          <div class="home-card-banner">
+            <img class="left-img" src="assets/imgs/home_bannermenu_icon_information_satwa.png" alt="">
+            <p class="bannermenu-title left-content">RAGUNAN ANIMAL</p>
+          </div>
+        </ion-card>
+      </ion-col>
+      <ion-col class="remove-padding">
+        <ion-card>
+          <img src="assets/imgs/animals/thumb_11014.jpg" height="80px" alt="">
+          <div class="home-card-banner">
+            <img class="right-img" src="assets/imgs/home_bannermenu_icon_information.png" alt="">
+            <p class="bannermenu-title right-content">ZOO PARK INFORMATION</p>
+          </div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
   <div class="add-margin">
     <img src="assets/imgs/button_ragunanmap.png" alt="">
   </div>
