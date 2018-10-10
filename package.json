@@ -63,8 +63,8 @@
       "cordova-plugin-ionic-keyboard": {},
       "cordova-plugin-headercolor": {},
       "cordova-plugin-googlemaps": {
-        "API_KEY_FOR_ANDROID": "AIzaSyDAFGJAp0u0ISyKMgqFWEnsgFzVmX1eoHM",
-        "API_KEY_FOR_IOS": "AIzaSyDAFGJAp0u0ISyKMgqFWEnsgFzVmX1eoHM",
+        "API_KEY_FOR_ANDROID": "AIzaSyBq1kUe5gCvwdZl5sy9uYk1VAjQUTk4b2w",
+        "API_KEY_FOR_IOS": "AIzaSyBq1kUe5gCvwdZl5sy9uYk1VAjQUTk4b2w",
         "PLAY_SERVICES_VERSION": "15.0.1",
         "ANDROID_SUPPORT_V4_VERSION": "27.+"
       },
