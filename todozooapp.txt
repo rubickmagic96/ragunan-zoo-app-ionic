@@ -1,0 +1,42 @@
+URGENT:
+	- test map on cordova browser //done//
+
+
+
+intro app:
+	- create 3 slides of intro app
+	- combine with everything
+animal badge collection:
+	- increase size of card
+	- when tap to desire card, a animal sound will appear
+animal Collection:
+	- include all animal in the logic file
+	- make the categories working when it's tapped
+	- when card tapped it will go to the details page
+home page:
+	- remove unnesscary button in navbar //done//
+	- make funfact color background to white //done//
+	- changes funfact font to loundry what ever font //done//
+	- change share color as it //done//
+	- increase font size of animal card //done//
+	- change swipe left or right icon //done//
+	- change collect all animal bages collection font //done//
+	- change color of and listen to their sound! //done//
+	- change font start here and make it bigger //done//
+	- change icon to image of the start here button //done//
+
+
+	- when tap to slider go to details page //done//
+	- when ragunan animal card tapp it will go to animal collection
+	  with back button //done//
+	- when zoo park tap it will go to visitor information //done//
+	- when tap to ragunan map it will go to zoo map //done//
+	- when tap to photobooth it will go to photobooth //done//
+	- when tap to about in fun fact it will go to details //done//
+	- when tap to share it will share the fun fact to facebook or twittter //done//
+	- when tap to start now in badges collection it will go to badge collection //done//
+	- when tap to volume button the sound of animal will appear //done//
+	- change fun fact so that it will so show a different slide //done//
+
+splashscreen:
+	- undo the exiting splash, with the one we watched yestereday

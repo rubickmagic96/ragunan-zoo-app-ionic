@@ -1,3 +1,4 @@
+import { NativeAudio } from '@ionic-native/native-audio';
 import { TriviasPage } from './../pages/trivias/trivias';
 import { BadgeCollectionPage } from './../pages/badge-collection/badge-collection';
 import { AnimalCollectionPage } from './../pages/animal-collection/animal-collection';
@@ -15,6 +16,7 @@ import { VisitorInfoPage } from '../pages/visitor-info/visitor-info';
 import { SettingsPage } from '../pages/settings/settings';
 import { PhotoboothPage } from '../pages/photobooth/photobooth';
 import { SplashscreenPage } from '../pages/splashscreen/splashscreen';
+import { DetailAnimalPage } from '../pages/detail-animal/detail-animal';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { SplashscreenPage } from '../pages/splashscreen/splashscreen';
     BadgeCollectionPage,
     PhotoboothPage,
     TriviasPage,
-    SplashscreenPage
+    SplashscreenPage,
+    DetailAnimalPage
   ],
   imports: [
     BrowserModule,
@@ -39,16 +42,19 @@ import { SplashscreenPage } from '../pages/splashscreen/splashscreen';
     HomePage,
     ZooMapPage,
     AnimalCollectionPage,
+    VisitorInfoPage,
     SettingsPage,
     BadgeCollectionPage,
     PhotoboothPage,
     TriviasPage,
-    SplashscreenPage
+    SplashscreenPage,
+    DetailAnimalPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     GoogleMaps,
+    NativeAudio,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

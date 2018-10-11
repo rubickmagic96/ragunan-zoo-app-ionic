@@ -26,15 +26,23 @@ export class ZooMapPage {
     this.loadMap();
   }
 
+  // south west
+  // -6.315991, 106.816858
+  // -6.317619, 106.815068
+  // north east
+  // -6.306394, 106.824495
+  // -6.304710, 106.826508
+
   loadMap() {
     let bounds: ILatLng[] = [
-      { "lat": -6.311593, "lng": 106.819864 }
+      { "lat": -6.317619, "lng": 106.815068 }, 
+      { "lat": -6.304710, "lng": 106.826508 }
     ];
 
     let mapOptions: GoogleMapOptions = {
       camera: {
-        target: bounds,
-        zoom: 18,
+        target: { "lat": -6.311593, "lng": 106.819864 },
+        zoom: 16,
         tilt: 30
       }
     };

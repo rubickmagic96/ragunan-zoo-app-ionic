@@ -17,3 +17,11 @@ add before type googlemaps
 "@ionic/pro": "2.0.3",
 
 add before ionic storage
+
+"@types/googlemaps": "^3.30.13",
+
+types googlemaps browser
+
+"cordova-plugin-file-transfer": "1.7.1",
+
+error one

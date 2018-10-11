@@ -1,3 +1,14 @@
 page-photobooth {
+    .under-construction {
+        text-align: center;
+        margin-top: 50%;
+        color: #555;
 
+        h2 {
+            font-size: 15px;
+            ion-icon {
+                color: #0f3;
+            }
+        }
+    }
 }
