@@ -21,6 +21,7 @@
     "@angular/platform-browser": "5.2.11",
     "@angular/platform-browser-dynamic": "5.2.11",
     "@ionic-native/core": "^4.15.0",
+    "@ionic-native/dialogs": "^4.15.0",
     "@ionic-native/google-maps": "^4.14.0",
     "@ionic-native/native-audio": "^4.15.0",
     "@ionic-native/splash-screen": "~4.15.0",
@@ -30,6 +31,7 @@
     "cordova-android": "7.1.1",
     "cordova-browser": "5.0.4",
     "cordova-plugin-device": "^2.0.2",
+    "cordova-plugin-dialogs": "2.0.1",
     "cordova-plugin-file": "6.0.1",
     "cordova-plugin-file-transfer": "1.7.1",
     "cordova-plugin-googlemaps": "2.4.6",
@@ -77,7 +79,8 @@
         "MAX_STORE": "2",
         "MIN_BACKGROUND_DURATION": "30"
       },
-      "cordova-plugin-nativeaudio": {}
+      "cordova-plugin-nativeaudio": {},
+      "cordova-plugin-dialogs": {}
     },
     "platforms": [
       "android",

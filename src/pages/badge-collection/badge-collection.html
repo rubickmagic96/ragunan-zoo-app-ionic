@@ -22,13 +22,13 @@
     <ion-grid>
       <ion-row *ngFor="let b of badges">
         <ion-col>
-          <div class="badge-card">
+          <div class="badge-card" (click)="playSound(b[0].soundpath, b[0].id)">
             <img src="{{b[0].asset}}" alt="">
             <h2>{{b[0].name}}</h2>
           </div>
         </ion-col>
         <ion-col *ngIf="b[1] !== undefined; else emptycard">
-          <div class="badge-card">
+          <div class="badge-card" (click)="playSound(b[1].soundpath, b[1].id)">
             <img src="{{b[1].asset}}" alt="">
             <h2>{{b[1].name}}</h2>
           </div>

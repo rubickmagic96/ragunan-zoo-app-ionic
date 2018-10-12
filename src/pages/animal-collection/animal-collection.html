@@ -18,12 +18,12 @@
 
 <ion-content style="background-color: #f2f2f2;">
     <ion-item no-lines>
-      <ion-select interface="popover">
-        <ion-option value="show_all" selected>Showing All Animal</ion-option>
-        <ion-option value="only_mammal">Mammal</ion-option>
-        <ion-option value="only_reptile">Reptile</ion-option>
-        <ion-option value="only_aves">Aves</ion-option>
-        <ion-option value="only_fishes">Fishes</ion-option>
+      <ion-select interface="popover" #c (ionChange)="onChange(c.value)">
+        <ion-option value="all" selected>Showing All Animal</ion-option>
+        <ion-option value="mammal">Mammal</ion-option>
+        <ion-option value="reptile">Reptile</ion-option>
+        <ion-option value="aves">Aves</ion-option>
+        <ion-option value="fishes">Fishes</ion-option>
       </ion-select>
     </ion-item>
   <ion-grid>

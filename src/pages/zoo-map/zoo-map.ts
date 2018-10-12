@@ -44,6 +44,9 @@ export class ZooMapPage {
         target: { "lat": -6.311593, "lng": 106.819864 },
         zoom: 16,
         tilt: 30
+      },
+      preferences: {
+        building: false
       }
     };
 

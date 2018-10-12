@@ -1,10 +1,12 @@
-import { NativeAudio } from '@ionic-native/native-audio';
 import { TriviasPage } from './../pages/trivias/trivias';
 import { BadgeCollectionPage } from './../pages/badge-collection/badge-collection';
 import { AnimalCollectionPage } from './../pages/animal-collection/animal-collection';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+
+import { Dialogs } from '@ionic-native/dialogs';
+import { NativeAudio } from '@ionic-native/native-audio';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
@@ -55,6 +57,7 @@ import { DetailAnimalPage } from '../pages/detail-animal/detail-animal';
     SplashScreen,
     GoogleMaps,
     NativeAudio,
+    Dialogs,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
