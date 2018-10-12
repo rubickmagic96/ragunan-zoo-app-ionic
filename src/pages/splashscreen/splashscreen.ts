@@ -1,6 +1,6 @@
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
+import { NavController, NavParams, ViewController } from 'ionic-angular';
 
 /**
  * Generated class for the SplashscreenPage page.
@@ -9,7 +9,6 @@ import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angul
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-splashscreen',
   templateUrl: 'splashscreen.html',

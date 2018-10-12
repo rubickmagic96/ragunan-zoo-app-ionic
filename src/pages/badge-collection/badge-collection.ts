@@ -2,7 +2,7 @@ import { NativeAudio } from '@ionic-native/native-audio';
 import { Dialogs } from '@ionic-native/dialogs';
 
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
 /**
  * Generated class for the BadgeCollectionPage page.
@@ -11,7 +11,6 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-badge-collection',
   templateUrl: 'badge-collection.html',

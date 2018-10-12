@@ -1,5 +1,6 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
+
 import {
   GoogleMaps,
   GoogleMap,
@@ -7,8 +8,8 @@ import {
   GroundOverlay,
   ILatLng,
 } from '@ionic-native/google-maps';
+// import { ImageResizer, ImageResizerOptions } from '@ionic-native/image-resizer';
 
-@IonicPage()
 @Component({
   selector: 'page-zoo-map',
   templateUrl: 'zoo-map.html',
@@ -45,17 +46,13 @@ export class ZooMapPage {
         zoom: 16,
         tilt: 30
       },
-      preferences: {
-        building: false
-      }
     };
 
     this.map = GoogleMaps.create('map_canvas', mapOptions);
     this.groundOverlay = this.map.addGroundOverlaySync({
-      'url': 'assets/imgs/zoomap.png',
+      'url': 'assets/imgs/newark_nj_1922.jpg',
       'bounds': bounds,
       'opacity': 1.0,
-      'clickable': false
     });
     // this.map = GoogleMaps.create(this.mapElement.nativeElement, mapOptions);
   }
