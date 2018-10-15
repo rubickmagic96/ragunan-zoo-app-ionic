@@ -11,7 +11,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { ZooMapPage } from './../pages/zoo-map/zoo-map';
 import { PhotoboothPage } from '../pages/photobooth/photobooth';
-import { SplashscreenPage } from '../pages/splashscreen/splashscreen';
 
 @Component({
   templateUrl: 'app.html'
@@ -46,9 +45,9 @@ export class MyApp {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       this.statusBar.styleDefault();
-      let splash = this.modalCtrl.create(SplashscreenPage);
-      splash.present();
-      // this.splashScreen.hide();
+      // let splash = this.modalCtrl.create(SplashscreenPage);
+      // splash.present();
+      this.splashScreen.hide();
     });
   }
 

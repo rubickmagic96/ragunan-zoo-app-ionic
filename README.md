@@ -34,13 +34,14 @@ Aplikasi kebun binatang
 - [x] change fun fact so that it will so show a different slide
 
 ### 2-week
-- <h5>Last week uncompleted:</h5>
+- <h3>Last week uncompleted:</h3>
 - [ ] include all animal in the logic file
 - [ ] undo the exiting splash, with the one we watched yestereday
 
-- <h5>This week:</h5>
-### visitor information
-- [ ] scrollable tabbar
+- <h3>This week:</h3>
+#### visitor information
+- [x] scrollable tabbar
+- [ ] centered first and last tab animation
 - <b>ticket</b>
 - [ ] enterence fee
 - [ ] buy ticket at the zoo
@@ -75,13 +76,13 @@ Aplikasi kebun binatang
 - [ ] detect wheater he in zoomap or not
 - [ ] share where you are with your friend here
 
-### settings
+#### settings
 - [ ] dropdown language
 - [ ] about ragunan zoo
 - [ ] terms and agreement
 - [ ] change language when user tapp the one of those language and redirect it to home page with new language of they wanted
 
-### photobooth
+#### photobooth
 - [ ] image
 - [ ] camera button
 - [ ] gallery button

@@ -1,14 +1,91 @@
 page-visitor-info {
-    .under-construction {
-        text-align: center;
-        margin-top: 50%;
-        color: #555;
+    super-tabs-toolbar > ion-toolbar.toolbar .tab-buttons-container .indicator {
+        height: 3px;
+    }
 
-        h2 {
-            font-size: 15px;
-            ion-icon {
-                color: #0f3;
-            }
+    ion-toolbar {
+        
+    }
+
+    super-tabs {
+        .title {
+            padding: 0px;
+            font-size: 14px;
+            text-transform: none;
+            color: #349003;
         }
     }
+    // .swipedtab-indicatorsegment {
+    //     -webkit-transition: 0.3s all;
+    //     -moz-transition: 0.3s all;
+    //     -o-transition: 0.3s all;
+    //     transition: 0.3s all;
+    //     transform-origin: top 0 left 0;
+    //     height: 2px;
+    //     background-color: #8eda20 !important;
+    //     margin-left: 35%;
+    // }
+    // .swipedtab-tabs ion-segment-button {
+    //     overflow: inherit;
+    //     text-transform: none !important;
+    //     border: none !important;
+    //     color: #349003 !important;
+    //     background-color: #f2f2f2 !important;
+    // }
+    // .swipedtab-tabs ion-segment-button.swipedtab-activetabs {
+    //     color: black !important;
+    // }
+    // .swipedtab-tabs {
+    //     margin-left: 35%;
+    //     width: 100%;
+    // }
+
+    // .title-segment {
+    //     font-family: 'Londrina Solid' !important;
+    //     background-color: #8eda20;
+    //     color: #fff;
+    //     padding: 4px 16px;
+    //     text-transform: uppercase;
+    //     text-align: left;
+    // }
+
+    // ion-list {
+    //     .col {
+    //         padding: 5px 5px 5px 0px;
+    //     }
+
+    //     .item-md, .item-ios {
+    //         background-color: #fff !important;
+    //     }
+
+    //     .differ {
+    //         background-color: #f2f2f2 !important;
+    //     }
+
+    //     ion-item {
+    //         padding: 0px !important;
+
+    //         img {
+    //             width: 8% !important;
+    //         }
+
+    //         span {
+    //             font-size: 10px;
+    //         }
+    //     }
+
+    //     ion-label {
+    //         text-align: justify;
+    //         font-size: 14px;
+    //         padding-left: 16px;
+    //         white-space: normal !important;
+    //     }
+
+    //     ion-label:last-child {
+    //         margin: 0px 0px 8px;
+    //     }
+
+    //     .label-md, .label-ios {
+    //     }
+    // }
 }

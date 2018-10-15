@@ -18,10 +18,43 @@
 </ion-header>
 
 
-<ion-content>
-  <div class="under-construction">
-    <ion-icon style="font-size: 100px; color: orangered" name="construct"></ion-icon>
-    <h2>The Page is under construction, go back again later! <ion-icon name="thumbs-up"></ion-icon>
-    </h2>
-  </div>
+<ion-content style="background-color: #f2f2f2">
+  <super-tabs id="supertabid" [selectedTabIndex]="selectedIndex" (tabSelect)="onTabSelect($event)" #superTabs [scrollTabs]="true" toolbarBackground="app-background" no-shadow>
+    <super-tab *ngFor="let page of pages" [root]="page.pagename" title="{{page.title}}"></super-tab>
+  </super-tabs>
+  <!-- <ion-segment id="tabbar" class="swipedtab-tabs">
+    <ion-segment-button *ngFor='let tab of tabs; let i = index' value="ignoreme" (click)="selectTab(i)" 
+    [ngClass]='{"swipedtab-activetabs" : (this.swipedTabSlider && (this.swipedTabSlider.getActiveIndex() === i || (tabs.length - 1 === i && this.swipedTabSlider.isEnd())))}'>
+      <span>{{tab}}</span>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div id="indicator" class="swipedtab-indicatorsegment" [ngStyle]="{'width.%': (100/this.tabs.length)}"></div>
+
+  <ion-slides #swipedtabslider (ionSlideDrag)="animateIndicator($event)" (ionSlideWillChange)="updateIndicatorPosition()" (ionSlideDidChange)="updateIndicatorPosition()" (pan)="updateIndicatorPosition()" [pager]="false">
+    <ion-slide>
+      <div class="title-segment">Entrance Fee</div>
+      <ion-list>
+        <ion-item>Open from 8.30 am to 16.00 pm, tuesday to sunday, monday is holiday for our animal to take a rests.</ion-item>
+        <ion-item>
+          <ion-row>
+            <ion-col>Adult</ion-col>
+            <ion-col>Rp 4,000<span>/person</span></ion-col>
+          </ion-row>
+        </ion-item>
+        <ion-item>
+          <ion-row>
+            <ion-col>Children<span>(below 5 years old)</span></ion-col>
+            <ion-col>Rp 3,000<span>/person</span></ion-col>
+          </ion-row>
+        </ion-item>
+        <ion-item nolines class="differ">
+          Payment Accepted : <img src="assets/imgs/image_payment_money.png" alt=""><span>cash</span>
+        </ion-item>
+      </ion-list>
+    </ion-slide>
+    <ion-slide>2</ion-slide>
+    <ion-slide>3</ion-slide>
+    <ion-slide>4</ion-slide>
+  </ion-slides> -->
 </ion-content>
