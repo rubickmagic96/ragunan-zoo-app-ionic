@@ -39,29 +39,29 @@ Aplikasi kebun binatang
 - [ ] undo the exiting splash, with the one we watched yestereday
 
 <h2>This week:</h2>
-#### visitor information
+### visitor information
 - [ ] scrollable tabbar
 - <b>ticket</b>
-   - [ ] enterence fee
-   - [ ] buy ticket at the zoo
-   - [ ] other fees
+- [ ] enterence fee
+- [ ] buy ticket at the zoo
+- [ ] other fees
 - <b>how to get here:</b>
-   - [ ] address
-   - [ ] get direction
-   - [ ] by car
-   - [ ] by bus
+- [ ] address
+- [ ] get direction
+- [ ] by car
+- [ ] by bus
 - <b>activities:</b>
-   - [ ] show reminder button toggle with view all activites
-   - [ ] 09:00
-   - [ ] 12:00
-   - [ ] 13:00
-   - [ ] 15:00
-   - [ ] remindme button (added to show reminder)
-   - [ ] view map (go to zoo map)
+- [ ] show reminder button toggle with view all activites
+- [ ] 09:00
+- [ ] 12:00
+- [ ] 13:00
+- [ ] 15:00
+- [ ] remindme button (added to show reminder)
+- [ ] view map (go to zoo map)
 - <b>contact us:</b>
-   - [ ] send your love letter...
-   - [ ] or write to use here...
-   - [ ] form and submit button
+- [ ] send your love letter...
+- [ ] or write to use here...
+- [ ] form and submit button
 
 #### zoo map
 - [ ] groundoverlay zoo map
