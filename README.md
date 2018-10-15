@@ -34,11 +34,11 @@ Aplikasi kebun binatang
 - [x] change fun fact so that it will so show a different slide
 
 ### 2-week
-<h2>Last week uncompleted:</h2>
+- <h2>Last week uncompleted:</h2>
 - [ ] include all animal in the logic file
 - [ ] undo the exiting splash, with the one we watched yestereday
 
-<h2>This week:</h2>
+- <h2>This week:</h2>
 ### visitor information
 - [ ] scrollable tabbar
 - <b>ticket</b>
