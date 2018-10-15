@@ -1,5 +1,4 @@
-URGENT:
-	- test map on cordova browser //done//
+
 
 
 
@@ -7,12 +6,12 @@ intro app:
 	- create 3 slides of intro app
 	- combine with everything
 animal badge collection:
-	- increase size of card
-	- when tap to desire card, a animal sound will appear
+	- increase size of card //done//
+	- when tap to desire card, a animal sound will appear //done//
 animal Collection:
 	- include all animal in the logic file
-	- make the categories working when it's tapped
-	- when card tapped it will go to the details page
+	- make the categories working when it's tapped //done//
+	- when card tapped it will go to the details page //done//
 home page:
 	- remove unnesscary button in navbar //done//
 	- make funfact color background to white //done//
