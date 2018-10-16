@@ -1,18 +1,69 @@
-<!--
-  Generated template for the GetherePage page.
+<ion-content>
+  <div class="get-direction-content">
+    <h6>Address</h6>
+    <p>Jln Harsono RM No. 1, Ragunan, Pasar Minggu</p>
+    <p>Jakarta Selatan, 12550</p>
+    <p>Indonesia</p>
+    <p>+622178847114</p>
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>gethere</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
-<ion-content padding>
-
+    <div #getdirection_maps id="getdirection-maps"></div>
+    <ion-buttons>
+      <button ion-button color="button-color">Get Direction</button>
+    </ion-buttons>
+  </div>
+  <div class="toggle-car-bus">
+    <div (click)="changeToRouteCar()" id="car">
+      <img id="carimg" src="assets/imgs/icon_car_on.png" alt=""><span id="carspan">By Car</span>
+    </div>
+    <div (click)="changeToRouteBus()" id="bus">
+      <img id="busimg" src="assets/imgs/icon_bus_off.png" alt=""><span id="busspan">By Bus</span>
+    </div>
+    <!-- <ion-buttons>
+      <button ion-button>
+        <img src="assets/imgs/icon_car_on.png" alt=""><span>By Car</span>
+      </button>
+      <button ion-button>
+        <img src="assets/imgs/icon_bus_off.png" alt=""><span>By Bus</span>
+      </button>
+    </ion-buttons> -->
+  </div>
+  <div #car id="car-routes">
+    <ion-list>
+      <ion-item>
+        <h2>From Cawang:</h2>
+        <p>Cawang - MT Haryono - Pancoran - Gatot Subroto - Kapten Tendean - Mampang Prapatan Raya - Warung Jati Barat
+          - Taman Margasatwa - Harsono RM - Kebon Binatang Ragunan</p>
+      </ion-item>
+      <ion-item>
+        <h2>From Cawang:</h2>
+        <p>Cawang - MT Haryono - Pancoran - Gatot Subroto - Kapten Tendean - Mampang Prapatan Raya - Warung Jati Barat
+          -
+          Taman Margasatwa - Harsono RM - Kebon Binatang Ragunan</p>
+      </ion-item>
+      <ion-item>
+        <h2>From Cawang:</h2>
+        <p>Cawang - MT Haryono - Pancoran - Gatot Subroto - Kapten Tendean - Mampang Prapatan Raya - Warung Jati Barat
+          -
+          Taman Margasatwa - Harsono RM - Kebon Binatang Ragunan</p>
+      </ion-item>
+    </ion-list>
+  </div>
+  <div #bus id="bus-routes">
+    <ion-list>
+      <ion-item>
+        <h2>From Bandara Soekarno - Hatta:</h2>
+        <ol>
+          <li>Dari Bandara Soekarno Hatta naik Damri jurusan pasar Minggu turun di Termminal Pasar Minggu</li>
+          <li>Naik Mikrolet 17/17A turun di Kebun Binatang Ragunan Pintu Timur</li>
+        </ol>
+      </ion-item>
+      <ion-item>
+        <h2>From Bandara Soekarno - Hatta:</h2>
+        <ol>
+          <li>Dari Bandara Soekarno Hatta naik Damri jurusan pasar Minggu turun di Termminal Pasar Minggu</li>
+          <li>Naik Mikrolet 17/17A turun di Kebun Binatang Ragunan Pintu Timur</li>
+        </ol>
+      </ion-item>
+    </ion-list>
+  </div>
 </ion-content>

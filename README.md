@@ -43,14 +43,16 @@ Aplikasi kebun binatang
 - [x] scrollable tabbar
 - [ ] centered first and last tab animation
 - <b>ticket</b>
-- [ ] enterence fee
-- [ ] buy ticket at the zoo
-- [ ] other fees
+- [x] enterence fee
+- [x] buy ticket at the zoo
+- [x] other fees
+- [ ] showing google maps with groundoverlay and ticket position with marker
 - <b>how to get here:</b>
-- [ ] address
-- [ ] get direction
-- [ ] by car
-- [ ] by bus
+- [x] address
+- [x] get direction
+- [x] by car
+- [x] by bus
+- [ ] showing google maps with marker of the address
 - <b>activities:</b>
 - [ ] show reminder button toggle with view all activites
 - [ ] 09:00

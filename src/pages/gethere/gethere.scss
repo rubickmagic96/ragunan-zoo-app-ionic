@@ -1,3 +1,111 @@
 page-gethere {
+    .get-direction-content {
+        padding: 8px 0px;
 
+        h6 {
+            font-size: 13px;
+            color:  #349003;
+            font-weight: bold;
+            margin-bottom: 0px;
+            padding: 0px 16px;
+        }
+
+        p {
+            padding: 0px 16px;
+            font-size: 12px;
+            margin: 5px 0;
+        }
+
+        #getdirection-maps {
+            width: 100%;
+            height: 100px;
+            padding: 5px 3px;
+        }
+
+        ion-buttons {
+            text-align: center;
+        }
+    }
+
+    .toggle-car-bus {
+        #car {
+            cursor: pointer;
+            padding: 4px 0px;
+            text-align: center;
+            background-color: darkgreen;
+            width: 50%;
+            float: left;
+            span {
+                position: relative;
+                bottom: 5px;
+                color: white;
+                font-weight: bold;
+                margin-left: 5px;
+                font-size: 13px;
+            }
+        }
+        #bus {
+            cursor: pointer;
+            padding: 4px 0px;
+            text-align: center;
+            float: left;
+            background: green;
+            width: 50%;
+            span {
+                position: relative;
+                bottom: 5px;
+                color: #ccc;
+                font-weight: bold;
+                margin-left: 5px;
+                font-size: 13px;
+            }
+        }
+        img {
+            width: 20px;
+        }
+    }
+
+    .item-md, .item-ios {
+        background-color: #fff !important;
+    }
+
+    #car-routes ion-list {
+        ion-item {
+            padding-left: 0px;
+
+            ion-label {
+                padding-left: 10px;
+            }
+
+            h2 {
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            p {
+                color: #000;
+                font-size: 13px;
+                white-space: normal !important;
+            }
+        }
+    }
+
+    #bus-routes {
+        display: none;
+    }
+
+    #bus-routes ion-list {
+        ion-item {
+            padding-left: 0px;
+
+            ion-label {
+                font-size: 14px;
+                padding-left: 10px;
+            }
+
+            p {
+                white-space: normal !important;
+            }
+        }
+    }
 }

@@ -1,18 +1,196 @@
-<!--
-  Generated template for the TicketPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>ticket</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
-<ion-content padding>
-
+<ion-content>
+  <div class="title-segment">Entrance Fee</div>
+  <ion-list class="enterence-fee-list">
+    <ion-item>Open from 8.30 am to 16.00 pm, tuesday to sunday, monday is holiday for our animal to take a rests.</ion-item>
+    <ion-item>
+      <ion-row>
+        <ion-col>Adult</ion-col>
+        <ion-col>Rp 4,000<span>/person</span></ion-col>
+      </ion-row>
+    </ion-item>
+    <ion-item>
+      <ion-row>
+        <ion-col>Children<span>(below 5 years old)</span></ion-col>
+        <ion-col>Rp 3,000<span>/person</span></ion-col>
+      </ion-row>
+    </ion-item>
+    <ion-item nolines class="differ">
+      Payment Accepted : <img src="assets/imgs/image_payment_money.png" alt=""><span>cash</span>
+    </ion-item>
+  </ion-list>
+  <div class="title-segment">Buy Ticket at the Zoo</div>
+  <div #ticketmaps id="ticketmaps"></div>
+  <div class="title-segment">Other Fees</div>
+  <div class="other-fees-section">
+    <ion-list class="guided-tour">
+      <ion-item class="title-other-fees-segment" no-lines>Guided Tour</ion-item>
+      <ion-item>
+        <ion-row>
+          <ion-col>
+            1-2 Hour Zoo Guided Tour
+          </ion-col>
+          <ion-col>
+            Rp. 100.000
+          </ion-col>
+        </ion-row>
+      </ion-item>
+    </ion-list>
+    <div class="grey-bg"></div>
+    <ion-list class="car-rates">
+      <ion-item class="title-other-fees-segment" no-lines>Car Rates vihicles / parking</ion-item>
+      <ion-item>
+        <ion-row>
+          <ion-col>
+            Bus Big, Big Trucks and Big Box Cars
+          </ion-col>
+          <ion-col>
+            Rp. 15.000<span>/day</span>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+      <ion-item>
+        <ion-row>
+          <ion-col>
+            a small bus, small truck, small truck and pick up large
+          </ion-col>
+          <ion-col>
+            Rp. 12.000<span>/day</span>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+      <ion-item>
+        <ion-row>
+          <ion-col>
+            Sedans car, minibuses/kind, including in the form of a small pick up
+          </ion-col>
+          <ion-col>
+            Rp. 6.000<span>/day</span>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+      <ion-item>
+        <ion-row>
+          <ion-col>
+            Motorcycles and tricycles
+          </ion-col>
+          <ion-col>
+            Rp. 3.000<span>/day</span>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+      <ion-item>
+        <ion-row>
+          <ion-col>
+            Motorcycles and tricycles
+          </ion-col>
+          <ion-col>
+            Rp. 1.000<span>/day</span>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+    </ion-list>
+    <div class="grey-bg"></div>
+    <ion-list class="fauna">
+      <ion-item class="title-other-fees-segment" no-lines>Car Rates vihicles / parking</ion-item>
+      <ion-item>
+        <ion-row>
+          <ion-col>
+            Horse Riding
+            <p>Only Available on Sunday</p>
+          </ion-col>
+          <ion-col>
+            Rp. 5.000<span>/around</span>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+      <ion-item>
+        <ion-row>
+          <ion-col>
+            Camel Riding
+            <p>Only Available on Sunday</p>
+          </ion-col>
+          <ion-col>
+            Rp. 7.500<span>/around</span>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+      <ion-item>
+        <ion-row>
+          <ion-col>
+            Elephant Riding
+            <p>Only Available on Sunday</p>
+          </ion-col>
+          <ion-col>
+            Rp. 7.500<span>/around</span>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+      <ion-item>
+        <ion-row>
+          <ion-col>
+            Children's Zoo
+          </ion-col>
+          <ion-col>
+            Rp. 2.500<span>/around</span>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+      <ion-item>
+        <ion-row>
+          <ion-col>
+            Sepeda Tandem
+          </ion-col>
+          <ion-col>
+            Rp. 15.000<span>/hour</span>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+      <ion-item>
+        <ion-row>
+          <ion-col>
+            Sepeda Single
+          </ion-col>
+          <ion-col>
+            Rp. 10.000<span>/hour</span>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+      <ion-item>
+        <ion-row>
+          <ion-col>
+            Kereta Keliling
+          </ion-col>
+          <ion-col>
+            Rp. 7.500<span>/person</span>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+    </ion-list>
+    <div class="grey-bg"></div>
+    <ion-list class="the-enterence">
+      <ion-item class="title-other-fees-segment" no-lines>The Enterence Fee Schmutzer Primate Center</ion-item>
+      <ion-item>
+        <ion-row>
+          <ion-col>
+            Monday Till Friday
+            <p>(ages 3 year and over)</p>
+          </ion-col>
+          <ion-col>
+            Rp. 6.000<span>/person</span>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+      <ion-item>
+        <ion-row>
+          <ion-col>
+           On Saturday Till Sunday / National Holidays
+            <p>(ages 3 year and over)</p>
+          </ion-col>
+          <ion-col>
+            Rp. 7.500<span>/person</span>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+    </ion-list>
+  </div>
 </ion-content>

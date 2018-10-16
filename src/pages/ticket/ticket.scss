@@ -1,3 +1,112 @@
 page-ticket {
+    .title-segment {
+        font-family: 'Londrina Solid' !important;
+        background-color: #8eda20;
+        color: #fff;
+        padding: 8px 16px;
+        text-transform: uppercase;
+        text-align: left;
+        font-size: 17px;
+    }
 
+    .list-md, .list-ios {
+        margin-bottom: 0px;
+    }
+
+    ion-item {
+        padding: 0px !important;
+    }
+
+    ion-label {
+        padding-left: 10px;
+        white-space: normal !important;
+    }
+
+    .item-md, .item-ios {
+            background-color: #fff !important;
+        }
+
+    ion-list.enterence-fee-list {
+        .col {
+            padding: 5px 5px 5px 0px;
+        }
+
+        .differ {
+            background-color: #f2f2f2 !important;
+        }
+
+        ion-label {
+            font-size: 14px;
+        }
+
+        ion-item {
+            img {
+                width: 8% !important;
+            }
+
+            span {
+                font-size: 10px;
+            }
+        }
+
+        .label-md, .label-ios {
+        }
+    }
+
+    #ticketmaps {
+        //max-height: 100% !important;
+        height: 30% !important;
+    }
+
+    ion-list.guided-tour {
+        ion-item:not(.title-other-fees-segment) {
+            font-size: 14px;
+        }
+    }
+
+    .title-other-fees-segment {
+        color: #349003;
+        font-family: 'Merryweather';
+        font-size: 17px !important;
+    }
+
+    .grey-bg {
+        height: 20px;
+        background-color: #f2f2f2;
+    }
+
+    ion-list.car-rates {
+        ion-item {
+            font-size: 14px;
+            span {
+                font-size: 10px;
+            }
+        }
+    }
+
+    ion-list.fauna {
+        ion-item {
+            font-size: 14px;
+            span {
+                font-size: 10px;
+            }
+
+            p {
+                font-size: 10px;
+            }
+        }
+    }
+
+    ion-list.the-enterence {
+        ion-item {
+            font-size: 14px;
+            span {
+                font-size: 10px;
+            }
+
+            p {
+                font-size: 10px;
+            }
+        }
+    }
 }
