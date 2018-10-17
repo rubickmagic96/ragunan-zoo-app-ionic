@@ -54,11 +54,12 @@ Aplikasi kebun binatang
 - [x] by bus
 - [ ] showing google maps with marker of the address
 - <b>activities:</b>
-- [ ] show reminder button toggle with view all activites
-- [ ] 09:00
-- [ ] 12:00
-- [ ] 13:00
-- [ ] 15:00
+- [x] show reminder button toggle with view all activites
+- [x] 09:00
+- [x] 12:00
+- [x] 13:00
+- [x] 15:00
+- [ ] make toggle button works
 - [ ] remindme button (added to show reminder)
 - [ ] view map (go to zoo map)
 - <b>contact us:</b>
