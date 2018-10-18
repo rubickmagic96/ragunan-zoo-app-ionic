@@ -1,65 +1,163 @@
 <ion-content style="background-color: #f2f2f2;">
-  <div class="toggle-reminder">
+  <div class="toggle-reminder" (click)="onTapShowReminder()">
     <h3>Show Reminder</h3>
     <div class="current-reminder">
       <span>0</span>
     </div>
   </div>
 
-  <div class="content-toggle">
-    <div class="feeding-time-bar">
-      <span>09:00</span>
+  <div id="content-toggle">
+    <div class="feeding-time" *ngFor="let feeding of activitesData">
+      <div class="feeding-time-bar"><span>{{feeding.time}}</span></div>
+      <ion-card *ngFor="let feed of feeding.animals">
+        <ion-card-header>
+          <img src="{{feed.asset}}" alt="">
+          <p>{{feed.activity}}</p>
+        </ion-card-header>
+        <div class="card-divider"></div>
+        <ion-card-content>
+          <h1 class="view-map">View Map</h1>
+          <h1 id="{{feed.id}}" class="remind" (click)="onRemindTap(feed.id)">Remind Me</h1>
+        </ion-card-content>
+      </ion-card>
     </div>
-    
-    <ion-card>
-      <ion-card-header>
-        <img src="assets/imgs/icon/icon_11004.png" alt="">
-        <p>Feeding the Gorilla</p>
-      </ion-card-header>
-      <div class="card-divider"></div>
-      <ion-card-content>
-        <h1 class="view-map">View Map</h1>
-        <h1 class="remind">Remind Me</h1>
-      </ion-card-content>
-    </ion-card>
-    <ion-card>
-      <ion-card-header>
-        <img src="assets/imgs/icon/icon_11004.png" alt="">
-        <p>Feeding the Gorilla</p>
-      </ion-card-header>
-      <div class="card-divider"></div>
-      <ion-card-content>
-        <h1 class="view-map">View Map</h1>
-        <h1 class="remind">Remind Me</h1>
-      </ion-card-content>
-    </ion-card>
-    <div class="feeding-time-bar">
-      <span>09:00</span>
+    <!-- <div class="feeding-time">
+      <div class="feeding-time-bar">
+        <span>09:00</span>
+      </div>
+      <ion-card>
+        <ion-card-header>
+          <img src="assets/imgs/icon/icon_11004.png" alt="">
+          <p>Feeding the Gorilla</p>
+        </ion-card-header>
+        <div class="card-divider"></div>
+        <ion-card-content>
+          <h1 class="view-map">View Map</h1>
+          <h1 id="remind1" class="remind" (click)="onRemindMe1Tap()">Remind Me</h1>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <img src="assets/imgs/icon/icon_11004.png" alt="">
+          <p>Feeding the Gorilla</p>
+        </ion-card-header>
+        <div class="card-divider"></div>
+        <ion-card-content>
+          <h1 class="view-map">View Map</h1>
+          <h1 id="remind2" class="remind" (click)="onRemindMe2Tap()">Remind Me</h1>
+        </ion-card-content>
+      </ion-card>
     </div>
-    <ion-card>
-      <ion-card-header>
-        <img src="assets/imgs/icon/icon_11004.png" alt="">
-        <p>Feeding the Gorilla</p>
-      </ion-card-header>
-      <div class="card-divider"></div>
-      <ion-card-content>
-        <h1 class="view-map">View Map</h1>
-        <h1 class="remind">Remind Me</h1>
-      </ion-card-content>
-    </ion-card>
-    <div class="feeding-time-bar">
-      <span>09:00</span>
+    <div class="feeding-time">
+      <div class="feeding-time-bar">
+        <span>09:00</span>
+      </div>
+      <ion-card>
+        <ion-card-header>
+          <img src="assets/imgs/icon/icon_11004.png" alt="">
+          <p>Feeding the Gorilla</p>
+        </ion-card-header>
+        <div class="card-divider"></div>
+        <ion-card-content>
+          <h1 class="view-map">View Map</h1>
+          <h1 id="remind3" class="remind" (click)="onRemindMe3Tap()">Remind Me</h1>
+        </ion-card-content>
+      </ion-card>
     </div>
-    <ion-card>
-      <ion-card-header>
-        <img src="assets/imgs/icon/icon_11004.png" alt="">
-        <p>Feeding the Gorilla</p>
-      </ion-card-header>
-      <div class="card-divider"></div>
-      <ion-card-content>
-        <h1 class="view-map">View Map</h1>
-        <h1 class="remind">Remind Me</h1>
-      </ion-card-content>
-    </ion-card>
+    <div class="feeding-time">
+      <div class="feeding-time-bar">
+        <span>09:00</span>
+      </div>
+      <ion-card>
+        <ion-card-header>
+          <img src="assets/imgs/icon/icon_11004.png" alt="">
+          <p>Feeding the Gorilla</p>
+        </ion-card-header>
+        <div class="card-divider"></div>
+        <ion-card-content>
+          <h1 class="view-map">View Map</h1>
+          <h1 id="remind4" class="remind" (click)="onRemindMe4Tap()">Remind Me</h1>
+        </ion-card-content>
+      </ion-card>
+    </div>
+    <div class="feeding-time">
+      <div class="feeding-time-bar">
+        <span>09:00</span>
+      </div>
+      <ion-card>
+        <ion-card-header>
+          <img src="assets/imgs/icon/icon_11004.png" alt="">
+          <p>Feeding the Gorilla</p>
+        </ion-card-header>
+        <div class="card-divider"></div>
+        <ion-card-content>
+          <h1 class="view-map">View Map</h1>
+          <h1 id="remind5" class="remind" (click)="onRemindMe5Tap()">Remind Me</h1>
+        </ion-card-content>
+      </ion-card>
+    </div> -->
   </div>
+
+  <div id="reminder-content" style="display: none;"></div>
 </ion-content>
+
+<!-- <div class="feeding-time">
+      <div class="feeding-time-bar">
+        <span>09:00</span>
+      </div>
+
+      <ion-card>
+        <ion-card-header>
+          <img src="assets/imgs/icon/icon_11004.png" alt="">
+          <p>Feeding the Gorilla</p>
+        </ion-card-header>
+        <div class="card-divider"></div>
+        <ion-card-content>
+          <h1 class="view-map">View Map</h1>
+          <h1 class="remove">Remove from Reminder</h1>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <img src="assets/imgs/icon/icon_11004.png" alt="">
+          <p>Feeding the Gorilla</p>
+        </ion-card-header>
+        <div class="card-divider"></div>
+        <ion-card-content>
+          <h1 class="view-map">View Map</h1>
+          <h1 class="remove">Remove from Reminder</h1>
+        </ion-card-content>
+      </ion-card>
+    </div>
+    <div class="feeding-time">
+      <div class="feeding-time-bar">
+        <span>09:00</span>
+      </div>
+      <ion-card>
+        <ion-card-header>
+          <img src="assets/imgs/icon/icon_11004.png" alt="">
+          <p>Feeding the Gorilla</p>
+        </ion-card-header>
+        <div class="card-divider"></div>
+        <ion-card-content>
+          <h1 class="view-map">View Map</h1>
+          <h1 class="remove">Remove from Reminder</h1>
+        </ion-card-content>
+      </ion-card>
+    </div>
+    <div class="feeding-time">
+      <div class="feeding-time-bar">
+        <span>09:00</span>
+      </div>
+      <ion-card>
+        <ion-card-header>
+          <img src="assets/imgs/icon/icon_11004.png" alt="">
+          <p>Feeding the Gorilla</p>
+        </ion-card-header>
+        <div class="card-divider"></div>
+        <ion-card-content>
+          <h1 class="view-map">View Map</h1>
+          <h1 class="remove">Remove from Reminder</h1>
+        </ion-card-content>
+      </ion-card>
+    </div> -->

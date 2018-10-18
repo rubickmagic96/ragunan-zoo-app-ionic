@@ -59,8 +59,11 @@ Aplikasi kebun binatang
 - [x] 12:00
 - [x] 13:00
 - [x] 15:00
-- [ ] make toggle button works
-- [ ] remindme button (added to show reminder)
+- [x] make toggle button works
+- [x] remindme button (added to show reminder)
+- [ ] implement all the remind me button to all button
+- [ ] make sure the content looks exactly like in the example
+- [ ] reminder red box rounded should be updated based on how much remind me button clicked
 - [ ] view map (go to zoo map)
 - <b>contact us:</b>
 - [ ] send your love letter...
