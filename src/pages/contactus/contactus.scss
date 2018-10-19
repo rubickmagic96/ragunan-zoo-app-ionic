@@ -1,3 +1,27 @@
 page-contactus {
+    h2 {
+        font-family: "Merriweather";
+        font-size: 17px;
+        padding: 0px 16px;
+        color: #349003;
+    }
 
+    .contact-bar {
+        padding: 12px 16px;
+        background-color: #fff;
+        margin-bottom: 16px;
+        box-shadow: 0 2.5px 1px .1px rgba(0, 0, 0, .1);
+
+        img {
+            float: left;
+            width: calc(20% - 40px);
+            height: calc(20% - 40px);
+        }
+
+        p {
+            font-size: 14px;
+            margin: 0px;
+            margin-left: 36px;
+        }
+    }
 }

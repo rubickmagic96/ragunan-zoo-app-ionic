@@ -41,7 +41,7 @@ Aplikasi kebun binatang
 - <h3>This week:</h3>
 #### visitor information
 - [x] scrollable tabbar
-- [ ] centered first and last tab animation
+- [ ] centered first and last tab animation **(Hard)**
 - <b>ticket</b>
 - [x] enterence fee
 - [x] buy ticket at the zoo
@@ -61,6 +61,7 @@ Aplikasi kebun binatang
 - [x] 15:00
 - [x] make toggle button works
 - [x] remindme button (added to show reminder)
+- [ ] added to reminder button is not disabled when we successful added to reminder
 - [ ] implement all the remind me button to all button
 - [ ] make sure the content looks exactly like in the example
 - [ ] reminder red box rounded should be updated based on how much remind me button clicked

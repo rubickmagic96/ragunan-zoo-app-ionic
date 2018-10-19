@@ -27,17 +27,19 @@ export class ActivitiesPage {
   addReminder2: boolean = false;
   isMoreThanOneElement: boolean = false;
 
-  activitesData: Array<{time: string, animals: Array<{asset: string, activity: string, id: string}>}>;
+  activitesData: Array<{ time: string, animals: Array<{ asset: string, activity: string, id: string }> }>;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public elementRef: ElementRef) {
   }
 
   ionViewDidLoad() {
     this.activitesData = [
-      { time: "09:00", animals: [
-        { asset: "assets/imgs/icon/icon_11004.png", activity: "Feeding the Gorilla", id: "feed1" },
-        { asset: "assets/imgs/icon/icon_11022.png", activity: "Feeding the Orangutan", id: "feed2" },
-      ] },
+      {
+        time: "09:00", animals: [
+          { asset: "assets/imgs/icon/icon_11004.png", activity: "Feeding the Gorilla", id: "feed1" },
+          { asset: "assets/imgs/icon/icon_11022.png", activity: "Feeding the Orangutan", id: "feed2" },
+        ]
+      },
       {
         time: "12:00", animals: [
           { asset: "assets/imgs/icon/icon_11004.png", activity: "Feeding the Gorilla", id: "feed3" },
@@ -58,14 +60,14 @@ export class ActivitiesPage {
     console.log('ionViewDidLoad ActivitiesPage');
   }
 
-  ionViewDidEnter(){
+  ionViewDidEnter() {
     this.contentToggle = document.getElementById('content-toggle');
     this.reminderContent = document.getElementById('reminder-content');
     this.remind1Text = document.getElementById('feed1');
-    this.remind2Text = document.getElementById('remind2');
-    this.remind3Text = document.getElementById('remind3');
-    this.remind4Text = document.getElementById('remind4');
-    this.remind5Text = document.getElementById('remind5');
+    this.remind2Text = document.getElementById('feed2');
+    this.remind3Text = document.getElementById('feed3');
+    this.remind4Text = document.getElementById('feed4');
+    this.remind5Text = document.getElementById('feed5');
   }
 
   onTapShowReminder() {
@@ -85,11 +87,10 @@ export class ActivitiesPage {
   }
 
   onRemindTap(id: string) {
-    switch(id) {
+    switch (id) {
       case "feed1":
-        if (this.reminderContent.childNodes[0]) {
-          
-        } else {
+        if (this.reminderContent.childNodes.length == 0) {
+          console.log("from if: " + (this.reminderContent.childNodes.length == 0));
           var feedingTime = document.createElement("div");
           var clock9 = document.createElement("div");
           var text = document.createElement("span");
@@ -143,11 +144,174 @@ export class ActivitiesPage {
           this.reminderContent.appendChild(feedingTime);
 
           this.elementRef.nativeElement.querySelector("#remover1").addEventListener(
-            'click', this.onRemoveReminder(this.activitesData[0].animals[0].id)
+            'click', this.onRemoveReminder.bind(this, this.activitesData[0].animals[0].id),
           );
 
           this.remind1Text.style.color = "#ccc";
           this.remind1Text.innerHTML = "Added to Reminder";
+          this.elementRef.nativeElement.querySelector("#feed1").addEventListener(
+            'click', function (e) { e.stopImmediatePropagation() }
+          );
+        } else {
+          console.log("from else: " + (this.reminderContent.childNodes.length == 0));
+          var ionCard = document.createElement("ion-card");
+          var ionCardHeader = document.createElement("ion-card-header");
+          var image = document.createElement("img");
+          var ptag = document.createElement("p");
+          var divider = document.createElement("div");
+          var ionCardContent = document.createElement("ion-card-content");
+          var viewmap = document.createElement("h1");
+          var remove = document.createElement("h1");
+
+          image.src = this.activitesData[0].animals[0].asset;
+          ptag.innerHTML = this.activitesData[0].animals[0].activity;
+
+          divider.classList.add("card-divider");
+          viewmap.classList.add("view-map");
+          remove.classList.add("remove");
+          viewmap.innerHTML = "View Map";
+          remove.innerHTML = "Remove from Reminder";
+          remove.setAttribute("id", "remover1");
+
+          /* ionic attribute */
+          ionCard.classList.add("card");
+          ionCard.classList.add("card-ios");
+          ionCard.classList.add("card-md");
+          ionCardHeader.classList.add("card-header");
+          ionCardHeader.classList.add("card-header-ios");
+          ionCardHeader.classList.add("card-header-md");
+          ionCardContent.classList.add("card-content");
+          ionCardContent.classList.add("card-content-ios");
+          ionCardContent.classList.add("card-content-md");
+
+          ionCard.appendChild(ionCardHeader);
+          ionCard.appendChild(divider);
+          ionCard.appendChild(ionCardContent);
+          ionCardHeader.appendChild(image);
+          ionCardHeader.appendChild(ptag);
+          ionCardContent.appendChild(viewmap);
+          ionCardContent.appendChild(remove);
+
+          this.elementRef.nativeElement.querySelector("#feedingtime09").appendChild(ionCard);
+          this.elementRef.nativeElement.querySelector("#remover1").addEventListener(
+            'click', this.onRemoveReminder.bind(this, this.activitesData[0].animals[0].id)
+          );
+
+          this.remind1Text.style.color = "#ccc";
+          this.remind1Text.innerHTML = "Added to Reminder";
+          this.elementRef.nativeElement.querySelector("#feed1").addEventListener(
+            'click', function (e) { e.stopImmediatePropagation() }
+          );
+        }
+
+        break;
+      case "feed2":
+        if (this.reminderContent.childNodes.length == 0) {
+          console.log("feed2 running...");
+          var feedingTime = document.createElement("div");
+          var clock9 = document.createElement("div");
+          var text = document.createElement("span");
+
+          var ionCard = document.createElement("ion-card");
+          var ionCardHeader = document.createElement("ion-card-header");
+          var image = document.createElement("img");
+          var ptag = document.createElement("p");
+          var divider = document.createElement("div");
+          var ionCardContent = document.createElement("ion-card-content");
+          var viewmap = document.createElement("h1");
+          var remove = document.createElement("h1");
+
+          image.src = this.activitesData[0].animals[1].asset;
+          ptag.innerHTML = this.activitesData[0].animals[1].activity;
+
+          divider.classList.add("card-divider");
+          viewmap.classList.add("view-map");
+          remove.classList.add("remove");
+          viewmap.innerHTML = "View Map";
+          remove.innerHTML = "Remove from Reminder";
+          remove.setAttribute("id", "remover2");
+
+          clock9.classList.add("feeding-time-bar");
+          text.innerHTML = this.activitesData[0].time;
+
+          /* ionic attribute */
+          ionCard.classList.add("card");
+          ionCard.classList.add("card-ios");
+          ionCard.classList.add("card-md");
+          ionCardHeader.classList.add("card-header");
+          ionCardHeader.classList.add("card-header-ios");
+          ionCardHeader.classList.add("card-header-md");
+          ionCardContent.classList.add("card-content");
+          ionCardContent.classList.add("card-content-ios");
+          ionCardContent.classList.add("card-content-md");
+
+          feedingTime.setAttribute("id", "feedingtime09");
+          feedingTime.appendChild(clock9);
+          feedingTime.appendChild(ionCard);
+          clock9.appendChild(text);
+
+          ionCard.appendChild(ionCardHeader);
+          ionCard.appendChild(divider);
+          ionCard.appendChild(ionCardContent);
+          ionCardHeader.appendChild(image);
+          ionCardHeader.appendChild(ptag);
+          ionCardContent.appendChild(viewmap);
+          ionCardContent.appendChild(remove);
+
+          this.reminderContent.appendChild(feedingTime);
+
+          this.elementRef.nativeElement.querySelector("#remover2").addEventListener(
+            'click', this.onRemoveReminder.bind(this, this.activitesData[0].animals[1].id)
+          );
+
+          this.remind2Text.style.color = "#ccc";
+          this.remind2Text.innerHTML = "Added to Reminder";
+        } else {
+          var ionCard = document.createElement("ion-card");
+          var ionCardHeader = document.createElement("ion-card-header");
+          var image = document.createElement("img");
+          var ptag = document.createElement("p");
+          var divider = document.createElement("div");
+          var ionCardContent = document.createElement("ion-card-content");
+          var viewmap = document.createElement("h1");
+          var remove = document.createElement("h1");
+
+          image.src = this.activitesData[0].animals[1].asset;
+          ptag.innerHTML = this.activitesData[0].animals[1].activity;
+
+          divider.classList.add("card-divider");
+          viewmap.classList.add("view-map");
+          remove.classList.add("remove");
+          viewmap.innerHTML = "View Map";
+          remove.innerHTML = "Remove from Reminder";
+          remove.setAttribute("id", "remover2");
+
+          /* ionic attribute */
+          ionCard.classList.add("card");
+          ionCard.classList.add("card-ios");
+          ionCard.classList.add("card-md");
+          ionCardHeader.classList.add("card-header");
+          ionCardHeader.classList.add("card-header-ios");
+          ionCardHeader.classList.add("card-header-md");
+          ionCardContent.classList.add("card-content");
+          ionCardContent.classList.add("card-content-ios");
+          ionCardContent.classList.add("card-content-md");
+
+          ionCard.appendChild(ionCardHeader);
+          ionCard.appendChild(divider);
+          ionCard.appendChild(ionCardContent);
+          ionCardHeader.appendChild(image);
+          ionCardHeader.appendChild(ptag);
+          ionCardContent.appendChild(viewmap);
+          ionCardContent.appendChild(remove);
+
+          this.elementRef.nativeElement.querySelector("#feedingtime09").appendChild(ionCard);
+          this.elementRef.nativeElement.querySelector("#remover2").addEventListener(
+            'click', this.onRemoveReminder.bind(this, this.activitesData[0].animals[1].id)
+          );
+
+          this.remind2Text.style.color = "#ccc";
+          this.remind2Text.innerHTML = "Added to Reminder";
         }
         break;
     }
@@ -155,25 +319,58 @@ export class ActivitiesPage {
 
   onRemoveReminder(id: string) {
     console.log(id);
-    // switch(id) {
-    //   case "feed1":
-    //     if (this.reminderContent.childNodes[0]) {
+    switch (id) {
+      case "feed1":
+        if (this.reminderContent.childNodes[0].childNodes.length > 2) {
+          var cardToDelete = this.reminderContent.childNodes[0].childNodes[1];
+          cardToDelete.parentNode.removeChild(cardToDelete);
 
-    //     } else {
-    //       var elementToDelete = document.getElementById("feedingtime09");
-    //       elementToDelete.parentNode.removeChild(elementToDelete);
+          console.log("from delete: " + this.reminderContent.childNodes.length);
 
-    //       this.remind1Text.style.color = "orangered";
-    //       this.remind1Text.innerHTML = "Remind Me";
-    //       this.elementRef.nativeElement.querySelector("#remind1").addEventListener(
-    //         'click', this.onRemindTap("feed1")
-    //       );
-    //     }
-    // }
+          this.remind1Text.style.color = "orangered";
+          this.remind1Text.innerHTML = "Remind Me";
+          this.elementRef.nativeElement.querySelector("#feed1").addEventListener(
+            'click', this.onRemindTap.bind(this, "feed1")
+          );
+        } else {
+          var elementToDelete = document.getElementById("feedingtime09");
+          elementToDelete.parentNode.removeChild(elementToDelete);
+
+          console.log("from delete: " + this.reminderContent.childNodes.length);
+
+          this.remind1Text.style.color = "orangered";
+          this.remind1Text.innerHTML = "Remind Me";
+          this.elementRef.nativeElement.querySelector("#feed1").addEventListener(
+            'click', this.onRemindTap.bind(this, "feed1")
+          );
+        }
+        break;
+      case "feed2":
+        if (this.reminderContent.childNodes[0].childNodes.length > 2) {
+          var cardToDelete = this.reminderContent.childNodes[0].childNodes[2];
+          cardToDelete.parentNode.removeChild(cardToDelete);
+
+          this.remind2Text.style.color = "orangered";
+          this.remind2Text.innerHTML = "Remind Me";
+          this.elementRef.nativeElement.querySelector("#feed2").addEventListener(
+            'click', this.onRemindTap.bind(this, "feed2")
+          );
+        } else {
+          var elementToDelete = document.getElementById("feedingtime09");
+          elementToDelete.parentNode.removeChild(elementToDelete);
+
+          this.remind2Text.style.color = "orangered";
+          this.remind2Text.innerHTML = "Remind Me";
+          this.elementRef.nativeElement.querySelector("#feed2").addEventListener(
+            'click', this.onRemindTap.bind(this, "feed2")
+          );
+        }
+        break;
+    }
   }
 
   onRemoveRemind1Tap() {
-    
+
     this.addReminder1 = false;
   }
 
