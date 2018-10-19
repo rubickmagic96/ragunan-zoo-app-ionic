@@ -24,4 +24,55 @@ page-contactus {
             margin-left: 36px;
         }
     }
+
+    .form-contact {
+        background-color: #fff;
+        padding: 12px 16px;
+
+        textarea {
+            margin: 0px;
+            padding: 8px 3px;
+            border-radius: 5px;
+            border: .6px solid rgba(0, 0, 0, .3);
+        }
+
+        textarea:focus {
+            border: .6px solid #8eda20;
+        }
+
+        input {
+            margin: 0px;
+            padding: 8px 3px;
+            border-radius: 5px;
+            border: .6px solid rgba(0, 0, 0, .3);
+        }
+
+        input:focus {
+            border: .6px solid #8eda20;
+        }
+
+        ion-buttons {
+            text-align: center;
+
+            button {
+                padding: 12px 20px;
+            }
+
+            span {
+                font-family: "Londrina Solid";
+                font-size: 17px;
+                letter-spacing: 2px;
+            }
+        }
+
+        ion-checkbox {
+            margin-top: 8px;
+            margin-botton: 5px;
+            margin-right: 20px;
+        }
+
+        span {
+            font-size: 12px;
+        }
+    }
 }

@@ -50,7 +50,7 @@ export class ZooMapPage {
 
     this.map = GoogleMaps.create('map_canvas', mapOptions);
     this.groundOverlay = this.map.addGroundOverlaySync({
-      'url': 'assets/imgs/newark_nj_1922.jpg',
+      'url': 'assets/imgs/ragunanmap.png',
       'bounds': bounds,
       'opacity': 1.0,
     });

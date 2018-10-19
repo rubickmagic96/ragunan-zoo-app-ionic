@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {
+  GoogleMaps,
+  GoogleMap,
+  GoogleMapOptions,
+  GroundOverlay,
+  ILatLng,
+} from '@ionic-native/google-maps';
 
-/**
- * Generated class for the GetherePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 @Component({
   selector: 'page-gethere',
   templateUrl: 'gethere.html',
@@ -20,6 +21,10 @@ export class GetherePage {
   busimg: any = null;
   carcontent: any = null;
   buscontent: any = null;
+
+  @ViewChild("getdirection_maps") mapElement: ElementRef;
+  map: GoogleMap;
+  groundOverlay: GroundOverlay;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -39,7 +44,31 @@ export class GetherePage {
   }
 
   ionViewDidLoad() {
+    this.loadMap();
     console.log('ionViewDidLoad GetherePage');
+  }
+
+  loadMap() {
+    let bounds: ILatLng[] = [
+      { "lat": -6.317619, "lng": 106.815068 },
+      { "lat": -6.304710, "lng": 106.826508 }
+    ];
+
+    let mapOptions: GoogleMapOptions = {
+      camera: {
+        target: { "lat": -6.311593, "lng": 106.819864 },
+        zoom: 13,
+        tilt: 30
+      },
+    };
+
+    this.map = GoogleMaps.create('getdirection_maps', mapOptions);
+    // this.groundOverlay = this.map.addGroundOverlaySync({
+    //   'url': 'assets/imgs/newark_nj_1922.jpg',
+    //   'bounds': bounds,
+    //   'opacity': 1.0,
+    // });
+
   }
 
   changeToRouteCar() {
