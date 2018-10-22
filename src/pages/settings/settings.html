@@ -1,9 +1,3 @@
-<!--
-  Generated template for the SettingsPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar color='primary'>
@@ -18,6 +12,22 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content style="background-color: #f2f2f2">
+  <ion-list>
+    <ion-item>
+      <p>Language:</p>
+      <ion-select interface="popover">
+        <ion-option value="eng" selected>English</ion-option>
+        <ion-option value="indo">Indonesian</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <p>About Ragunan Zoo</p>
+    </ion-item>
+  </ion-list>
 
+  <div class="settings-footer">
+    <h4>Terms and Agrement</h4>
+    <p>Ragunan Zoo v1.0</p>
+  </div>
 </ion-content>

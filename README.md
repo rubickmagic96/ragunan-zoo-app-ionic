@@ -67,12 +67,13 @@ Aplikasi kebun binatang
 - [ ] reminder red box rounded should be updated based on how much remind me button clicked
 - [ ] view map (go to zoo map)
 - <b>contact us:</b>
-- [ ] send your love letter...
-- [ ] or write to use here...
-- [ ] form and submit button
+- [x] send your love letter...
+- [x] or write to use here...
+- [x] form and submit button
 
 #### zoo map
-- [ ] groundoverlay zoo map
+- [x] fix ragunan maps coords
+- [x] groundoverlay zoo map
 - [ ] animal location
 - [ ] orange dot location
 - [ ] food location
