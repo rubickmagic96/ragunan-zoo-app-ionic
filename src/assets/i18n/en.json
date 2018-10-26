@@ -1,0 +1,13 @@
+{
+    "appbar_title": {
+        "home": "Home Page",
+        "settings": "Settings"
+    },
+    "content": {
+        "settings": {
+            "lang": "Language",
+            "about": "About Ragunan Zoo",
+            "terms": "Terms and Agreement"
+        }
+    }
+}

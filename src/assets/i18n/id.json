@@ -1,0 +1,13 @@
+{
+    "appbar_title": {
+        "home": "Halaman Utama",
+        "settings": "Pengaturan"
+    },
+    "content": {
+        "settings": {
+            "lang": "Bahasa",
+            "about": "Tentang Bonbin",
+            "terms": "Syarat dan Ketentuan"
+        }
+    }
+}

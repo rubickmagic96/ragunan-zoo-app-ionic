@@ -12,17 +12,26 @@ import { HomePage } from '../pages/home/home';
 import { ZooMapPage } from './../pages/zoo-map/zoo-map';
 import { PhotoboothPage } from '../pages/photobooth/photobooth';
 
+import { TranslateService } from '@ngx-translate/core'
+
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-  rootPage:any = HomePage;
+  rootPage: any = HomePage;
 
   pages: Array<{ title: string, component: any, asset: string }>;
-  buttonPages: Array<{ title: string, component: any, asset: string, text_color: string, button_color: string}>;
+  buttonPages: Array<{ title: string, component: any, asset: string, text_color: string, button_color: string }>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar,public splashScreen: SplashScreen, public modalCtrl: ModalController) {
+  constructor(public platform: Platform,
+    public statusBar: StatusBar,
+    public splashScreen: SplashScreen,
+    public modalCtrl: ModalController,
+    private translateService: TranslateService) {
+
+    this.translateService.setDefaultLang('en')
+
     this.initializeApp();
 
     this.pages = [

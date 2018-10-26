@@ -16,6 +16,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { Camera } from '@ionic-native/camera' 
 
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { GoogleMaps } from '@ionic-native/google-maps';
@@ -24,6 +27,7 @@ import { VisitorInfoPage } from '../pages/visitor-info/visitor-info';
 import { SettingsPage } from '../pages/settings/settings';
 import { PhotoboothPage } from '../pages/photobooth/photobooth';
 import { DetailAnimalPage } from '../pages/detail-animal/detail-animal';
+import { HttpClient, HttpClientModule  } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -43,9 +47,17 @@ import { DetailAnimalPage } from '../pages/detail-animal/detail-animal';
     ContactusPage
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     SuperTabsModule.forRoot(),
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (createTranslateLoader),
+        deps: [HttpClient]
+      }
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -74,4 +86,8 @@ import { DetailAnimalPage } from '../pages/detail-animal/detail-animal';
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
+
 export class AppModule {}
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}

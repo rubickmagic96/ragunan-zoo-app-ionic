@@ -3,13 +3,6 @@ import { NavController, NavParams } from 'ionic-angular';
 
 import { Camera, CameraOptions } from '@ionic-native/camera';
 
-/**
- * Generated class for the PhotoboothPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 @Component({
   selector: 'page-photobooth',
   templateUrl: 'photobooth.html',
