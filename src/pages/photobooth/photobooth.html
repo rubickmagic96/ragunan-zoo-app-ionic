@@ -21,13 +21,13 @@
 <ion-content padding>
   <img src="assets/imgs/coverimage.png" alt="">
   <ion-buttons>
-    <button ion-button>
+    <button color="button-color" ion-button (click)="openCamera()" full>
       <ion-icon name="camera"></ion-icon>
       <h1>Camera</h1>
     </button>
   </ion-buttons>
   <ion-buttons>
-    <button ion-button>
+    <button color="button-color" ion-button (click)="openGallery()" full>
       <ion-icon name="albums"></ion-icon>
       <h1>Gallery</h1>
     </button>

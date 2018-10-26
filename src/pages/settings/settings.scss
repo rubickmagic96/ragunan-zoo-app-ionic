@@ -1,4 +1,12 @@
 page-settings {
+    ion-list {
+        ion-item{
+            p {
+                float: left;
+                font-size: 20px;
+            }
+        }
+    }
     .item-md, .item-ios {
         padding-left: 0px;
     }

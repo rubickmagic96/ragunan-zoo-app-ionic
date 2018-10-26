@@ -1,14 +1,21 @@
 page-photobooth {
-    .under-construction {
-        text-align: center;
-        margin-top: 50%;
-        color: #555;
+    ion-content {
+        button {
+            border-radius: 10px !important;
+            -webkit-box-shadow: none !important;
+            -moz-box-shadow: none !important;
+            box-shadow: none !important;
+            padding: 23px !important;
+        }
 
-        h2 {
-            font-size: 15px;
-            ion-icon {
-                color: #0f3;
-            }
+        ion-icon {
+            padding: 0 10px;
+            font-size: 23px;
+        }
+        h1 {
+            margin: 0px;
+            font-size: 18px;
+            font-weight: 400;
         }
     }
 }

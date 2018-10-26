@@ -14,6 +14,7 @@ import { Dialogs } from '@ionic-native/dialogs';
 import { NativeAudio } from '@ionic-native/native-audio';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { Camera } from '@ionic-native/camera' 
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -69,6 +70,7 @@ import { DetailAnimalPage } from '../pages/detail-animal/detail-animal';
     GoogleMaps,
     NativeAudio,
     Dialogs,
+    Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
