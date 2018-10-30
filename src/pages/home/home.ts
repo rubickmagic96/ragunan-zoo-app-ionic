@@ -1,3 +1,4 @@
+import { IntroappPage } from './../introapp/introapp';
 import { BadgeCollectionPage } from './../badge-collection/badge-collection';
 import { PhotoboothPage } from './../photobooth/photobooth';
 import { VisitorInfoPage } from './../visitor-info/visitor-info';
@@ -109,7 +110,7 @@ export class HomePage {
     this.navCtrl.push(page);
   }
 
-  // openSplashPage() {
-  //   this.navCtrl.push(SplashscreenPage);
-  // }
+  openIntroApp() {
+    this.navCtrl.push(IntroappPage);
+  }
 }

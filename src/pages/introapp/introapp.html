@@ -1,0 +1,28 @@
+<ion-content>
+  <ion-slides #slides pager (ionSlideDidChange)="onSlideChanged()">
+    <ion-slide>
+      <img src="assets/imgs/full_21001.jpg" alt="">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/imgs/full_21002.jpg" alt="">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/imgs/full_21003.jpg" alt="">
+    </ion-slide>
+  </ion-slides>
+
+  <div class="content-slide">
+    <h1>{{currentActiveContent.title}}</h1>
+    <p class="desc">
+      {{currentActiveContent.desc}}
+    </p>
+    <ion-buttons>
+      <button ion-button color="button-color">
+        <h3>Selanjutnya</h3>
+        <img src="assets/imgs/ic_arrow.png" alt="">
+      </button>
+    </ion-buttons>
+
+    <p class="skip">Lewatkan</p>
+  </div>
+</ion-content>

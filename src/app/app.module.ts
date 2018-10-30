@@ -1,3 +1,4 @@
+import { IntroappPage } from './../pages/introapp/introapp';
 import { TicketPage } from '../pages/ticket/ticket';
 import { ContactusPage } from './../pages/contactus/contactus';
 import { ActivitiesPage } from './../pages/activities/activities';
@@ -44,7 +45,8 @@ import { HttpClient, HttpClientModule  } from '@angular/common/http';
     TicketPage,
     GetherePage,
     ActivitiesPage,
-    ContactusPage
+    ContactusPage,
+    IntroappPage
   ],
   imports: [
     HttpClientModule,
@@ -54,7 +56,7 @@ import { HttpClient, HttpClientModule  } from '@angular/common/http';
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
-        useFactory: (createTranslateLoader),
+        useFactory: createTranslateLoader,
         deps: [HttpClient]
       }
     })
@@ -74,7 +76,8 @@ import { HttpClient, HttpClientModule  } from '@angular/common/http';
     TicketPage,
     GetherePage,
     ActivitiesPage,
-    ContactusPage
+    ContactusPage,
+    IntroappPage
   ],
   providers: [
     StatusBar,
@@ -83,10 +86,9 @@ import { HttpClient, HttpClientModule  } from '@angular/common/http';
     NativeAudio,
     Dialogs,
     Camera,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
-
 export class AppModule {}
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
