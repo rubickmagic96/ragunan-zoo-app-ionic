@@ -1,3 +1,67 @@
 page-trivias {
+    .header {
+        .greenline {
+            top: -5px;
+            position: relative;
+            width: 100%;
+            border-bottom: 1px solid green;
+        }
+    }
 
+    .content {
+        padding: 10px 8px;
+
+        h3 {
+            color: green;
+            font-weight: 900;
+            padding: 0px;
+            margin: 0px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .levels {
+            .level {
+                .bg-level {
+                    position: relative;
+                    height: 38px;
+                    width: calc(100% - 40px);
+                    background-color: #32db64;
+                    border-radius: 7px;
+
+                    img.star1 {
+                        position: absolute;
+                        height: 28px;
+                        width: 28px;
+                        bottom: 0px;
+                        left: 5px;
+                    }
+                    img.star2 {
+                        position: absolute;
+                        height: 28px;
+                        width: 28px;
+                        top: 0px;
+                        left: 30px;
+                    }
+                    img.star3 {
+                        position: absolute;
+                        height: 28px;
+                        width: 28px;
+                        bottom: 0px;
+                        left: 55px;
+                    }
+                    h5 {
+                        padding: 10px 0px;
+                        margin: 0px;
+                        color: #fff;
+                        font-weight: 900;
+                        font-size: 15px;
+                        position: absolute;
+                        z-index: 1000;
+                        left: 100px;
+                    }
+                }
+            }
+        }
+    }
 }
