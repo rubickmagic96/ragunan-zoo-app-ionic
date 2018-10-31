@@ -1,0 +1,519 @@
+{
+    "animals": [
+        {
+            "position": {
+                "lat": -6.30817,
+                "lng": 106.819385
+            },
+            "icon": {
+                "url": "assets/imgs/icon/icon_11015.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.307345,
+                "lng": 106.821911
+            },
+            "icon": {
+                "url": "assets/imgs/icon/icon_12006.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.307058,
+                "lng": 106.823282
+            },
+            "icon": {
+                "url": "assets/imgs/icon/icon_11030.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.307542,
+                "lng": 106.824004
+            },
+            "icon": {
+                "url": "assets/imgs/icon/icon_11030.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.308583,
+                "lng": 106.824166
+            },
+            "icon": {
+                "url": "assets/imgs/icon/icon_13013.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.309713,
+                "lng": 106.824419
+            },
+            "icon": {
+                "url": "assets/imgs/icon/icon_11015.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.310538,
+                "lng": 106.825195
+            },
+            "icon": {
+                "url": "assets/imgs/icon/icon_11015.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.311147,
+                "lng": 106.824365
+            },
+            "icon": {
+                "url": "assets/imgs/icon/icon_11025.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.311614,
+                "lng": 106.824383
+            },
+            "icon": {
+                "url": "assets/imgs/icon/icon_11015.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.311596,
+                "lng": 106.823679
+            },
+            "icon": {
+                "url": "assets/imgs/icon/icon_11031.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.313622,
+                "lng": 106.824166
+            },
+            "icon": {
+                "url": "assets/imgs/icon/icon_11002.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.314698,
+                "lng": 106.824617
+            },
+            "icon": {
+                "url": "assets/imgs/icon/icon_11001.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.316348,
+                "lng": 106.824527
+            },
+            "icon": {
+                "url": "assets/imgs/icon/icon_11002.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.311040,
+                "lng": 106.823120
+            },
+            "icon": {
+                "url": "assets/imgs/icon/icon_11022.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.311380,
+                "lng": 106.820991
+            },
+            "icon": {
+                "url": "assets/imgs/icon/icon_11022.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.308977,
+                "lng": 106.821351
+            },
+            "icon": {
+                "url": "assets/imgs/icon/icon_11007.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.310179,
+                "lng": 106.819457
+            },
+            "icon": {
+                "url": "assets/imgs/icon/icon_11029.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.310340,
+                "lng": 106.818879
+            },
+            "icon": {
+                "url": "assets/imgs/icon/icon_12008.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.313407,
+                "lng": 106.821225
+            },
+            "icon": {
+                "url": "assets/imgs/icon/icon_11009.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.313694,
+                "lng": 106.821442
+            },
+            "icon": {
+                "url": "assets/imgs/icon/icon_11021.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.313945,
+                "lng": 106.820052
+            },
+            "icon": {
+                "url": "assets/imgs/icon/icon_11004.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.314842,
+                "lng": 106.820106
+            },
+            "icon": {
+                "url": "assets/imgs/icon/icon_11003.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        }
+    ],
+    "foods": [
+        {
+            "position": {
+                "lat": -6.307507,
+                "lng": 106.822380
+            },
+            "icon": {
+                "url": "assets/imgs/icon/restoranr2.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.307184,
+                "lng": 106.821893
+            },
+            "icon": {
+                "url": "assets/imgs/icon/restoranr2.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.310627,
+                "lng": 106.819475
+            },
+            "icon": {
+                "url": "assets/imgs/icon/restoranr2.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        }
+    ],
+    "restrooms": [
+        {
+            "position": {
+                "lat": -6.308170,
+                "lng": 106.819006
+            },
+            "icon": {
+                "url": "assets/imgs/icon/toilet.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.310609,
+                "lng": 106.819132
+            },
+            "icon": {
+                "url": "assets/imgs/icon/toilet.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.306628,
+                "lng": 106.822795
+            },
+            "icon": {
+                "url": "assets/imgs/icon/toilet.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.312026,
+                "lng": 106.824617
+            },
+            "icon": {
+                "url": "assets/imgs/icon/toilet.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.314519,
+                "lng": 106.823751
+            },
+            "icon": {
+                "url": "assets/imgs/icon/toilet.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        }
+    ],
+    "parkings": [
+        {
+            "position": {
+                "lat": -6.317301,
+                "lng": 106.822284
+            },
+            "icon": {
+                "url": "assets/imgs/icon/parkir.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.312133,
+                "lng": 106.824576
+            },
+            "icon": {
+                "url": "assets/imgs/icon/parkir.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.307352,
+                "lng": 106.821208
+            },
+            "icon": {
+                "url": "assets/imgs/icon/parkir.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.306100,
+                "lng": 106.820115
+            },
+            "icon": {
+                "url": "assets/imgs/icon/parkir.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        }
+    ],
+    "exits": [
+        {
+            "position": {
+                "lat": -6.305839,
+                "lng": 106.820413
+            },
+            "icon": {
+                "url": "assets/imgs/icon/pintu_keluar.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.312098,
+                "lng": 106.824996
+            },
+            "icon": {
+                "url": "assets/imgs/icon/pintu_keluar.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.311632,
+                "lng": 106.825285
+            },
+            "icon": {
+                "url": "assets/imgs/icon/pintu_keluar.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.307130,
+                "lng": 106.821424
+            },
+            "icon": {
+                "url": "assets/imgs/icon/pintu_keluar.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        },
+        {
+            "position": {
+                "lat": -6.317352,
+                "lng": 106.822017
+            },
+            "icon": {
+                "url": "assets/imgs/icon/pintu_keluar.png",
+                "size": {
+                    "width": 50,
+                    "height": 50
+                }
+            }
+        }
+    ]
+}

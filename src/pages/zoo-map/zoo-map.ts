@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
@@ -6,6 +7,7 @@ import {
   GoogleMap,
   GoogleMapOptions,
   GroundOverlay,
+  GoogleMapsEvent,
   ILatLng,
   Marker,
   MarkerOptions,
@@ -30,39 +32,24 @@ export class ZooMapPage {
   selectionsMarker: Array<string> = [ 'animal', 'food', 'parking', 'restroom', 'exit' ]
   currentSelectionMarker: string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient) {
   }
 
   ionViewDidLoad() {
     this.currentSelectionMarker = this.selectionsMarker[0];
-    this.animalLocation = [
-      { position: { lat: -6.30817, lng: 106.819385 }, icon: { url: "assets/imgs/icon/icon_11015.png", size: { width: 50, height: 50 } } },
-      { position: { lat: -6.307345, lng: 106.821911 }, icon: { url: "assets/imgs/icon/icon_12006.png", size: { width: 50, height: 50 } } },
-      { position: { lat: -6.307058, lng: 106.823282 }, icon: { url: "assets/imgs/icon/icon_11030.png", size: { width: 50, height: 50 } } },
-      { position: { lat: -6.307542, lng: 106.824004 }, icon: { url: "assets/imgs/icon/icon_11030.png", size: { width: 50, height: 50 } } },
-      { position: { lat: -6.308583, lng: 106.824166 }, icon: { url: "assets/imgs/icon/icon_13013.png", size: { width: 50, height: 50 } } },
-      { position: { lat: -6.309713, lng: 106.824419 }, icon: { url: "assets/imgs/icon/icon_11015.png", size: { width: 50, height: 50 } } },
-      { position: { lat: -6.310538, lng: 106.825195 }, icon: { url: "assets/imgs/icon/icon_11015.png", size: { width: 50, height: 50 } } },
-      { position: { lat: -6.311147, lng: 106.824365 }, icon: { url: "assets/imgs/icon/icon_11025.png", size: { width: 50, height: 50 } } },
-      { position: { lat: -6.311614, lng: 106.824383 }, icon: { url: "assets/imgs/icon/icon_11015.png", size: { width: 50, height: 50 } } },
-      { position: { lat: -6.311596, lng: 106.823679 }, icon: { url: "assets/imgs/icon/icon_11031.png", size: { width: 50, height: 50 } } },
-      { position: { lat: -6.313622, lng: 106.824166 }, icon: { url: "assets/imgs/icon/icon_11002.png", size: { width: 50, height: 50 } } },
-      { position: { lat: -6.314698, lng: 106.824617 }, icon: { url: "assets/imgs/icon/icon_11001.png", size: { width: 50, height: 50 } } },
-      { position: { lat: -6.316348, lng: 106.824527 }, icon: { url: "assets/imgs/icon/icon_11002.png", size: { width: 50, height: 50 } } },
-      { position: { lat: -6.311040, lng: 106.823120 }, icon: { url: "assets/imgs/icon/icon_11022.png", size: { width: 50, height: 50 } } },
-      { position: { lat: -6.311380, lng: 106.820991 }, icon: { url: "assets/imgs/icon/icon_11022.png", size: { width: 50, height: 50 } } },
-      { position: { lat: -6.308977, lng: 106.821351 }, icon: { url: "assets/imgs/icon/icon_11007.png", size: { width: 50, height: 50 } } },
-      { position: { lat: -6.310179, lng: 106.819457 }, icon: { url: "assets/imgs/icon/icon_11029.png", size: { width: 50, height: 50 } } },
-      { position: { lat: -6.310340, lng: 106.818879 }, icon: { url: "assets/imgs/icon/icon_12008.png", size: { width: 50, height: 50 } } },
-      { position: { lat: -6.313407, lng: 106.821225 }, icon: { url: "assets/imgs/icon/icon_11009.png", size: { width: 50, height: 50 } } },
-      { position: { lat: -6.313694, lng: 106.821442 }, icon: { url: "assets/imgs/icon/icon_11021.png", size: { width: 50, height: 50 } } },
-      { position: { lat: -6.313945, lng: 106.820052 }, icon: { url: "assets/imgs/icon/icon_11004.png", size: { width: 50, height: 50 } } },
-      { position: { lat: -6.314842, lng: 106.820106 }, icon: { url: "assets/imgs/icon/icon_11003.png", size: { width: 50, height: 50 } } }
-    ]
-    this.loadMap();
+    this.http.get('assets/data/ragunan_map.json').subscribe((response) => {
+      this.animalLocation = response['animals'];
+      this.foodLocation = response['foods'];
+      this.parkingLocation = response['parkings'];
+      this.restroomLocation = response['restrooms'];
+      this.exitLocation = response['exits'];
+
+      this.loadMap();
+    })
   }
 
   loadMap() {
+    let markers: Marker[] = [];
     let bounds: ILatLng[] = [
       { "lat": -6.318346, "lng": 106.815952 }, 
       { "lat": -6.305505, "lng": 106.827089 }
@@ -77,39 +64,57 @@ export class ZooMapPage {
     };
 
     this.map = GoogleMaps.create('map_canvas', mapOptions);
-    
+
     for (var i = 0; i < this.animalLocation.length; i++) {
-      this.map.addMarkerSync(this.animalLocation[i]);
+      markers.push(this.map.addMarkerSync(this.animalLocation[i]));
     }
+
+    for (var i = 0; i < this.foodLocation.length; i++) {
+      markers.push(this.map.addMarkerSync(this.foodLocation[i]));
+    }
+
+    for (var i = 0; i < this.parkingLocation.length; i++) {
+      markers.push(this.map.addMarkerSync(this.parkingLocation[i]));
+    }
+
+    for (var i = 0; i < this.restroomLocation.length; i++) {
+      markers.push(this.map.addMarkerSync(this.restroomLocation[i]));
+    }
+
+    for (var i = 0; i < this.exitLocation.length; i++) {
+      markers.push(this.map.addMarkerSync(this.exitLocation[i]));
+    }
+
+    // markers.forEach((marker) => {
+    //   marker.setVisible(false);
+    // });
 
     this.groundOverlay = this.map.addGroundOverlaySync({
       'url': 'assets/imgs/ragunanmap.png',
       'bounds': bounds,
       'opacity': 1.0,
     });
-
-    this.map.addEventListener
     // this.map = GoogleMaps.create(this.mapElement.nativeElement, mapOptions);
   }
 
   onSearchBtnTap() {
-    
+    this.currentSelectionMarker = this.selectionsMarker[0];
   }
 
   onFoodBtnTap() {
-
+    this.currentSelectionMarker = this.selectionsMarker[1];
   }
 
   onParkingBtnTap() {
-
+    this.currentSelectionMarker = this.selectionsMarker[2];
   }
 
   onRestroomBtnTap() {
-
+    this.currentSelectionMarker = this.selectionsMarker[3];
   }
 
   onExitBtnTap() {
-
+    this.currentSelectionMarker = this.selectionsMarker[4];
   }
 }
 /* exit marker location */
