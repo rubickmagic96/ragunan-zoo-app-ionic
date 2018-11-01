@@ -15,72 +15,76 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
-.menu-icon {
-    height: 10%;
-    width: 10%;
-    margin-right: 12px;
-    float: left;
-}
+.drawer-content {
+    .menu-icon {
+        height: 10%;
+        width: 10%;
+        margin-right: 12px;
+        float: left;
+    }
 
-.title {
-    font-size: 17px;
-    color: #333;
-}
+    .title {
+        font-size: 17px;
+        color: #666;
+    }
 
-.button-icon {
-    height: 1.5em;
-    width: 1.5em;
-    margin-right: 6px;
-    margin-top: 6px;
-    margin-left: 8px;
-    float: left;
-}
+    .button-icon {
+        height: 1.8em;
+        width: 1.7em;
+        margin-right: 8px;
+        margin-top: 9px;
+        margin-left: 8px;
+        float: left;
+    }
 
-.button-title {
-    font-size: 0.9em;
-    letter-spacing: 1px;
-    font-family: 'Londrina Solid' !important;
-}
+    .button-title {
+        font-size: 1.1em;
+        font-family: 'Londrina Solid' !important;
+    }
 
-.text-icon-color {
-    color: #f0a40b;
-}
+    .text-icon-color {
+        color: #f0a40b;
+    }
 
-.fun-center-title {
-    font-size: 13px;
-    margin-bottom: 2px;
-    margin-left: 4px;
-    font-family: 'Londrina Solid' !important;
-    color: #83c766;
-}
+    .fun-center-title {
+        font-size: 13px;
+        margin-bottom: 2px;
+        margin-left: 4px;
+        font-family: 'Londrina Solid' !important;
+        color: #83c766;
+    }
 
-.item-md, .item-ios {
-    background-color: #f2f2f2 !important;
-}
+    .item-md, .item-ios {
+        background-color: #f2f2f2 !important;
+    }
 
-ion-buttons {
-    .button-list {
-        .ion-buttons {
-            button {
-                padding: 0 !important;
-                text-align: left;
+    ion-buttons {
+        margin: 4px 8px !important;
+
+        .button-list {
+            .ion-buttons {
+                button {
+                    text-align: left;
+                }
             }
         }
     }
-}
 
-.button-content {
-    position: absolute;
-    left: 0;
-}
+    .button-content {
+        position: absolute;
+        left: 0;
+    }
 
-.button-md, .button-ios {
-    border-radius: 4px;
-}
+    .button-md, .button-ios {
+        border-radius: 4px;
+        box-shadow: none !important;
+        padding: 1.9em 1.1em !important;
+    }
 
-.modal-wrapper {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+    .modal-wrapper {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
 }

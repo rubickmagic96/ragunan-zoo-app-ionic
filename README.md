@@ -2,11 +2,11 @@
 Aplikasi kebun binatang
 
 ### Bugs Report
-- [ ] Custom Marker terlalu besar
-- [ ] Groundoverlay kelihatan kabur karena di kompress
-- [ ] Custom Appbar Animation
-- [ ] Ukuran tombol yang ada di drawer terlalu kecil dan memiliki shadow
-- [ ] Sound yang ada di app hanya bisa di jalankan sekali
+- [x] Custom Marker terlalu besar
+- [ ] Groundoverlay kelihatan kabur karena di kompress **hard** 
+- [ ] Custom Appbar Animation **hard**
+- [x] Ukuran tombol yang ada di drawer terlalu kecil dan memiliki shadow
+- [ ] Sound yang ada di app hanya bisa di jalankan sekali **medium**
 - [ ] Belum semua kata tertranslate
 - [ ] Belum semua koleksi hewan di tampilkan
 - [ ] Intro app masih ada di appbar halaman utama

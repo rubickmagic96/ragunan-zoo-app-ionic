@@ -1,42 +1,24 @@
 <ion-menu [content]="mycontent">
     <ion-content style="background-color: #f2f2f2;">
-        <img src="assets/imgs/profile_bgcover.jpg" alt="">
-        <ion-list>
-            <ion-item menuClose *ngFor="let p of pages" no-lines (click)="openPage(p)">
-                <img class="menu-icon" src="{{p.asset}}" alt="">
-                <span class="title">{{p.title}}</span>
-            </ion-item>
-            <!-- <ion-item no-lines>
-                <img class="menu-icon" src="assets/imgs/icon_menukiri_home.png" alt="">
-                <span class="title">Home page</span>
-            </ion-item>
-            <ion-item no-lines>
-                <img class="menu-icon" src="assets/imgs/icon_menukiri_map.png" alt="">
-                <span class="title">Zoo Map</span>
-            </ion-item>
-            <ion-item no-lines>
-                <img class="menu-icon" src="assets/imgs/icon_menukiri_animal.png" alt="">
-                <span class="title">Animal Collection</span>
-            </ion-item>
-            <ion-item no-lines>
-                <img class="menu-icon" src="assets/imgs/icon_menukiri_profile.png" alt="">
-                <span class="title">Visitor Information</span>
-            </ion-item>
-            <ion-item no-lines>
-                <img class="menu-icon" src="assets/imgs/icon_menukiri_settings.png" alt="">
-                <span class="title">Settings</span>
-            </ion-item> -->
-        </ion-list>
-        <div class="button-list">
-            <h2 class="fun-center-title">ZOO FUN CENTER</h2>
-            <ion-buttons *ngFor="let page of buttonPages">
-                <button menuClose (click)="openPageButton(page)" ion-button block color="{{page.button_color}}">
-                    <div class="button-content">
-                        <img class="button-icon" src="{{page.asset}}" alt="">
-                        <p class="button-title {{page.text_color}} ">{{page.title}}</p>
-                    </div>
-                </button>
-            </ion-buttons>
+        <div class="drawer-content">
+            <img src="assets/imgs/profile_bgcover.jpg" alt="">
+            <ion-list>
+                <ion-item menuClose *ngFor="let p of pages" no-lines (click)="openPage(p)">
+                    <img class="menu-icon" src="{{p.asset}}" alt="">
+                    <span class="title">{{p.title}}</span>
+                </ion-item>
+            </ion-list>
+            <div class="button-list">
+                <h2 class="fun-center-title">ZOO FUN CENTER</h2>
+                <ion-buttons *ngFor="let page of buttonPages">
+                    <button menuClose (click)="openPageButton(page)" ion-button block color="{{page.button_color}}">
+                        <div class="button-content">
+                            <img class="button-icon" src="{{page.asset}}" alt="">
+                            <p class="button-title {{page.text_color}} ">{{page.title}}</p>
+                        </div>
+                    </button>
+                </ion-buttons>
+            </div>
         </div>
     </ion-content>
 </ion-menu>

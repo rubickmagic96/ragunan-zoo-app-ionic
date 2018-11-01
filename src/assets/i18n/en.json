@@ -1,13 +1,332 @@
 {
     "appbar_title": {
         "home": "Home Page",
-        "settings": "Settings"
+        "settings": "Settings",
+        "zoomap": "Zoo Map",
+        "animal_collection": "Animal Colelction",
+        "visitor_info": "Visitor Information",
+        "animal_badge": "Animal Badge Collection",
+        "photobooth": "Photo Booth",
+        "trivias": "Animal Trivias"
     },
     "content": {
+        "home": {
+            "slider_header": {
+                "slide1": "Blue peacock has a very beautiful feather",
+                "slide2": "Do you know that tiger is a very good swimmer?",
+                "slide3": "Monkey Loves Selfie!"
+            },
+            "next_attraction": {
+                "title": "Next Attraction",
+                "content": "Feeding the Gorilla"
+            },
+            "button_card": {
+                "button1": "Ragunan Animals",
+                "button2": "Zoo Information"
+            },
+            "fun_facts": "Fun Facts!",
+            "slider_funfact": {
+                "slide1": {
+                    "title": "About Visitor Rule",
+                    "fact": "Loves the animal, keep them safe, please follow the visitor rules"
+                },
+                "slide2": {
+                    "title": "About Animal Welfare",
+                    "fact": "Like human, animal feels hunger, fear, pain and stress! Let them be free of them!"
+                },
+                "slide3": {
+                    "title": "About Anoa",
+                    "fact": "Male Anoa Horns can grow to about 30m in length"
+                },
+                "slide4": {
+                    "title": "About Sitatunga",
+                    "fact": "Young sitatungas independent at young age. They are often seen grazing on their own"
+                },
+                "slide5": {
+                    "title": "About Single Wattle Cassowarry",
+                    "fact": "In the wild, cassowaries are generally shy and avoid contact with humans"
+                },
+                "slide6": {
+                    "title": "About Proboscis",
+                    "fact": "Proboscis or baboon can interact with human quite well"
+                },
+                "slide7": {
+                    "title": "About Flamingo",
+                    "fact": "The word 'flamingo' comes from the spanish and latin word 'flamenco' which means fire"
+                },
+                "slide8": {
+                    "title": "About Pelican",
+                    "fact": "Pelicans live on every continent except Antartica"
+                },
+                "slide9": {
+                    "title": "About Siamang",
+                    "fact": "50% of their waking time is spent resting, they are lying on their back or on their stomach"
+                },
+                "slide10": {
+                    "title": "About Bornean Orangutan",
+                    "fact": "Orangutans can remember thing for years, just like humans"
+                },
+                "slide11": {
+                    "title": "About Bear",
+                    "fact": "Honey Bear diet consist of Lizard, Little Birds, Rodents, Insects, termites, fruit and honey"
+                },
+                "slide12": {
+                    "title": "About Blue Peacock",
+                    "fact": "the peafowls will expose their fans to any passing birds, humans or peahens."
+                },
+                "slide13": {
+                    "title": "About Knobbed Hornbill",
+                    "fact": "Female Knobbed Hornbill sealed itself inside a tree hole for egg-laying"
+                },
+                "slide14": {
+                    "title": "About White Tiger",
+                    "fact": "A group of Tigers is known as an 'ambush' or 'streak'. Cool name."
+                },
+                "slide15": {
+                    "title": "About Single Wattle Cassowarry",
+                    "fact": "In the wild, cassowaries are generally shy and avoid contact with humans"
+                },
+                "slide16": {
+                    "title": "About Nilgai",
+                    "fact": "Nilgai can survive long periods without water"
+                },
+                "slide17": {
+                    "title": "About Sri Lanka Leopard",
+                    "fact": "Leopard don't need much water. They survive from the moisture they get from eating their prey"
+                },
+                "slide18": {
+                    "title": "About Pelican",
+                    "fact": "Compared to all the birds of the world in the most spacious palican's beak, which can hold 3 buckets of fish"
+                },
+                "slide19": {
+                    "title": "About Tapir",
+                    "fact": "Scientists belive that tapirs have not changed very much over tens of Millions of years."
+                },
+                "slide20": {
+                    "title": "About Visitor Rule",
+                    "fact": "Loves the animal, keep them safe, please follow the visitor rules"
+                },
+                "slide21": {
+                    "title": "About Bornean Orangutan",
+                    "fact": "The Orangutan is the only Asian great Ape"
+                },
+                "slide22": {
+                    "title": "About Komodo",
+                    "fact": "they can eat prey that weighs 80% of their own weight, including the bones and hooves"
+                }
+            },
+            "swiper_note": {
+                "note": "Swipe left or right to see more facts"
+            },
+            "collection_note": {
+                "collect": "Collect All The Animal Badges Collection",
+                "subcollect": "and listen to their sound!"
+            },
+            "start_btn": {
+                "content": "Start Here"
+            }
+        },
+        "zoomap": {
+            "food": "food",
+            "parking": "parking",
+            "restroom": "restroom",
+            "exit": "exit"
+        },
+        "animal_collection": {
+            "show_all_animal": "Show All Animal",
+            "mammal": "Mammal",
+            "reptile": "Reptile",
+            "aves": "Aves",
+            "fishes": "Fishes"
+        },
         "settings": {
             "lang": "Language",
             "about": "About Ragunan Zoo",
             "terms": "Terms and Agreement"
+        },
+        "visitor_information": {
+            "ticket": {
+                "enterance_fee": {
+                    "title": "Entrance Fee",
+                    "item1": "Open from 8.30 am  to 16.00 pm, tuesday to sunday, monday is holiday for our animal to take a rests.",
+                    "item2": {
+                        "title": "Adult",
+                        "price": 4000,
+                        "per": "person"
+                    },
+                    "item3": {
+                        "title": "Children(belo 5 years old)",
+                        "price": 3000,
+                        "per": "person"
+                    },
+                    "item4": "Payment Accepted"
+                },
+                "buy_ticket": "Buy Ticket At The Zoo",
+                "other_fees": {
+                    "title": "Other Fees",
+                    "guided_tour": {
+                        "title": "Guided Tour",
+                        "item1": {
+                            "title": "1-2 Hour Zoo Guided tour",
+                            "price": 100000
+                        }
+                    },
+                    "car_rates": {
+                        "title": "Car Rates vehicles/parking",
+                        "item1": {
+                            "title": "Bus Big, Big Trucks and Big Box Cars",
+                            "price": 15000,
+                            "per": "day"
+                        },
+                        "item2": {
+                            "title": "Bus Big, Big Trucks and Big Box Cars",
+                            "price": 15000,
+                            "per": "day"
+                        },
+                        "item3": {
+                            "title": "Bus Big, Big Trucks and Big Box Cars",
+                            "price": 15000,
+                            "per": "day"
+                        },
+                        "item4": {
+                            "title": "Bus Big, Big Trucks and Big Box Cars",
+                            "price": 15000,
+                            "per": "day"
+                        },
+                        "item5": {
+                            "title": "Bus Big, Big Trucks and Big Box Cars",
+                            "price": 15000,
+                            "per": "day"
+                        }
+                    },
+                    "user_of_facility": {
+                        "title": "Use of the facility vechicle/fauna",
+                        "item1": {
+                            "title": "Horse Riding",
+                            "subtitle": "Only Available on Sunday",
+                            "price": 5000,
+                            "per": "around"
+                        },
+                        "item2": {
+                            "title": "Camel Riding",
+                            "subtitle": "Only Available on Sunday",
+                            "price": 7500,
+                            "per": "around"
+                        },
+                        "item3": {
+                            "title": "Elephant Riding",
+                            "subtitle": "Only Available on Sunday",
+                            "price": 7500,
+                            "per": "around"
+                        },
+                        "item4": {
+                            "title": "Children's Zoo",
+                            "price": 2500,
+                            "per": "around"
+                        },
+                        "item5": {
+                            "title": "Sepeda Tandem",
+                            "price": 15000,
+                            "per": "hour"
+                        },
+                        "item6": {
+                            "title": "Sepeda Single",
+                            "price": 10000,
+                            "per": "hour"
+                        },
+                        "item7": {
+                            "title": "Horse Riding",
+                            "price": 7500,
+                            "per": "person"
+                        }
+                    },
+                    "entrance_fee_primate": {
+                        "title": "The Entrance Fee Schmutzer Primate Center",
+                        "item1": {
+                            "title": "Monday Till Friday",
+                            "subtitle": "(ages 3 year and over)",
+                            "price": 6000,
+                            "per": "person"
+                        },
+                        "item2": {
+                            "title": "On Saturday Till Sunday / National Holidays",
+                            "subtitle": "(ages 3 year and over)",
+                            "price": 7500,
+                            "per": "person"
+                        }
+                    }
+                }
+            },
+            "gethere": {
+                "address": "address",
+                "by_car": "By Car",
+                "by_bus": "By Bus",
+                "button": "Get Direction"
+            },
+            "activities": {
+                "prefix": "Feeding the",
+                "animals": [ "Gorilla", "Orangutan" ],
+                "show_reminder": "Show Reminder",
+                "remind_me": "Remind Me",
+                "added_to_reminder": "Added To Reminder",
+                "remove_from_reminder": "Remove From Reminder"
+            },
+            "contact_us": {
+                "title1": "Send your love letter to our animals here!",
+                "title2": "Or Write to Us here!",
+                "field1": "Enter Your Name",
+                "field2": "Enter Address",
+                "field3": "Enter Message Subject",
+                "field4": "Enter Your Message",
+                "checkbox": "Send a copy of this message to your email",
+                "button": "Submit"
+            }
+        },
+        "animal_badge": {
+            "badges": [
+                "Sumatran Tiger",
+                "Bear",
+                "Siamang",
+                "Gorilla",
+                "Lion",
+                "Monkey Budeng",
+                "Sambar Deer",
+                "Bornean Orangutan",
+                "Java Bull",
+                "Sumatran Elephant",
+                "Camel",
+                "King Cobra",
+                "Yello-Crested"
+            ]
+        },
+        "photobooth": {
+            "button1": "Camera",
+            "button2": "Gallery"
+        },
+        "trivias": {
+            "button1": {
+                "title": "Zoo Fans Club - Easy"
+            },
+            "button2": {
+                "title": "Zoo University - Medium"
+            },
+            "button3": {
+                "title": "Zoo Keeper - Hard"
+            }
+        }
+    },
+    "drawer": {
+        "title": {
+            "home_page": "Home Page",
+            "zoomap": "Zoo Map",
+            "animal_collection": "Animal Collection",
+            "visitor_info": "Visitor Information",
+            "settings": "Settings"
+        },
+        "button": {
+            "animal_badge": "Animal Badge Collection",
+            "photobooth": "Photo Booth",
+            "trivias": "Animal Trivias"
         }
     }
 }
