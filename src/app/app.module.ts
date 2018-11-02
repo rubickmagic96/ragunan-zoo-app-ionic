@@ -29,6 +29,8 @@ import { SettingsPage } from '../pages/settings/settings';
 import { PhotoboothPage } from '../pages/photobooth/photobooth';
 import { DetailAnimalPage } from '../pages/detail-animal/detail-animal';
 import { HttpClient, HttpClientModule  } from '@angular/common/http';
+import { InGamePage } from '../pages/in-game/in-game';
+import { IonicStorageModule } from '@ionic/storage';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,8 @@ import { HttpClient, HttpClientModule  } from '@angular/common/http';
     GetherePage,
     ActivitiesPage,
     ContactusPage,
-    IntroappPage
+    IntroappPage,
+    InGamePage
   ],
   imports: [
     HttpClientModule,
@@ -59,7 +62,8 @@ import { HttpClient, HttpClientModule  } from '@angular/common/http';
         useFactory: createTranslateLoader,
         deps: [HttpClient]
       }
-    })
+    }),
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -77,7 +81,8 @@ import { HttpClient, HttpClientModule  } from '@angular/common/http';
     GetherePage,
     ActivitiesPage,
     ContactusPage,
-    IntroappPage
+    IntroappPage,
+    InGamePage
   ],
   providers: [
     StatusBar,

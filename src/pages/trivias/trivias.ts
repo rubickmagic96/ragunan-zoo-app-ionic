@@ -1,12 +1,6 @@
+import { InGamePage } from './../in-game/in-game';
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the TriviasPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @Component({
   selector: 'page-trivias',
@@ -21,4 +15,7 @@ export class TriviasPage {
     console.log('ionViewDidLoad TriviasPage');
   }
 
+  openGame() {
+    this.navCtrl.push(InGamePage);
+  }
 }

@@ -45,7 +45,7 @@ export class ZooMapPage {
       this.exitLocation = response['exits'];
 
       this.loadMap();
-    })
+    });
   }
 
   loadMap() {

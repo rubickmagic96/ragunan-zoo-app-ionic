@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-navbar color='primary'>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Animal Trivias
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="background-color: #f2f2f2;">
+  <div class="time-n-life">
+    <h4 class="time-left">Time Left</h4>
+    <div class="life-left">
+      <h4>Life</h4>
+      <img class="lifes" src="assets/imgs/life.png" alt="">
+      <img class="lifes" src="assets/imgs/life.png" alt="">
+      <img class="lifes" src="assets/imgs/life.png" alt="">
+    </div>
+    <div class="time-bar"></div>
+  </div>
+  <div class="score">
+    <h2>Score : 0/10</h2>
+  </div>
+  <div class="quiz">
+    <div id="game">
+      <h4 class="question">asdf</h4>
+      <label class="container">asdf
+        <input (click)="toggleTo()" type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">asdf
+        <input (click)="toggleTo()" type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">asdf
+        <input (click)="toggleTo()" type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">asdf
+        <input (click)="toggleTo()" type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+    </div>
+    <div id="result">
+      <h1 class="result-info">WRONG!!</h1>
+      <div class="share">
+        <ion-buttons>
+          <button ion-button>SHARE <ion-icon name="logo-facebook"></ion-icon></button>
+          <button ion-button>SHARE <ion-icon name="logo-twitter"></ion-icon></button>
+        </ion-buttons>
+      </div>
+      <ion-buttons>
+        <button (click)="toggleTo()"  ion-button><span>Next</span><ion-icon name="arrow-forward"></ion-icon></button>
+      </ion-buttons>
+    </div>
+  </div>
+</ion-content>

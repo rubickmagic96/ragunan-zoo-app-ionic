@@ -1,3 +1,4 @@
+import { HomePage } from './../home/home';
 import { Component, ViewChild } from '@angular/core';
 import { NavController, NavParams, Slides } from 'ionic-angular';
 
@@ -49,5 +50,13 @@ export class IntroappPage {
       ].title;
       this.currentActiveContent.desc = this.slideContent[currentIndex - 1].desc;
     }
+  }
+
+  goToNext() {
+    this.slides.slideNext();
+  }
+
+  goToHome() {
+    this.navCtrl.setRoot(HomePage);
   }
 }

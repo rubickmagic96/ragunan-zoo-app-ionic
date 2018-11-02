@@ -17,12 +17,12 @@
       {{currentActiveContent.desc}}
     </p>
     <ion-buttons>
-      <button ion-button color="button-color">
+      <button (click)="goToNext()" ion-button color="button-color">
         <h3>Selanjutnya</h3>
         <img src="assets/imgs/ic_arrow.png" alt="">
       </button>
     </ion-buttons>
 
-    <p class="skip">Lewatkan</p>
+    <p (click)="goToHome()" class="skip">Lewatkan</p>
   </div>
 </ion-content>

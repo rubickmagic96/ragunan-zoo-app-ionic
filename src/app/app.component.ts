@@ -7,12 +7,14 @@ import { Component, ViewChild } from '@angular/core';
 import { Platform, Nav, ModalController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { Storage } from '@ionic/storage'
 
 import { HomePage } from '../pages/home/home';
 import { ZooMapPage } from './../pages/zoo-map/zoo-map';
 import { PhotoboothPage } from '../pages/photobooth/photobooth';
 
-import { TranslateService } from '@ngx-translate/core'
+import { TranslateService } from '@ngx-translate/core';
+import { IntroappPage } from '../pages/introapp/introapp';
 
 @Component({
   templateUrl: 'app.html'
@@ -28,7 +30,8 @@ export class MyApp {
     public statusBar: StatusBar,
     public splashScreen: SplashScreen,
     public modalCtrl: ModalController,
-    private translateService: TranslateService) {
+    private translateService: TranslateService,
+    public storage: Storage) {
 
     this.translateService.setDefaultLang('en')
 
@@ -53,6 +56,14 @@ export class MyApp {
     this.platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
+      this.storage.get('introShown').then((result) => {
+        if (result) {
+          this.rootPage = HomePage;
+        } else {
+          this.rootPage = IntroappPage;
+          this.storage.set('introShown', true);
+        }
+      });
       this.statusBar.styleDefault();
       // let splash = this.modalCtrl.create(SplashscreenPage);
       // splash.present();
