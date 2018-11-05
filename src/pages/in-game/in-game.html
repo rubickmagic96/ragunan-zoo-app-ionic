@@ -21,30 +21,12 @@
     <div class="time-bar"></div>
   </div>
   <div class="score">
-    <h2>Score : 0/10</h2>
+    <h2>Score : {{currentScore}}/10</h2>
   </div>
   <div class="quiz">
-    <div id="game">
-      <h4 class="question">asdf</h4>
-      <label class="container">asdf
-        <input (click)="toggleTo()" type="radio" name="radio">
-        <span class="checkmark"></span>
-      </label>
-      <label class="container">asdf
-        <input (click)="toggleTo()" type="radio" name="radio">
-        <span class="checkmark"></span>
-      </label>
-      <label class="container">asdf
-        <input (click)="toggleTo()" type="radio" name="radio">
-        <span class="checkmark"></span>
-      </label>
-      <label class="container">asdf
-        <input (click)="toggleTo()" type="radio" name="radio">
-        <span class="checkmark"></span>
-      </label>
-    </div>
+    <div id="game"></div>
     <div id="result">
-      <h1 class="result-info">WRONG!!</h1>
+      <h1 id="result-info"></h1>
       <div class="share">
         <ion-buttons>
           <button ion-button>SHARE <ion-icon name="logo-facebook"></ion-icon></button>
@@ -52,7 +34,16 @@
         </ion-buttons>
       </div>
       <ion-buttons>
-        <button (click)="toggleTo()"  ion-button><span>Next</span><ion-icon name="arrow-forward"></ion-icon></button>
+        <button (click)="nextQuestion()" ion-button><span>Next</span><ion-icon name="arrow-forward"></ion-icon></button>
+      </ion-buttons>
+    </div>
+    <div id="gameover">
+      <h1>Game Over</h1>
+      <h2 style="color: green">Your score is {{currentScore}}/10</h2>
+      <ion-buttons>
+        <button (click)="restart()" ion-button><span>Next</span>
+          <ion-icon name="arrow-forward"></ion-icon>
+        </button>
       </ion-buttons>
     </div>
   </div>

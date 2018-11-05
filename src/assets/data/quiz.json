@@ -1,52 +1,52 @@
 {
     "questions": [
         {
-            "question": "Question number #1 ?",
+            "question": "Macan adalah jenis hewan ?",
             "answers": {
-                "a": "Answer 1",
-                "b": "Answer 2",
-                "c": "Answer 3",
-                "d": "Answer 4"
+                "a": "Karnivora",
+                "b": "Herbivora",
+                "c": "Omnivora",
+                "d": "Dodolvora"
             },
-            "correct_answer": "c"
+            "correct_answer": "a"
         },
         {
-            "question": "Question number #2 ?",
+            "question": "Biasanya kucing memangsa hewan ?",
             "answers": {
-                "a": "Answer 1",
-                "b": "Answer 2",
-                "c": "Answer 3",
-                "d": "Answer 4"
+                "a": "Bebek",
+                "b": "Tikus",
+                "c": "Musang",
+                "d": "Kadal"
             },
-            "correct_answer": "c"
+            "correct_answer": "b"
         },
         {
-            "question": "Question number #3 ?",
+            "question": "Siapa nama lengkap pemeran kucing di film tom & jerry ?",
             "answers": {
-                "a": "Answer 1",
-                "b": "Answer 2",
-                "c": "Answer 3",
-                "d": "Answer 4"
+                "a": "Thomas",
+                "b": "Tom",
+                "c": "Jerry",
+                "d": "Erry"
             },
-            "correct_answer": "c"
+            "correct_answer": "a"
         },
         {
-            "question": "Question number #4 ?",
+            "question": "Hewan yang bisa menjadi alat transportasi adalah ?",
             "answers": {
-                "a": "Answer 1",
-                "b": "Answer 2",
-                "c": "Answer 3",
-                "d": "Answer 4"
+                "a": "Kuda",
+                "b": "Kucing",
+                "c": "Harimau",
+                "d": "Musang"
             },
-            "correct_answer": "c"
+            "correct_answer": "a"
         },
         {
-            "question": "Question number #5 ?",
+            "question": "Kekuatan yang terletak ditubuh naruta adalah hewan ?",
             "answers": {
-                "a": "Answer 1",
-                "b": "Answer 2",
-                "c": "Answer 3",
-                "d": "Answer 4"
+                "a": "Musang",
+                "b": "Kucing",
+                "c": "Monyet",
+                "d": "Bebek"
             },
             "correct_answer": "c"
         },
