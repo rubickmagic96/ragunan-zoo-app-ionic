@@ -21,50 +21,32 @@ export class InGamePage {
     console.log('ionViewDidLoad InGamePage');
   }
 
-  ionViewCanEnter(){
+  ionViewCanEnter() {
     this.http.get('assets/data/quiz.json').subscribe((response) => {
       this.quiz = response['questions'];
 
       this.buildQuiz(this.quiz);
+      let quizz = this.quiz;
+      let score = this.currentScore;
       let answers = document.querySelectorAll(".radio-answer");
       for (let i = 0; i < answers.length; i++) {
         let currentItem = answers[i];
-        currentItem.addEventListener("click", function() {
-          checkAnswer(currentItem, this.quiz);
+        currentItem.addEventListener("click", () => {
+          this.checkAnswer(currentItem, quizz);
         });
       }
-      //  document.querySelectorAll("input[type='radio']").forEach((item, index) => {
-      //   item.addEventListener('click', this.checkAnswer.bind(this, item, this.quiz), false)
+      // document.querySelectorAll(".radio-answer").forEach((item, index) => {
+      //   console.log(index);
+      //   item.addEventListener('click', function() {
+      //     item.setAttribute('name', `question${index}`);
+      //     checkAnswer(item, this.quiz);
+      //   })
       // });
       this.showSlide(0);
 
-      function checkAnswer(item, quiz) {
-        console.log(item);
-        // let currentIndex = 0;
-        // const currentQuestion = item.name.substr(item.name.length - 1);
-        // quiz.forEach((question) => {
-        //   if (currentIndex == currentQuestion) {
-        //     if (question.correct_answer == item.value) {
-        //       this.showResult(true);
-        //       this.currentScore++;
-        //     } else {
-        //       console.log(question.correct_answer);
-        //       console.log(item.value);
-        //       this.showResult(false);
-        //     }
-        //   }
-        //   currentIndex++;
-        // });
-
-        // another method #2
-        // return function() {
-
-        // }
-      }
+      this.currentScore = score;
     });
   }
-
-  
 
   nextQuestion() {
     if (this.currentSlide < 10) {
@@ -75,19 +57,6 @@ export class InGamePage {
       document.getElementById('result').style.display = 'none';
       document.getElementById('game').style.display = 'none';
       document.getElementById('gameover').style.display = 'block';
-    }
-  }
-
-  showResult(answer) {
-    document.getElementById('result').style.display = 'block';
-    document.getElementById('game').style.display = 'none';
-
-    if (answer) {
-      document.getElementById('result-info').innerText = "Correct!";
-      document.getElementById('result-info').style.color = "green";  
-    } else {
-      document.getElementById('result-info').innerText = "Wrong!";
-      document.getElementById('result-info').style.color = "red"; 
     }
   }
 
@@ -116,6 +85,38 @@ export class InGamePage {
     });
 
     document.getElementById('game').innerHTML = output.join('');
+  }
+
+  checkAnswer(item, quiz) {
+    console.log(item);
+    let currentIndex = 0;
+    const currentQuestion = item.name.substr(item.name.length - 1);
+    quiz.forEach((question) => {
+      if (currentIndex == currentQuestion) {
+        if (question.correct_answer == item.value) {
+          this.showResult(true);
+          this.currentScore++;
+        } else {
+          console.log(question.correct_answer);
+          console.log(item.value);
+          this.showResult(false);
+        }
+      }
+      currentIndex++;
+    });
+  }
+
+  showResult(answer) {
+    document.getElementById('result').style.display = 'block';
+    document.getElementById('game').style.display = 'none';
+
+    if (answer) {
+      document.getElementById('result-info').innerText = "Correct!";
+      document.getElementById('result-info').style.color = "green";
+    } else {
+      document.getElementById('result-info').innerText = "Wrong!";
+      document.getElementById('result-info').style.color = "red";
+    }
   }
 
   showSlide(slide) {
