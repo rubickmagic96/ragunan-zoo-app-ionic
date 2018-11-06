@@ -47,13 +47,7 @@ page-in-game {
         text-align: center;
 
         ion-icon {
-            margin-left: 20px;
-        }
-
-        h1#result-info {
-            font-size: 18px;
-            color: red;
-            margin-bottom: 50px;
+            margin-left: 10px;
         }
     }
 
@@ -83,7 +77,19 @@ page-in-game {
         }
 
         button {
+            text-transform: none;
+            border-radius: 5px;
             box-shadow: none !important;
+
+            ion-icon {
+                font-size: 30px;
+                margin-left: 16px;
+            }
+        }
+
+        button.bigger-button {
+            font-size: 20px;
+            padding: 0 2.9em;
         }
 
         label {

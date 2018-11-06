@@ -15,6 +15,7 @@ export class InGamePage {
   slideOption: any;
   correctAnswer: boolean;
   currentQuestion: number;
+  isGameOver: boolean = false;
   
   constructor(public navCtrl: NavController, public navParams: NavParams, public quizProvider: QuizProvider) {
   }
@@ -35,9 +36,7 @@ export class InGamePage {
   }
 
   checkAnswer(index, question, answer) {
-    console.log(index + ": "+answer) //log answer
-
-    if (this.life > 1) {
+    if (this.life > 0) {
       if (question.correct_answer === answer) {
         this.score++;
         this.correctAnswer = true;
@@ -56,24 +55,35 @@ export class InGamePage {
         }
 
         console.log('lifes = ' + this.life);
+
+        if (this.life == 0) {
+          this.isGameOver = true;
+        }
       }
 
       this.currentQuestion = index;
       this.slides.lockSwipes(false);
       this.slides.slideTo(this.questions.length + 1, 0);
-      this.slides.lockSwipes(true);
-    } else {
-      document.getElementById('time-n-life').style.display = "none";
-      document.getElementById('score').style.display = "none";
-      document.getElementById('quiz').style.display = "none";
-      document.getElementById('gameover').style.display = "block";
+      this.slides.lockSwipes(true); 
     }
   }
 
+  goToGameOver() {
+    document.getElementById('time-n-life').style.display = "none";
+    document.getElementById('score').style.display = "none";
+    document.getElementById('quiz').style.display = "none";
+    document.getElementById('gameover').style.display = "block";
+    this.isGameOver = false;
+  }
+
   nextQuestion() {
-    this.slides.lockSwipes(false);
-    this.slides.slideTo(this.currentQuestion + 1, 0);
-    this.slides.lockSwipes(true);
+    if (this.currentQuestion == this.questions.length - 1) {
+      this.isGameOver = true;
+    } else {
+      this.slides.lockSwipes(false);
+      this.slides.slideTo(this.currentQuestion + 1, 0);
+      this.slides.lockSwipes(true);
+    }
   }
 
   playAgain() {

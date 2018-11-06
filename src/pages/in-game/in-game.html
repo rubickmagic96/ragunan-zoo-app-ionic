@@ -53,20 +53,25 @@
         </div>
       </ion-slide>
       <ion-slide>
-        <h1 *ngIf="correctAnswer; else wrongAnswer" id="result-info" style="color: green; font-size: 17px;">CORRECT!</h1>
+        <h1 *ngIf="correctAnswer; else wrongAnswer" class="result-info" style="font-weight: 900; margin: 100px 0 !important; color: green; font-size: 17px;">CORRECT!</h1>
         <ng-template #wrongAnswer>
-          <h1 else id="result-info" style="color: red; font-size: 17px;">WRONG!</h1>
+          <h1 else class="result-info" style="font-weight: 900; margin: 100px 0 !important; color: red; font-size: 17px;">WRONG!</h1>
         </ng-template>
         <div class="share">
           <ion-buttons>
-            <button ion-button>SHARE <ion-icon name="logo-facebook"></ion-icon></button>
-            <button ion-button>SHARE <ion-icon name="logo-twitter"></ion-icon></button>
+            <button ion-button color="button-color3">Share <ion-icon name="logo-facebook"></ion-icon></button>
+            <button ion-button color="button-color3">Share <ion-icon name="logo-twitter"></ion-icon></button>
           </ion-buttons>
         </div>
         <ion-buttons>
-          <button (click)="nextQuestion()" ion-button><span>Next</span>
+          <button *ngIf="isGameOver; else playgame" class="bigger-button" (click)="goToGameOver()" ion-button><span>Gameover</span>
             <ion-icon name="arrow-forward"></ion-icon>
           </button>
+          <ng-template #playgame>
+              <button class="bigger-button" (click)="nextQuestion()" ion-button><span>Next</span>
+                <ion-icon name="arrow-forward"></ion-icon>
+              </button>
+          </ng-template>
         </ion-buttons>
       </ion-slide>
     </ion-slides>
