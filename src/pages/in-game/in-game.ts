@@ -1,133 +1,111 @@
-import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { HomePage } from './../home/home';
+import { QuizProvider } from './../../providers/quiz/quiz';
+import { Component, ViewChild } from '@angular/core';
+import { NavController, NavParams, Slides } from 'ionic-angular';
 
 @Component({
   selector: 'page-in-game',
   templateUrl: 'in-game.html',
 })
 export class InGamePage {
-  game: any;
-  result: any;
-  quiz: any;
-  currentSlide: number = 0;
-  currentScore: number = 0;
-  constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient) {
+  @ViewChild("slides") slides: Slides;
+  questions: any;
+  score:number = 0;
+  life:number = 3;
+  slideOption: any;
+  correctAnswer: boolean;
+  currentQuestion: number;
+  
+  constructor(public navCtrl: NavController, public navParams: NavParams, public quizProvider: QuizProvider) {
   }
 
   ionViewDidLoad() {
-    // this.result = document.getElementById('result');
-    // this.result.style.display = "none";
     console.log('ionViewDidLoad InGamePage');
+
+    this.slides.lockSwipes(true);
+
+    this.quizProvider.load().then((data) => {
+      data.map((question) => {
+        let answers = Object.keys(question.answers);
+        question.answer_key = answers;
+      });
+
+      this.questions = data;
+    })
   }
 
-  ionViewCanEnter() {
-    this.http.get('assets/data/quiz.json').subscribe((response) => {
-      this.quiz = response['questions'];
+  checkAnswer(index, question, answer) {
+    console.log(index + ": "+answer) //log answer
 
-      this.buildQuiz(this.quiz);
-      let quizz = this.quiz;
-      let score = this.currentScore;
-      let answers = document.querySelectorAll(".radio-answer");
-      for (let i = 0; i < answers.length; i++) {
-        let currentItem = answers[i];
-        currentItem.addEventListener("click", () => {
-          this.checkAnswer(currentItem, quizz);
-        });
+    if (this.life > 1) {
+      if (question.correct_answer === answer) {
+        this.score++;
+        this.correctAnswer = true;
+      } else {
+        this.life--;
+        this.correctAnswer = false;
+
+        let lifes = document.querySelectorAll(".lifes");
+        for (let i = 0; i < lifes.length; i++) {
+          if (i == lifes.length - 1) {
+            lifes[i].classList.remove("lifes");
+            lifes[i].classList.add("no-life");
+
+            (lifes[i] as HTMLImageElement).src = "assets/imgs/life_off.png";
+          }
+        }
+
+        console.log('lifes = ' + this.life);
       }
-      // document.querySelectorAll(".radio-answer").forEach((item, index) => {
-      //   console.log(index);
-      //   item.addEventListener('click', function() {
-      //     item.setAttribute('name', `question${index}`);
-      //     checkAnswer(item, this.quiz);
-      //   })
-      // });
-      this.showSlide(0);
 
-      this.currentScore = score;
-    });
+      this.currentQuestion = index;
+      this.slides.lockSwipes(false);
+      this.slides.slideTo(this.questions.length + 1, 0);
+      this.slides.lockSwipes(true);
+    } else {
+      document.getElementById('time-n-life').style.display = "none";
+      document.getElementById('score').style.display = "none";
+      document.getElementById('quiz').style.display = "none";
+      document.getElementById('gameover').style.display = "block";
+    }
   }
 
   nextQuestion() {
-    if (this.currentSlide < 10) {
-      document.getElementById('result').style.display = 'none';
-      document.getElementById('game').style.display = 'block';
-      this.showSlide(this.currentSlide + 1);
-    } else {
-      document.getElementById('result').style.display = 'none';
-      document.getElementById('game').style.display = 'none';
-      document.getElementById('gameover').style.display = 'block';
+    this.slides.lockSwipes(false);
+    this.slides.slideTo(this.currentQuestion + 1, 0);
+    this.slides.lockSwipes(true);
+  }
+
+  playAgain() {
+    document.getElementById('time-n-life').style.display = "block";
+    document.getElementById('score').style.display = "block";
+    document.getElementById('quiz').style.display = "block";
+    document.getElementById('gameover').style.display = "none";
+
+    this.score = 0;
+    this.currentQuestion = 0;
+    this.life = 3;
+
+    this.slides.lockSwipes(false);
+    this.slides.slideTo(0, 0);
+    this.slides.lockSwipes(true);
+
+    let checkmark = document.querySelectorAll(".container input:checked ~ .checkmark");
+    checkmark.forEach((marker) => {
+      (marker as HTMLElement).style.backgroundColor = "#eee";
+    })
+
+
+    let noLifes = document.querySelectorAll(".no-life");
+    for (let i = 0; i < noLifes.length; i++) {
+      noLifes[i].classList.remove("no-life");
+      noLifes[i].classList.add("lifes");
+
+      (noLifes[i] as HTMLImageElement).src = "assets/imgs/life.png";
     }
   }
 
-  buildQuiz(questionsList) {
-    const output = [];
-
-    questionsList.forEach((question, index) => {
-      const answers = [];
-      for (const answer in question.answers) {
-        answers.push(
-          `<label class="container">${question.answers[answer]}
-            <input class="radio-answer" type="radio" name="question${index}" value="${answer}">
-            <span class="checkmark"></span>
-           </label>`
-        )
-      }
-
-      output.push(
-        `<div class="slides">
-        <h4 class="question">${question.question}</h4>
-        <div class="answers">
-          ${answers.join('')}
-        </div>
-      </div>`
-      )
-    });
-
-    document.getElementById('game').innerHTML = output.join('');
-  }
-
-  checkAnswer(item, quiz) {
-    console.log(item);
-    let currentIndex = 0;
-    const currentQuestion = item.name.substr(item.name.length - 1);
-    quiz.forEach((question) => {
-      if (currentIndex == currentQuestion) {
-        if (question.correct_answer == item.value) {
-          this.showResult(true);
-          this.currentScore++;
-        } else {
-          console.log(question.correct_answer);
-          console.log(item.value);
-          this.showResult(false);
-        }
-      }
-      currentIndex++;
-    });
-  }
-
-  showResult(answer) {
-    document.getElementById('result').style.display = 'block';
-    document.getElementById('game').style.display = 'none';
-
-    if (answer) {
-      document.getElementById('result-info').innerText = "Correct!";
-      document.getElementById('result-info').style.color = "green";
-    } else {
-      document.getElementById('result-info').innerText = "Wrong!";
-      document.getElementById('result-info').style.color = "red";
-    }
-  }
-
-  showSlide(slide) {
-    const slides = document.querySelectorAll('.slides');
-    slides[this.currentSlide].classList.remove('active-slide');
-    slides[slide].classList.add('active-slide');
-    this.currentSlide = slide;
-  }
-
-  restart() {
-    this.currentScore = 0;
-    this.currentSlide = 0;
+  backToHomePage() {
+    this.navCtrl.setRoot(HomePage);
   }
 }

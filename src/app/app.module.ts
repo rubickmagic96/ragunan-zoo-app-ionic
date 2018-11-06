@@ -31,6 +31,7 @@ import { DetailAnimalPage } from '../pages/detail-animal/detail-animal';
 import { HttpClient, HttpClientModule  } from '@angular/common/http';
 import { InGamePage } from '../pages/in-game/in-game';
 import { IonicStorageModule } from '@ionic/storage';
+import { QuizProvider } from '../providers/quiz/quiz';
 
 @NgModule({
   declarations: [
@@ -91,7 +92,8 @@ import { IonicStorageModule } from '@ionic/storage';
     NativeAudio,
     Dialogs,
     Camera,
-    { provide: ErrorHandler, useClass: IonicErrorHandler }
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    QuizProvider
   ]
 })
 export class AppModule {}

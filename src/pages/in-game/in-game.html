@@ -10,7 +10,7 @@
 </ion-header>
 
 <ion-content style="background-color: #f2f2f2;">
-  <div class="time-n-life">
+  <div id="time-n-life">
     <h4 class="time-left">Time Left</h4>
     <div class="life-left">
       <h4>Life</h4>
@@ -20,31 +20,66 @@
     </div>
     <div class="time-bar"></div>
   </div>
-  <div class="score">
-    <h2>Score : {{currentScore}}/10</h2>
+  <div id="score">
+    <h2>Score : {{score}}/10</h2>
   </div>
-  <div class="quiz">
-    <div id="game"></div>
-    <div id="result">
-      <h1 id="result-info"></h1>
-      <div class="share">
+  <div id="quiz">
+    <ion-slides #slides>
+      <ion-slide *ngFor="let question of questions; let i = index">
+        <div class="slides">
+          <h4 class="question">{{question.question}}</h4>
+          <div class="answers">
+            <label class="container">{{question.answers.a}}
+              <input (click)="checkAnswer(i, question, question.answer_key[0])" class="radio-answer" type="radio" name="question{{i}}"
+                value="{{question.answer_key[0]}}">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">{{question.answers.b}}
+              <input (click)="checkAnswer(i, question, question.answer_key[1])" class="radio-answer" type="radio" name="question{{i}}"
+                value="{{question.answer_key[1]}}">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">{{question.answers.c}}
+              <input (click)="checkAnswer(i ,question, question.answer_key[2])" class="radio-answer" type="radio" name="question{{i}}"
+                value="{{question.answer_key[2]}}">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">{{question.answers.d}}
+              <input (click)="checkAnswer(i, question, question.answer_key[3])" class="radio-answer" type="radio" name="question{{i}}"
+                value="{{question.answer_key[3]}}">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <h1 *ngIf="correctAnswer; else wrongAnswer" id="result-info" style="color: green; font-size: 17px;">CORRECT!</h1>
+        <ng-template #wrongAnswer>
+          <h1 else id="result-info" style="color: red; font-size: 17px;">WRONG!</h1>
+        </ng-template>
+        <div class="share">
+          <ion-buttons>
+            <button ion-button>SHARE <ion-icon name="logo-facebook"></ion-icon></button>
+            <button ion-button>SHARE <ion-icon name="logo-twitter"></ion-icon></button>
+          </ion-buttons>
+        </div>
         <ion-buttons>
-          <button ion-button>SHARE <ion-icon name="logo-facebook"></ion-icon></button>
-          <button ion-button>SHARE <ion-icon name="logo-twitter"></ion-icon></button>
+          <button (click)="nextQuestion()" ion-button><span>Next</span>
+            <ion-icon name="arrow-forward"></ion-icon>
+          </button>
         </ion-buttons>
-      </div>
-      <ion-buttons>
-        <button (click)="nextQuestion()" ion-button><span>Next</span><ion-icon name="arrow-forward"></ion-icon></button>
-      </ion-buttons>
-    </div>
-    <div id="gameover">
-      <h1>Game Over</h1>
-      <h2 style="color: green">Your score is {{currentScore}}/10</h2>
-      <ion-buttons>
-        <button (click)="restart()" ion-button><span>Next</span>
-          <ion-icon name="arrow-forward"></ion-icon>
-        </button>
-      </ion-buttons>
-    </div>
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <div id="gameover">
+    <h1>GAME OVER</h1>
+    <ion-buttons>
+      <button (click)="playAgain()" ion-button><span>Play Again</span>
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+      <button (click)="backToHomePage()" ion-button><span>Back to home page</span>
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-buttons>
   </div>
 </ion-content>
