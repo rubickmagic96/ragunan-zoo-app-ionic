@@ -101,9 +101,9 @@ export class InGamePage {
     this.slides.lockSwipes(true);
 
     let checkmark = document.querySelectorAll(".container input:checked ~ .checkmark");
-    checkmark.forEach((marker) => {
-      (marker as HTMLElement).style.backgroundColor = "#eee";
-    })
+    for (let i = 0; i < checkmark.length; i++) {
+      (checkmark[i] as HTMLElement).style.backgroundColor = "#eee";
+    }
 
 
     let noLifes = document.querySelectorAll(".no-life");
