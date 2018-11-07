@@ -18,7 +18,9 @@
       <img class="lifes" src="assets/imgs/life.png" alt="">
       <img class="lifes" src="assets/imgs/life.png" alt="">
     </div>
-    <div class="time-bar"></div>
+    <div class="time-bar">
+      <div id="current-progress"></div>
+    </div>
   </div>
   <div id="score">
     <h2>Score : {{score}}/10</h2>
@@ -80,13 +82,13 @@
     <div id="main-info">
       <h1>GAME OVER</h1>
       <div id="collected-stars">
-        <img class="star" src="assets/imgs/trivias/star_small.png" alt="">
-        <img class="star" src="assets/imgs/trivias/star_empty.png" alt="">
-        <img class="star" src="assets/imgs/trivias/star_small_empty.png" alt="">
+        <img id="star1" class="star" src="assets/imgs/trivias/star_small_empty.png" alt="">
+        <img id="star2" class="star" src="assets/imgs/trivias/star_empty.png" alt="">
+        <img id="star3" class="star" src="assets/imgs/trivias/star_small_empty.png" alt="">
       </div>
       <p>You've Collected</p>
       <div id="star-score">
-        <h1>5</h1><img class="star" src="assets/imgs/trivias/star_small.png" alt="">
+        <h1>{{score}}</h1><img class="star" src="assets/imgs/trivias/star_small.png" alt="">
       </div>
       <div class="share-section">
         <h6>You are now</h6>

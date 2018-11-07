@@ -1,3 +1,4 @@
+import { Storage } from '@ionic/storage';
 import { HomePage } from './../home/home';
 import { QuizProvider } from './../../providers/quiz/quiz';
 import { Component, ViewChild } from '@angular/core';
@@ -10,18 +11,28 @@ import { NavController, NavParams, Slides } from 'ionic-angular';
 export class InGamePage {
   @ViewChild("slides") slides: Slides;
   questions: any;
-  score:number = 0;
-  life:number = 3;
+  progress: any;
+  width: number = 100;
+  score: number = 0;
+  life: number = 3;
+  starCollected: number = 0;
   slideOption: any;
   correctAnswer: boolean;
   currentQuestion: number;
   isGameOver: boolean = false;
-  
-  constructor(public navCtrl: NavController, public navParams: NavParams, public quizProvider: QuizProvider) {
+  pauseOn: boolean = false;
+
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams, 
+    public quizProvider: QuizProvider,
+    public storage: Storage) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad InGamePage');
+
+    this.progress = document.getElementById("current-progress");
 
     this.slides.lockSwipes(true);
 
@@ -32,12 +43,30 @@ export class InGamePage {
       });
 
       this.questions = data;
+      this.startTimer();
     })
+  }
+
+  scene() {
+    if (!this.pauseOn) {
+      if (this.width <= 0) {
+        clearInterval();
+      } else {
+        this.width--;
+        this.progress.style.width = this.width + "%";
+      }
+    }
+  }
+
+  startTimer() {
+    setInterval(() => {
+      this.scene();
+    }, 50);
   }
 
   checkAnswer(index, question, answer) {
     if (this.life > 0) {
-      if (question.correct_answer === answer) {
+      if (question.correct_answer === answer && this.width > 0) {
         this.score++;
         this.correctAnswer = true;
       } else {
@@ -64,7 +93,8 @@ export class InGamePage {
       this.currentQuestion = index;
       this.slides.lockSwipes(false);
       this.slides.slideTo(this.questions.length + 1, 0);
-      this.slides.lockSwipes(true); 
+      this.slides.lockSwipes(true);
+      this.pauseOn = true;
     }
   }
 
@@ -74,9 +104,38 @@ export class InGamePage {
     document.getElementById('quiz').style.display = "none";
     document.getElementById('gameover').style.display = "block";
     this.isGameOver = false;
+
+    this.storage.get("easy_score").then((score) => {
+      if (score == 0 || score == undefined || score == null) {
+        this.storage.set("easy_score", 0);
+      }
+
+      if (this.score > score) {
+        this.storage.set("easy_score", this.score);
+      }
+    })
+    
+    if (this.score > 0 && this.score <= 4) {
+      let star = document.getElementById("star1");
+      (star as HTMLImageElement).src = "assets/imgs/trivias/star_small.png";
+    } else if (this.score > 4 && this.score <= 9) {
+      let star = document.getElementById("star1");
+      let star2 = document.getElementById("star2");
+      (star as HTMLImageElement).src = "assets/imgs/trivias/star_small.png";
+      (star2 as HTMLImageElement).src = "assets/imgs/trivias/star.png";
+    } else if (this.score > 9) {
+      let star = document.getElementById("star1");
+      let star2 = document.getElementById("star2");
+      let star3 = document.getElementById("star3");
+      (star as HTMLImageElement).src = "assets/imgs/trivias/star_small.png";
+      (star2 as HTMLImageElement).src = "assets/imgs/trivias/star.png";
+      (star3 as HTMLImageElement).src = "assets/imgs/trivias/star_small.png";
+    }
   }
 
   nextQuestion() {
+    this.pauseOn = false;
+    this.width = 100;
     if (this.currentQuestion == this.questions.length - 1) {
       this.isGameOver = true;
     } else {
