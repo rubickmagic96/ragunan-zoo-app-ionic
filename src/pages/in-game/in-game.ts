@@ -11,6 +11,7 @@ import { NavController, NavParams, Slides } from 'ionic-angular';
 export class InGamePage {
   @ViewChild("slides") slides: Slides;
   questions: any;
+  theInterval: any;
   progress: any;
   width: number = 100;
   score: number = 0;
@@ -43,14 +44,42 @@ export class InGamePage {
       });
 
       this.questions = data;
-      this.startTimer();
+      this.theInterval = setInterval(() => {
+        this.scene();
+      }, 50);
     })
   }
 
   scene() {
     if (!this.pauseOn) {
       if (this.width <= 0) {
-        clearInterval();
+        // clearInterval(this.theInterval);
+        this.width = 0;
+        this.pauseOn = true;
+
+        this.life--;
+        this.correctAnswer = false;
+
+        let lifes = document.querySelectorAll(".lifes");
+        for (let i = 0; i < lifes.length; i++) {
+          if (i == lifes.length - 1) {
+            lifes[i].classList.remove("lifes");
+            lifes[i].classList.add("no-life");
+
+            (lifes[i] as HTMLImageElement).src = "assets/imgs/life_off.png";
+          }
+        }
+
+        console.log('lifes = ' + this.life);
+
+        if (this.life == 0) {
+          this.isGameOver = true;
+        }
+
+        this.currentQuestion = this.slides.getActiveIndex();
+        this.slides.lockSwipes(false);
+        this.slides.slideTo(this.questions.length + 1, 0);
+        this.slides.lockSwipes(true);
       } else {
         this.width--;
         this.progress.style.width = this.width + "%";
@@ -58,15 +87,9 @@ export class InGamePage {
     }
   }
 
-  startTimer() {
-    setInterval(() => {
-      this.scene();
-    }, 50);
-  }
-
   checkAnswer(index, question, answer) {
     if (this.life > 0) {
-      if (question.correct_answer === answer && this.width > 0) {
+      if (question.correct_answer === answer) {
         this.score++;
         this.correctAnswer = true;
       } else {
@@ -150,6 +173,9 @@ export class InGamePage {
     document.getElementById('score').style.display = "block";
     document.getElementById('quiz').style.display = "block";
     document.getElementById('gameover').style.display = "none";
+
+    this.pauseOn = false;
+    this.width = 100;
 
     this.score = 0;
     this.currentQuestion = 0;
