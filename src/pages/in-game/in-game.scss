@@ -138,28 +138,6 @@ page-in-game {
             background-color: #8eda20;
         }
 
-        // /* Create the indicator (the dot/circle - hidden when not checked) */
-        // .checkmark:after {
-        //     content: "";
-        //     position: absolute;
-        //     display: none;
-        // }
-
-        // /* Show the indicator (dot/circle) when checked */
-        // .container input:checked ~ .checkmark:after {
-        //     display: block;
-        // }
-
-        // /* Style the indicator (dot/circle) */
-        // .container .checkmark:after {
-        //     top: 9px;
-        //     left: 9px;
-        //     width: 8px;
-        //     height: 8px;
-        //     border-radius: 50%;
-        //     background: #8eda20;
-        // }
-
         .active-slide {
             opacity: 1;
         }
@@ -170,6 +148,90 @@ page-in-game {
     }
 
     #gameover {
+        margin: 30px 16px 15px 16px;
         display: none;
+
+        .star {
+            width: 50px;
+            height: 50px;
+        }
+        
+        #main-info {
+            background-color: #fff;
+            padding: 20px;
+
+            h1 {
+                margin: 0px;
+                margin-bottom: 30px;
+                color: red;
+                text-align: center;
+                font-weight: 900;
+                font-size: 20px;
+            }
+
+            #collected-stars {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+                font-size: 16px;
+                color: #8eda20;
+                font-weight: 900;
+                margin: 8px 0px;
+            }
+
+            #star-score {
+                text-align: center;
+                h1 {
+                    bottom: 6px;
+                    right: 4px;
+                    position: relative;
+                    display: inline-block;
+                    color: #8eda20;
+                    margin: 0;
+                    font-size: 39px;
+                }
+            }
+
+            .share-section {
+                text-align: center;
+                background-color: #ddd;
+                padding: 8px 0;
+
+                h6 {
+                    margin: 5px 0;
+                    font-size: 13px;
+                    font-weight: 900;
+                }
+
+                button {
+                    text-transform: none;
+                    border-radius: 5px;
+                    box-shadow: none !important;
+
+                    ion-icon {
+                        font-size: 30px;
+                        margin-left: 16px;
+                    }
+
+                    img.star {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    #option-section {
+        text-align: center;
+
+        button {
+            text-transform: none;
+            border-radius: 5px;
+            box-shadow: none !important;
+            font-size: 16px;
+        }
     }
 }
