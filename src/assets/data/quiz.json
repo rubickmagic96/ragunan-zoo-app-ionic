@@ -2,104 +2,241 @@
     "questions": {
         "easy": [
             {
-                "question": "Macan adalah jenis hewan ?",
+                "question": "Berat beban yang dapat diangkat oleh seekor semut?",
+                "fact": "Semut dapat mengangkat beban 50 kali tubuhnya",
                 "answers": {
-                    "a": "Karnivora",
+                    "a": "10 kali tubuhnya",
+                    "b": "50 kali tubuhnya",
+                    "c": "20 kali tubuhnya",
+                    "d": "40 kali tubuhnya"
+                },
+                "correct_answer": "b",
+                "withimage": true,
+                "image": "ant"
+            },
+            {
+                "question": "Salah satu fakta mengenai jaguar adalah?",
+                "fact": "",
+                "answers": {
+                    "a": "Hidup Menyendiri",
+                    "b": "Lamban",
+                    "c": "Hidup Berkolompok",
+                    "d": "Tidak Suka berenang"
+                },
+                "correct_answer": "a",
+                "withimage": false,
+                "image": ""
+            },
+            {
+                "question": "Yang tidak termasuk ciri-ciri Sumatran Tiger...",
+                "answers": {
+                    "a": "Berwarna lebih terang dari spesies Tiger lainnya",
+                    "b": "Memiliki belang yang lebih tipis dari spesies Tiger lainnya",
+                    "c": "Memiliki selaput disela-sela jarinya untuk berenang",
+                    "d": "Ketika melahirkan warna bulunya berubah"
+                },
+                "correct_answer": "d"
+            },
+            {
+                "question": "Sumatran Tiger termasuk golongan hewan?",
+                "answers": {
+                    "a": "Carnivora",
                     "b": "Herbivora",
                     "c": "Omnivora",
-                    "d": "Dodolvora"
+                    "d": "Metafora"
                 },
                 "correct_answer": "a"
             },
             {
-                "question": "Biasanya kucing memangsa hewan ?",
+                "question": "Tokoh kartun terkenal dari Walt Disney yang diambil dari binatang Beruang Madu...",
                 "answers": {
-                    "a": "Bebek",
-                    "b": "Tikus",
-                    "c": "Musang",
-                    "d": "Kadal"
+                    "a": "Winnie The Pooh",
+                    "b": "Donald Duck",
+                    "c": "Mickey Mouse",
+                    "d": "Care Bear"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Beruang Madu dikenal juga dengan nama apa?",
+                "answers": {
+                    "a": "Sun Bear",
+                    "b": "Moon Bear",
+                    "c": "Grizzly Bear",
+                    "d": "Happy Bear"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Film yang terinspirasi dari binatang Gorilla...",
+                "fact": "Kepopuleran film King Kong mampu mengecohkan penontonnya hingga kini, yang mengira bahwa King Kong termasuk salah satu spesies binatang",
+                "answers": {
+                    "a": "King Kong",
+                    "b": "Godzilla",
+                    "c": "Jurassic Park",
+                    "d": "Dragon"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Singa termasuk spesies dari keluarga mana?",
+                "fact": "Meskipun terlihat lebih menyerupai anjing, namun singa masih termasuk keluarga kucing",
+                "answers": {
+                    "a": "Kucing",
+                    "b": "Anjing",
+                    "c": "Serigala",
+                    "d": "Macan"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Siapa nama tokoh kartun singa yang terkenal di Walt Disney Company?",
+                "answers": {
+                    "a": "Simba",
+                    "b": "Limbat",
+                    "c": "King",
+                    "d": "Leo"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "ape (kera) termasuk dalam ordo apa?",
+                "answers": {
+                    "a": "Primata",
+                    "b": "Karnivora",
+                    "c": "Omnivora",
+                    "d": "Human"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Binatang Jaguar menjadi icon kebanggaan bagi brand apa?",
+                "answers": {
+                    "a": "Mobil",
+                    "b": "Motor",
+                    "c": "Ponsel",
+                    "d": "Jam Tangan"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Gajah Sumatera merupakan sub spesies dari?",
+                "answers": {
+                    "a": "Gajah Asia",
+                    "b": "Gajah indonesia",
+                    "c": "Gajah Thailand",
+                    "d": "Gajah Hitam"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Ular Python termasuk dalam Kelas apa ?",
+                "answers": {
+                    "a": "Reptilia",
+                    "b": "Aves",
+                    "c": "Pisces",
+                    "d": "Molusca"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Apa hal yang paling unik dari burung beo?",
+                "fact": "Burung beo memiliki keunikan yaitu bisa menirukan suara manusia.",
+                "answers": {
+                    "a": "Bisa Bicara",
+                    "b": "Bisa terbang",
+                    "c": "Bisa Berkokok",
+                    "d": "Bisa Menari"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Kemampuan apa yang dimiliki burung unta?",
+                "fact": "Burung unta memang nggak bisa terbang, tapi kakinya yang kuat dan panjang, bisa berlari dengan kencang hingga mencapai kecepatan 65 km\/jam!",
+                "answers": {
+                    "a": "Berenang",
+                    "b": "Berlari",
+                    "c": "Memanjat",
+                    "d": "Terbang"
                 },
                 "correct_answer": "b"
             },
             {
-                "question": "Siapa nama lengkap pemeran kucing di film tom & jerry ?",
+                "question": "Apa bagian tubuh yang unik dari jerapah?",
+                "fact": "Jerapah memiliki leher dan kaki yang sangat panjang yang menjadi keunikan tersendiri bagi hewan ini.",
                 "answers": {
-                    "a": "Thomas",
-                    "b": "Tom",
-                    "c": "Jerry",
-                    "d": "Erry"
+                    "a": "Leher",
+                    "b": "Punggung",
+                    "c": "Kepala",
+                    "d": "Perut"
                 },
                 "correct_answer": "a"
             },
             {
-                "question": "Hewan yang bisa menjadi alat transportasi adalah ?",
+                "question": "AApa warna kulit zebra?",
+                "fact": "Zebra memiliki warna kulit yang unik yang menjadi ciri khas hewan ini yaitu belang hitam putih",
+                "answers": {
+                    "a": "Hitam Putih",
+                    "b": "Merah Putih",
+                    "c": "Emas Putih",
+                    "d": "Hitam Biru"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Termasuk ke dalam Famili apakah binatang Zebra?",
+                "fact": "",
                 "answers": {
                     "a": "Kuda",
-                    "b": "Kucing",
-                    "c": "Harimau",
-                    "d": "Musang"
+                    "b": "Unggas",
+                    "c": "Ikan",
+                    "d": "Reptil"
                 },
                 "correct_answer": "a"
             },
             {
-                "question": "Kekuatan yang terletak ditubuh naruto adalah hewan ?",
+                "question": "Apa bagian unik dari kura-kura yang tidak dimiliki jenis hewan lainnya?",
+                "fact": "Kura-kura memiliki keunikan yaitu mempunyai bagian tubuh yang dinamakan tempurung yang jarang dimiliki oleh hewan lainnya",
                 "answers": {
-                    "a": "Musang",
-                    "b": "Kucing",
-                    "c": "Monyet",
-                    "d": "Bebek"
-                },
-                "correct_answer": "c"
-            },
-            {
-                "question": "Yang bukan termasuk makanan dari hewan orangutan adalah... ?",
-                "answers": {
-                    "a": "Paku",
-                    "b": "Pisang",
-                    "c": "Nangka",
-                    "d": "Durian"
+                    "a": "Tempurung",
+                    "b": "Kepala",
+                    "c": "Kaki",
+                    "d": "Leher"
                 },
                 "correct_answer": "a"
             },
             {
-                "question": "Apa makanan favorit dari monyet ?",
+                "question": "Yang bukan kemampuan kura kura?",
+                "fact": "",
                 "answers": {
-                    "a": "Pizza",
-                    "b": "Kentang Goreng",
-                    "c": "Gudek",
-                    "d": "Pisang"
+                    "a": "Terbang",
+                    "b": "Berenang",
+                    "c": "Berjalan",
+                    "d": "Sembunyi"
                 },
-                "correct_answer": "d"
+                "correct_answer": "a"
             },
             {
-                "question": "Berikut merupakan hewan yang biasanya tinggal di suhu yang dingin, kecuali... ?",
+                "question": "Apa yang menjadi daya tarik burung Kakaktua ?",
+                "fact": "",
                 "answers": {
-                    "a": "Pinguin",
-                    "b": "Beruang Kutub",
-                    "c": "Ayam",
-                    "d": "Anjing Laut"
+                    "a": "Suara dan bulu",
+                    "b": "Cakar dan Kepala",
+                    "c": "Suara dan Cakar",
+                    "d": "Bulu dan Cakar"
                 },
-                "correct_answer": "c"
+                "correct_answer": "a"
             },
             {
-                "question": "Yang merupakan ciri-ciri dari hewan mamalia, kecuali... ?",
+                "question": "Berapa jumlah gigi Gorilla?",
+                "fact": "",
                 "answers": {
-                    "a": "Bergerak",
-                    "b": "Memiliki kelenjar susu",
-                    "c": "Bertulang belakang",
-                    "d": "Pandai main sosmed"
+                    "a": "32",
+                    "b": "3",
+                    "c": "7",
+                    "d": "2"
                 },
-                "correct_answer": "d"
-            },
-            {
-                "question": "Yang bukan merupakan ciri-ciri dari hewan vivipar adalah... ?",
-                "answers": {
-                    "a": "Memiliki Puting Susu",
-                    "b": "Memiliki Daun Telinga",
-                    "c": "Memiliki Bulu",
-                    "d": "Memiliki Sarung Tinju"
-                },
-                "correct_answer": "d"
+                "correct_answer": "a"
             }
         ]
     }

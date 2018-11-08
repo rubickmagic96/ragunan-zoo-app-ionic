@@ -9,14 +9,16 @@ export class QuizProvider {
     console.log('Hello QuizProvider Provider');
   }
 
-  load() {
+  load(level) {
+    console.log(typeof(level));
     if (this.data) {
       return Promise.resolve(this.data);
     }
 
     return new Promise(resolve => {
       this.http.get('assets/data/quiz.json').subscribe(data => {
-        this.data = data['questions']['easy'];
+        this.data = data['questions'][level];
+
         resolve(this.data);
       })
     })

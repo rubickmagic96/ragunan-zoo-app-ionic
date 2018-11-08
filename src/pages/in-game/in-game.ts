@@ -3,6 +3,7 @@ import { HomePage } from './../home/home';
 import { QuizProvider } from './../../providers/quiz/quiz';
 import { Component, ViewChild } from '@angular/core';
 import { NavController, NavParams, Slides } from 'ionic-angular';
+import { fsyncSync } from 'fs';
 
 @Component({
   selector: 'page-in-game',
@@ -10,6 +11,8 @@ import { NavController, NavParams, Slides } from 'ionic-angular';
 })
 export class InGamePage {
   @ViewChild("slides") slides: Slides;
+  allQuestions: any;
+  level: any;
   questions: any;
   theInterval: any;
   progress: any;
@@ -32,12 +35,13 @@ export class InGamePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad InGamePage');
+    this.level = this.navParams.get('level');
 
     this.progress = document.getElementById("current-progress");
 
     this.slides.lockSwipes(true);
 
-    this.quizProvider.load().then((data) => {
+    this.quizProvider.load(this.level).then((data) => {
       data.map((question) => {
         let answersKey = Object.keys(question.answers);
         let answers = Object.keys(question.answers).map(key => question.answers[key]);
@@ -50,23 +54,27 @@ export class InGamePage {
         question.answer_val = answers;
       });
 
+      this.allQuestions = data;
       data = this.randomizeQuestions(data);
+
+      let ms = this.level == "easy" ? 100 : this.level == "medium" ? 75 : this.level == "hard" ? 50 : 0;
 
       this.questions = data;
       this.theInterval = setInterval(() => {
         this.scene();
-      }, 80);
+      }, ms);
     })
   }
 
   randomizeQuestions(questions: any[]) {
-    console.log(questions);
     for (let i = questions.length - 1; i > 0; i--) {
       let j = Math.floor(Math.random() * (i + 1));
       let tempQuestion = questions[i];
       questions[i] = questions[j];
       questions[j] = tempQuestion;
     }
+
+    questions.splice(10, questions.length - 1); //get only 10 questions
 
     return questions;
   }
@@ -206,7 +214,7 @@ export class InGamePage {
     document.getElementById('quiz').style.display = "block";
     document.getElementById('gameover').style.display = "none";
 
-    this.questions.map((question) => {
+    this.allQuestions.map((question) => {
       let answersKey = Object.keys(question.answers);
       let answers = Object.keys(question.answers).map(key => question.answers[key]);
       let randomAnswerAndKey = this.randomizeAnswers(answersKey, answers);
@@ -218,7 +226,7 @@ export class InGamePage {
       question.answer_val = answers;
     });
 
-    this.questions = this.randomizeQuestions(this.questions);
+    this.questions = this.randomizeQuestions(this.allQuestions);
 
     this.pauseOn = false;
     this.width = 100;

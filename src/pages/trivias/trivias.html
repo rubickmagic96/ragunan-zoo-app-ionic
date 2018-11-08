@@ -17,7 +17,7 @@
   <div class="content">
     <h3>All Challenge</h3>
     <div class="levels">
-      <div (click)="openGame()" class="level">
+      <div (click)="openGame('easy')" class="level">
         <div class="bg-level">
           <img id="easy-star1" class="star1" src="assets/imgs/trivias/star_small_empty.png" alt="">
           <img id="easy-star2" class="star2" src="assets/imgs/trivias/star_empty.png" alt="">
@@ -26,7 +26,7 @@
         </div>
       </div>
       <hr>
-      <div class="level">
+      <div (click)="openGame('medium')" class="level">
         <div class="bg-level">
           <img class="star1" src="assets/imgs/trivias/star_small_empty.png" alt="">
           <img class="star2" src="assets/imgs/trivias/star_empty.png" alt="">
@@ -35,7 +35,7 @@
         </div>
       </div>
       <hr>
-      <div class="level">
+      <div (click)="openGame('hard')" class="level">
         <div class="bg-level">
           <img class="star1" src="assets/imgs/trivias/star_small_empty.png" alt="">
           <img class="star2" src="assets/imgs/trivias/star_empty.png" alt="">

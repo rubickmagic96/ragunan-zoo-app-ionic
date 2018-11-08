@@ -38,7 +38,9 @@ export class TriviasPage {
     });
   }
 
-  openGame() {
-    this.navCtrl.push(InGamePage);
+  openGame(level) {
+    this.navCtrl.push(InGamePage, {
+      level: level
+    });
   }
 }
