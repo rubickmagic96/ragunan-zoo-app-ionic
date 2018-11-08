@@ -16,7 +16,7 @@ export class QuizProvider {
 
     return new Promise(resolve => {
       this.http.get('assets/data/quiz.json').subscribe(data => {
-        this.data = data['questions'];
+        this.data = data['questions']['easy'];
         resolve(this.data);
       })
     })

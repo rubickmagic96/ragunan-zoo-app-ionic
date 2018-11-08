@@ -39,15 +39,50 @@ export class InGamePage {
 
     this.quizProvider.load().then((data) => {
       data.map((question) => {
-        let answers = Object.keys(question.answers);
-        question.answer_key = answers;
+        let answersKey = Object.keys(question.answers);
+        let answers = Object.keys(question.answers).map(key => question.answers[key]);
+        let randomAnswerAndKey = this.randomizeAnswers(answersKey, answers);
+
+        answersKey = randomAnswerAndKey[0];
+        answers = randomAnswerAndKey[1];
+
+        question.answer_key = answersKey;
+        question.answer_val = answers;
       });
+
+      data = this.randomizeQuestions(data);
 
       this.questions = data;
       this.theInterval = setInterval(() => {
         this.scene();
-      }, 50);
+      }, 80);
     })
+  }
+
+  randomizeQuestions(questions: any[]) {
+    console.log(questions);
+    for (let i = questions.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      let tempQuestion = questions[i];
+      questions[i] = questions[j];
+      questions[j] = tempQuestion;
+    }
+
+    return questions;
+  }
+
+  randomizeAnswers(keys: any[], vals: any[]) {
+    for (let i = keys.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      let tempKey = keys[i];
+      let tempVal = vals[i];
+      keys[i] = keys[j];
+      vals[i] = vals[j];
+      keys[j] = tempKey;
+      vals[j] = tempVal;
+    }
+
+    return [keys, vals];
   }
 
   scene() {
@@ -69,8 +104,6 @@ export class InGamePage {
             (lifes[i] as HTMLImageElement).src = "assets/imgs/life_off.png";
           }
         }
-
-        console.log('lifes = ' + this.life);
 
         if (this.life == 0) {
           this.isGameOver = true;
@@ -105,8 +138,6 @@ export class InGamePage {
             (lifes[i] as HTMLImageElement).src = "assets/imgs/life_off.png";
           }
         }
-
-        console.log('lifes = ' + this.life);
 
         if (this.life == 0) {
           this.isGameOver = true;
@@ -161,6 +192,7 @@ export class InGamePage {
     this.width = 100;
     if (this.currentQuestion == this.questions.length - 1) {
       this.isGameOver = true;
+      this.pauseOn = true;
     } else {
       this.slides.lockSwipes(false);
       this.slides.slideTo(this.currentQuestion + 1, 0);
@@ -173,6 +205,20 @@ export class InGamePage {
     document.getElementById('score').style.display = "block";
     document.getElementById('quiz').style.display = "block";
     document.getElementById('gameover').style.display = "none";
+
+    this.questions.map((question) => {
+      let answersKey = Object.keys(question.answers);
+      let answers = Object.keys(question.answers).map(key => question.answers[key]);
+      let randomAnswerAndKey = this.randomizeAnswers(answersKey, answers);
+
+      answersKey = randomAnswerAndKey[0];
+      answers = randomAnswerAndKey[1];
+
+      question.answer_key = answersKey;
+      question.answer_val = answers;
+    });
+
+    this.questions = this.randomizeQuestions(this.questions);
 
     this.pauseOn = false;
     this.width = 100;

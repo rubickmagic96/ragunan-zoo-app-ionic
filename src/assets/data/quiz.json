@@ -1,104 +1,106 @@
 {
-    "questions": [
-        {
-            "question": "Macan adalah jenis hewan ?",
-            "answers": {
-                "a": "Karnivora",
-                "b": "Herbivora",
-                "c": "Omnivora",
-                "d": "Dodolvora"
+    "questions": {
+        "easy": [
+            {
+                "question": "Macan adalah jenis hewan ?",
+                "answers": {
+                    "a": "Karnivora",
+                    "b": "Herbivora",
+                    "c": "Omnivora",
+                    "d": "Dodolvora"
+                },
+                "correct_answer": "a"
             },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Biasanya kucing memangsa hewan ?",
-            "answers": {
-                "a": "Bebek",
-                "b": "Tikus",
-                "c": "Musang",
-                "d": "Kadal"
+            {
+                "question": "Biasanya kucing memangsa hewan ?",
+                "answers": {
+                    "a": "Bebek",
+                    "b": "Tikus",
+                    "c": "Musang",
+                    "d": "Kadal"
+                },
+                "correct_answer": "b"
             },
-            "correct_answer": "b"
-        },
-        {
-            "question": "Siapa nama lengkap pemeran kucing di film tom & jerry ?",
-            "answers": {
-                "a": "Thomas",
-                "b": "Tom",
-                "c": "Jerry",
-                "d": "Erry"
+            {
+                "question": "Siapa nama lengkap pemeran kucing di film tom & jerry ?",
+                "answers": {
+                    "a": "Thomas",
+                    "b": "Tom",
+                    "c": "Jerry",
+                    "d": "Erry"
+                },
+                "correct_answer": "a"
             },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Hewan yang bisa menjadi alat transportasi adalah ?",
-            "answers": {
-                "a": "Kuda",
-                "b": "Kucing",
-                "c": "Harimau",
-                "d": "Musang"
+            {
+                "question": "Hewan yang bisa menjadi alat transportasi adalah ?",
+                "answers": {
+                    "a": "Kuda",
+                    "b": "Kucing",
+                    "c": "Harimau",
+                    "d": "Musang"
+                },
+                "correct_answer": "a"
             },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Kekuatan yang terletak ditubuh naruto adalah hewan ?",
-            "answers": {
-                "a": "Musang",
-                "b": "Kucing",
-                "c": "Monyet",
-                "d": "Bebek"
+            {
+                "question": "Kekuatan yang terletak ditubuh naruto adalah hewan ?",
+                "answers": {
+                    "a": "Musang",
+                    "b": "Kucing",
+                    "c": "Monyet",
+                    "d": "Bebek"
+                },
+                "correct_answer": "c"
             },
-            "correct_answer": "c"
-        },
-        {
-            "question": "Yang bukan termasuk makanan dari hewan orangutan adalah... ?",
-            "answers": {
-                "a": "Paku",
-                "b": "Pisang",
-                "c": "Nangka",
-                "d": "Durian"
+            {
+                "question": "Yang bukan termasuk makanan dari hewan orangutan adalah... ?",
+                "answers": {
+                    "a": "Paku",
+                    "b": "Pisang",
+                    "c": "Nangka",
+                    "d": "Durian"
+                },
+                "correct_answer": "a"
             },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Apa makanan favorit dari monyet ?",
-            "answers": {
-                "a": "Pizza",
-                "b": "Kentang Goreng",
-                "c": "Gudek",
-                "d": "Pisang"
+            {
+                "question": "Apa makanan favorit dari monyet ?",
+                "answers": {
+                    "a": "Pizza",
+                    "b": "Kentang Goreng",
+                    "c": "Gudek",
+                    "d": "Pisang"
+                },
+                "correct_answer": "d"
             },
-            "correct_answer": "d"
-        },
-        {
-            "question": "Berikut merupakan hewan yang biasanya tinggal di suhu yang dingin, kecuali... ?",
-            "answers": {
-                "a": "Pinguin",
-                "b": "Beruang Kutub",
-                "c": "Ayam",
-                "d": "Anjing Laut"
+            {
+                "question": "Berikut merupakan hewan yang biasanya tinggal di suhu yang dingin, kecuali... ?",
+                "answers": {
+                    "a": "Pinguin",
+                    "b": "Beruang Kutub",
+                    "c": "Ayam",
+                    "d": "Anjing Laut"
+                },
+                "correct_answer": "c"
             },
-            "correct_answer": "c"
-        },
-        {
-            "question": "Yang merupakan ciri-ciri dari hewan mamalia, kecuali... ?",
-            "answers": {
-                "a": "Bergerak",
-                "b": "Memiliki kelenjar susu",
-                "c": "Bertulang belakang",
-                "d": "Pandai main sosmed"
+            {
+                "question": "Yang merupakan ciri-ciri dari hewan mamalia, kecuali... ?",
+                "answers": {
+                    "a": "Bergerak",
+                    "b": "Memiliki kelenjar susu",
+                    "c": "Bertulang belakang",
+                    "d": "Pandai main sosmed"
+                },
+                "correct_answer": "d"
             },
-            "correct_answer": "d"
-        },
-        {
-            "question": "Yang bukan merupakan ciri-ciri dari hewan vivipar adalah... ?",
-            "answers": {
-                "a": "Memiliki Puting Susu",
-                "b": "Memiliki Daun Telinga",
-                "c": "Memiliki Bulu",
-                "d": "Memiliki Sarung Tinju"
-            },
-            "correct_answer": "d"
-        }
-    ]
+            {
+                "question": "Yang bukan merupakan ciri-ciri dari hewan vivipar adalah... ?",
+                "answers": {
+                    "a": "Memiliki Puting Susu",
+                    "b": "Memiliki Daun Telinga",
+                    "c": "Memiliki Bulu",
+                    "d": "Memiliki Sarung Tinju"
+                },
+                "correct_answer": "d"
+            }
+        ]
+    }
 }

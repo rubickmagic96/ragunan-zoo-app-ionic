@@ -1,6 +1,12 @@
 ## Ragunan Zoo
 Aplikasi kebun binatang
 
+### Todo 8 Nov, 2018
+- [ ] Random question
+- [ ] Medium level
+- [ ] Hard level
+- [ ] Gradient timebar
+
 ### Bugs Report
 - [x] Custom Marker terlalu besar
 - [ ] Groundoverlay kelihatan kabur karena di kompress **hard** 

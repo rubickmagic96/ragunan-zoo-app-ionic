@@ -31,26 +31,32 @@
         <div class="slides">
           <h4 class="question">{{question.question}}</h4>
           <div class="answers">
-            <label class="container">{{question.answers.a}}
+            <label *ngFor="let answer of question.answer_key; let j = index" class="container">{{question.answer_val[j]}}
+              <input (click)="checkAnswer(i, question, question.answer_key[j])" class="radio-answer" type="radio" name="question{{i}}"
+                value="{{question.answer_key[j]}}">
+              <span class="checkmark"></span>
+            </label>
+
+            <!-- <label class="container">{{question.answer_val[0]}}
               <input (click)="checkAnswer(i, question, question.answer_key[0])" class="radio-answer" type="radio" name="question{{i}}"
                 value="{{question.answer_key[0]}}">
               <span class="checkmark"></span>
             </label>
-            <label class="container">{{question.answers.b}}
+            <label class="container">{{question.answer_val[1]}}
               <input (click)="checkAnswer(i, question, question.answer_key[1])" class="radio-answer" type="radio" name="question{{i}}"
                 value="{{question.answer_key[1]}}">
               <span class="checkmark"></span>
             </label>
-            <label class="container">{{question.answers.c}}
+            <label class="container">{{question.answer_val[2]}}
               <input (click)="checkAnswer(i ,question, question.answer_key[2])" class="radio-answer" type="radio" name="question{{i}}"
                 value="{{question.answer_key[2]}}">
               <span class="checkmark"></span>
             </label>
-            <label class="container">{{question.answers.d}}
+            <label class="container">{{question.answer_val[3]}}
               <input (click)="checkAnswer(i, question, question.answer_key[3])" class="radio-answer" type="radio" name="question{{i}}"
                 value="{{question.answer_key[3]}}">
               <span class="checkmark"></span>
-            </label>
+            </label> -->
           </div>
         </div>
       </ion-slide>
