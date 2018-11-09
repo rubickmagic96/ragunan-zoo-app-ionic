@@ -239,5 +239,381 @@
                 "correct_answer": "a"
             }
         ]
-    }
+    },
+    "medium": [
+        {
+            "question": "Yang mana yang tidak termasuk ciri-ciri dari Gajah Sumatera",
+            "fact": "Selain Gajah Sumatera, Indonesia juga memiliki Gajah Kalimantan dan Gajah Jawa",
+            "answers": {
+                "a": "Juga dapat ditemukan di pulau Jawa dan Kalimantan",
+                "b": "Mamalia terbesar di Indonesia",
+                "c": "Lebih kecil dari Gajah India",
+                "d": "Memiliki otak yang lebih besar daripada mamalia darat lain"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Anoa adalah binatang khas dari daerah mana?",
+            "fact": "",
+            "answers": {
+                "a": "Sulawesi",
+                "b": "Kalimantan",
+                "c": "Jawa",
+                "d": "Sumatera"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Apakah nama ilmiah untuk Gajah Sumatera?",
+            "fact": "",
+            "answers": {
+                "a": "Elephas maximus sumatranus",
+                "b": "Elephas maximus",
+                "c": "Elephas maximus indicus",
+                "d": "Elephas maximus borneensis"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Apa menu makanan utama dari Orangutan?",
+            "fact": "Sama seperti primata lainnya, Orangutan adalah hewan Omnivora",
+            "answers": {
+                "a": "Buah-Buahan",
+                "b": "Daun-Daunan",
+                "c": "Serangga",
+                "d": "Telur Unggas"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Orangutan pernah muncul sebagai simbol apa dari negara Indonesia?",
+            "fact": "Orangutan terpilih sebagai gambar pada lembar kertas mata uang 500an dengan warna hijau",
+            "answers": {
+                "a": "Mata Uang",
+                "b": "Cagar Alam",
+                "c": "Lagu Daerah",
+                "d": "Tugu Nasional"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Sebutkan nama lain dari Binturong?",
+            "fact": "",
+            "answers": {
+                "a": "Bearcat",
+                "b": "Kucing Hutan",
+                "c": "Tikus Sawah",
+                "d": "Tupai Jawa"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Chimpanzee termasuk binatang?",
+            "fact": "Chimpanzee termasuk salah satu binatang yang pernah dikirim oleh manusia ke luar angkasa",
+            "answers": {
+                "a": "Menyusui",
+                "b": "Memamah Biak",
+                "c": "Amphibi",
+                "d": "Berdarah Dingin"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Berapa Tinggi kebanyakan Chimpanzee Jantan saat berdiri?",
+            "fact": "Panjang tangan Chimpanzee umumnya, bila dilebarkan, memiliki rentang satu setengah kali tinggi badan dan tangan chimpanzee lebih panjang dari kakinya",
+            "answers": {
+                "a": "1.7 meter",
+                "b": "5 meter",
+                "c": "8 meter",
+                "d": "1 meter"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Di Indonesia Orang Utan banyak di temukan di wilayah mana?",
+            "fact": "",
+            "answers": {
+                "a": "Kalimantan",
+                "b": "Papua",
+                "c": "Sulawesi",
+                "d": "Jawa"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Apa nama lain dari Orangutan?",
+            "fact": "Orangutan nama lainnya adalah mawas.",
+            "answers": {
+                "a": "Mawas",
+                "b": "Simpanse",
+                "c": "Monyet",
+                "d": "Kera"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Berapa % kemiripan DNA Chimpanzee dengan manusia?",
+            "fact": "",
+            "answers": {
+                "a": "99%",
+                "b": "78%",
+                "c": "77%",
+                "d": "50%"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Termasuk Klasifikasi hewan apakah Rusa Tutul?",
+            "fact": "",
+            "answers": {
+                "a": "Mamalia",
+                "b": "Unggas",
+                "c": "Karnivora",
+                "d": "Omnivora"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Dari mana Chimpanzee berasal?",
+            "fact": "",
+            "answers": {
+                "a": "Afrika",
+                "b": "Indonesia",
+                "c": "India",
+                "d": "Eropa"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Apa sebutan bagi Sri Lanka Leopard dalam bahasa Tamil?",
+            "fact": "",
+            "answers": {
+                "a": "Chiruththai",
+                "b": "Kotiya",
+                "c": "Jaguar",
+                "d": "Tiger"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Apa warna bulu monyet Jawa jantan dewasa?",
+            "fact": "",
+            "answers": {
+                "a": "Hitam",
+                "b": "Perak",
+                "c": "Coklat",
+                "d": "Abu-Abu"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Dalam Klasifikasi Ilmiah, Harimau Sumatera termasuk dalam kelas?",
+            "fact": "Dalam Klasifikasi Ilmiah, Harimau Sumatera termasuk dalam Filum Chordata, Kelas Mammalia, Ordo Carnivora, Famili Felidae",
+            "answers": {
+                "a": "Mammalia",
+                "b": "Chordata",
+                "c": "Carnivora",
+                "d": "Felidae"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Warna bulu Beruang Madu mayoritas Hitam, pada bagian manakah yang berwana lebih terang?",
+            "fact": "",
+            "answers": {
+                "a": "Dada",
+                "b": "Hidung",
+                "c": "Tangan",
+                "d": "Punggung"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Yang tidak termasuk ciri-ciri Beruang Madu",
+            "fact": "Meskipun dinamakan Beruang Madu, tidak hanya madu yang menjadi menu makanan Beruang Madu. Mereka juga memakan serangga kecil dan burung",
+            "answers": {
+                "a": "Binatang Herbivora",
+                "b": "Tidak berhibernasi saat musim dingin",
+                "c": "Makhluk Nocturnal",
+                "d": "Tidak memiliki musim kawin"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Provinsi di Indonesia yang menggunakan Beruang Madu sebagai simbol adalah?",
+            "fact": "Beruang madu adalah fauna khas provinsi Bengkulu sekaligus dipakai sebagai simbol dari provinsi tersebut",
+            "answers": {
+                "a": "Bengkulu",
+                "b": "Sulawesi Utara",
+                "c": "Papua",
+                "d": "Sumatera Barat"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Yang tidak termasuk ciri-ciri dari Gorilla",
+            "fact": "",
+            "answers": {
+                "a": "Spesies binatang yang paling mendekati manusia",
+                "b": "Merupakan primata terbesar",
+                "c": "Gorilla adalah binatang yang pemalu",
+                "d": "Mampu berkomunikasi dengan bahasa sandi"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Dari mana gorilla berasal?",
+            "fact": "Gorila berasal dari hutan tropis di Afrika.",
+            "answers": {
+                "a": "Afrika",
+                "b": "India",
+                "c": "indonesia",
+                "d": "Eropa"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Dimana pertama kali harimau putih ditemukan?",
+            "fact": "Harimau putih ditemukan pertama kali sekitar satu abad lalu di hutan-hutan india",
+            "answers": {
+                "a": "India",
+                "b": "Afrika",
+                "c": "Cina",
+                "d": "Eropa"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Apa yang menyebabkan warna harimau putih menjadi putih?",
+            "fact": "Tim peneliti dari China mengungkapkan, warna putih pada bulu harimau itu disebabkan oleh perubahan pada gen pigmennya",
+            "answers": {
+                "a": "Gen Pigmen",
+                "b": "Adaptasi",
+                "c": "Bertahan Hidup",
+                "d": "Umur"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Hewan Proboscis dijadikan sebagai maskot apa?",
+            "fact": "",
+            "answers": {
+                "a": "Dunia Fantasi",
+                "b": "Tanah Abang",
+                "c": "Walt Disney",
+                "d": "Taman Mini"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Yang tidak termasuk keluarga Ape",
+            "fact": "",
+            "answers": {
+                "a": "King Kong",
+                "b": "Orangutan",
+                "c": "Simpanse",
+                "d": "Siamang"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Berikut ini adalah sebutan inggris untuk monyet jawa, kecuali?",
+            "fact": "Lutung jawa atau lutung budeng dalam bahasa Inggris dikenal sebagai Javan Lutung, Ebony Leaf Monkey, Javan Langur.",
+            "answers": {
+                "a": "Jawir Monkey",
+                "b": "Javan Lutung",
+                "c": "Ebony Leaf Monkey",
+                "d": "Javan Langur"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Apa warna bulu monyet Jawa jantan dewasa?",
+            "fact": "Warna bulu monyet jawa jantan yang sudah dewasa adalah hitam, sedangkan warna bulu yang betina adalah keperakan",
+            "answers": {
+                "a": "Hitam",
+                "b": "Perak",
+                "c": "Coklat",
+                "d": "Abu-Abu"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Berapa jumlah gigi Gorilla?",
+            "fact": "",
+            "answers": {
+                "a": "32",
+                "b": "3",
+                "c": "7",
+                "d": "2"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Berapa jumlah gigi Gorilla?",
+            "fact": "",
+            "answers": {
+                "a": "32",
+                "b": "3",
+                "c": "7",
+                "d": "2"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Berapa jumlah gigi Gorilla?",
+            "fact": "",
+            "answers": {
+                "a": "32",
+                "b": "3",
+                "c": "7",
+                "d": "2"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Berapa jumlah gigi Gorilla?",
+            "fact": "",
+            "answers": {
+                "a": "32",
+                "b": "3",
+                "c": "7",
+                "d": "2"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Berapa jumlah gigi Gorilla?",
+            "fact": "",
+            "answers": {
+                "a": "32",
+                "b": "3",
+                "c": "7",
+                "d": "2"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Berapa jumlah gigi Gorilla?",
+            "fact": "",
+            "answers": {
+                "a": "32",
+                "b": "3",
+                "c": "7",
+                "d": "2"
+            },
+            "correct_answer": "a"
+        },
+        {
+            "question": "Berapa jumlah gigi Gorilla?",
+            "fact": "",
+            "answers": {
+                "a": "32",
+                "b": "3",
+                "c": "7",
+                "d": "2"
+            },
+            "correct_answer": "a"
+        }
+    ]
 }

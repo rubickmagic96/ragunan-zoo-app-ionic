@@ -3,7 +3,6 @@ import { HomePage } from './../home/home';
 import { QuizProvider } from './../../providers/quiz/quiz';
 import { Component, ViewChild } from '@angular/core';
 import { NavController, NavParams, Slides } from 'ionic-angular';
-import { fsyncSync } from 'fs';
 
 @Component({
   selector: 'page-in-game',
