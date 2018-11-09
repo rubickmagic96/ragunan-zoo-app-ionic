@@ -238,382 +238,736 @@
                 },
                 "correct_answer": "a"
             }
+        ],
+        "medium": [
+            {
+                "question": "Yang mana yang tidak termasuk ciri-ciri dari Gajah Sumatera",
+                "fact": "Selain Gajah Sumatera, Indonesia juga memiliki Gajah Kalimantan dan Gajah Jawa",
+                "answers": {
+                    "a": "Juga dapat ditemukan di pulau Jawa dan Kalimantan",
+                    "b": "Mamalia terbesar di Indonesia",
+                    "c": "Lebih kecil dari Gajah India",
+                    "d": "Memiliki otak yang lebih besar daripada mamalia darat lain"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Anoa adalah binatang khas dari daerah mana?",
+                "fact": "",
+                "answers": {
+                    "a": "Sulawesi",
+                    "b": "Kalimantan",
+                    "c": "Jawa",
+                    "d": "Sumatera"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Apakah nama ilmiah untuk Gajah Sumatera?",
+                "fact": "",
+                "answers": {
+                    "a": "Elephas maximus sumatranus",
+                    "b": "Elephas maximus",
+                    "c": "Elephas maximus indicus",
+                    "d": "Elephas maximus borneensis"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Apa menu makanan utama dari Orangutan?",
+                "fact": "Sama seperti primata lainnya, Orangutan adalah hewan Omnivora",
+                "answers": {
+                    "a": "Buah-Buahan",
+                    "b": "Daun-Daunan",
+                    "c": "Serangga",
+                    "d": "Telur Unggas"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Orangutan pernah muncul sebagai simbol apa dari negara Indonesia?",
+                "fact": "Orangutan terpilih sebagai gambar pada lembar kertas mata uang 500an dengan warna hijau",
+                "answers": {
+                    "a": "Mata Uang",
+                    "b": "Cagar Alam",
+                    "c": "Lagu Daerah",
+                    "d": "Tugu Nasional"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Sebutkan nama lain dari Binturong?",
+                "fact": "",
+                "answers": {
+                    "a": "Bearcat",
+                    "b": "Kucing Hutan",
+                    "c": "Tikus Sawah",
+                    "d": "Tupai Jawa"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Chimpanzee termasuk binatang?",
+                "fact": "Chimpanzee termasuk salah satu binatang yang pernah dikirim oleh manusia ke luar angkasa",
+                "answers": {
+                    "a": "Menyusui",
+                    "b": "Memamah Biak",
+                    "c": "Amphibi",
+                    "d": "Berdarah Dingin"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Berapa Tinggi kebanyakan Chimpanzee Jantan saat berdiri?",
+                "fact": "Panjang tangan Chimpanzee umumnya, bila dilebarkan, memiliki rentang satu setengah kali tinggi badan dan tangan chimpanzee lebih panjang dari kakinya",
+                "answers": {
+                    "a": "1.7 meter",
+                    "b": "5 meter",
+                    "c": "8 meter",
+                    "d": "1 meter"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Di Indonesia Orang Utan banyak di temukan di wilayah mana?",
+                "fact": "",
+                "answers": {
+                    "a": "Kalimantan",
+                    "b": "Papua",
+                    "c": "Sulawesi",
+                    "d": "Jawa"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Apa nama lain dari Orangutan?",
+                "fact": "Orangutan nama lainnya adalah mawas.",
+                "answers": {
+                    "a": "Mawas",
+                    "b": "Simpanse",
+                    "c": "Monyet",
+                    "d": "Kera"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Berapa % kemiripan DNA Chimpanzee dengan manusia?",
+                "fact": "",
+                "answers": {
+                    "a": "99%",
+                    "b": "78%",
+                    "c": "77%",
+                    "d": "50%"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Termasuk Klasifikasi hewan apakah Rusa Tutul?",
+                "fact": "",
+                "answers": {
+                    "a": "Mamalia",
+                    "b": "Unggas",
+                    "c": "Karnivora",
+                    "d": "Omnivora"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Dari mana Chimpanzee berasal?",
+                "fact": "",
+                "answers": {
+                    "a": "Afrika",
+                    "b": "Indonesia",
+                    "c": "India",
+                    "d": "Eropa"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Apa sebutan bagi Sri Lanka Leopard dalam bahasa Tamil?",
+                "fact": "",
+                "answers": {
+                    "a": "Chiruththai",
+                    "b": "Kotiya",
+                    "c": "Jaguar",
+                    "d": "Tiger"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Apa warna bulu monyet Jawa jantan dewasa?",
+                "fact": "",
+                "answers": {
+                    "a": "Hitam",
+                    "b": "Perak",
+                    "c": "Coklat",
+                    "d": "Abu-Abu"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Dalam Klasifikasi Ilmiah, Harimau Sumatera termasuk dalam kelas?",
+                "fact": "Dalam Klasifikasi Ilmiah, Harimau Sumatera termasuk dalam Filum Chordata, Kelas Mammalia, Ordo Carnivora, Famili Felidae",
+                "answers": {
+                    "a": "Mammalia",
+                    "b": "Chordata",
+                    "c": "Carnivora",
+                    "d": "Felidae"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Warna bulu Beruang Madu mayoritas Hitam, pada bagian manakah yang berwana lebih terang?",
+                "fact": "",
+                "answers": {
+                    "a": "Dada",
+                    "b": "Hidung",
+                    "c": "Tangan",
+                    "d": "Punggung"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Yang tidak termasuk ciri-ciri Beruang Madu",
+                "fact": "Meskipun dinamakan Beruang Madu, tidak hanya madu yang menjadi menu makanan Beruang Madu. Mereka juga memakan serangga kecil dan burung",
+                "answers": {
+                    "a": "Binatang Herbivora",
+                    "b": "Tidak berhibernasi saat musim dingin",
+                    "c": "Makhluk Nocturnal",
+                    "d": "Tidak memiliki musim kawin"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Provinsi di Indonesia yang menggunakan Beruang Madu sebagai simbol adalah?",
+                "fact": "Beruang madu adalah fauna khas provinsi Bengkulu sekaligus dipakai sebagai simbol dari provinsi tersebut",
+                "answers": {
+                    "a": "Bengkulu",
+                    "b": "Sulawesi Utara",
+                    "c": "Papua",
+                    "d": "Sumatera Barat"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Yang tidak termasuk ciri-ciri dari Gorilla",
+                "fact": "",
+                "answers": {
+                    "a": "Spesies binatang yang paling mendekati manusia",
+                    "b": "Merupakan primata terbesar",
+                    "c": "Gorilla adalah binatang yang pemalu",
+                    "d": "Mampu berkomunikasi dengan bahasa sandi"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Dari mana gorilla berasal?",
+                "fact": "Gorila berasal dari hutan tropis di Afrika.",
+                "answers": {
+                    "a": "Afrika",
+                    "b": "India",
+                    "c": "indonesia",
+                    "d": "Eropa"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Dimana pertama kali harimau putih ditemukan?",
+                "fact": "Harimau putih ditemukan pertama kali sekitar satu abad lalu di hutan-hutan india",
+                "answers": {
+                    "a": "India",
+                    "b": "Afrika",
+                    "c": "Cina",
+                    "d": "Eropa"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Apa yang menyebabkan warna harimau putih menjadi putih?",
+                "fact": "Tim peneliti dari China mengungkapkan, warna putih pada bulu harimau itu disebabkan oleh perubahan pada gen pigmennya",
+                "answers": {
+                    "a": "Gen Pigmen",
+                    "b": "Adaptasi",
+                    "c": "Bertahan Hidup",
+                    "d": "Umur"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Hewan Proboscis dijadikan sebagai maskot apa?",
+                "fact": "",
+                "answers": {
+                    "a": "Dunia Fantasi",
+                    "b": "Tanah Abang",
+                    "c": "Walt Disney",
+                    "d": "Taman Mini"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Yang tidak termasuk keluarga Ape",
+                "fact": "",
+                "answers": {
+                    "a": "King Kong",
+                    "b": "Orangutan",
+                    "c": "Simpanse",
+                    "d": "Siamang"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Berikut ini adalah sebutan inggris untuk monyet jawa, kecuali?",
+                "fact": "Lutung jawa atau lutung budeng dalam bahasa Inggris dikenal sebagai Javan Lutung, Ebony Leaf Monkey, Javan Langur.",
+                "answers": {
+                    "a": "Jawir Monkey",
+                    "b": "Javan Lutung",
+                    "c": "Ebony Leaf Monkey",
+                    "d": "Javan Langur"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Apa warna bulu monyet Jawa jantan dewasa?",
+                "fact": "Warna bulu monyet jawa jantan yang sudah dewasa adalah hitam, sedangkan warna bulu yang betina adalah keperakan",
+                "answers": {
+                    "a": "Hitam",
+                    "b": "Perak",
+                    "c": "Coklat",
+                    "d": "Abu-Abu"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Ular Python membunuh mangsa dengan cara?",
+                "fact": "",
+                "answers": {
+                    "a": "Dililit",
+                    "b": "Dipukul",
+                    "c": "Diracun",
+                    "d": "Dilihat"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Berapa jumlah gigi Gorilla?",
+                "fact": "",
+                "answers": {
+                    "a": "32",
+                    "b": "3",
+                    "c": "7",
+                    "d": "2"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Ular Python Dikenal di Indonesia dengan nama sebagai berikut, kecuali",
+                "fact": "Lebih dikenal umum dengan nama Ular Retic, yang diambil dari bahasa Inggris Reticulated Python",
+                "answers": {
+                    "a": "Ular Sendok",
+                    "b": "Ular Sanca",
+                    "c": "Ular Sawah",
+                    "d": "Ular Petola"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Yang mana yang tidak termasuk ciri-ciri dari Ular Python",
+                "fact": "Meskipun senang berada disekitar air, namun ular Python lebih senang menunggu mangsa daripada aktif berburu",
+                "answers": {
+                    "a": "Sangat aktif berburu di dalam air sungai",
+                    "b": "Badannya mampu melebihi panjangnya Ular Anaconda",
+                    "c": "Memiliki umur yang panjang hingga 25 tahun",
+                    "d": "Mengerami telur hingga menetas seperti ayam"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "King Kobra paling sering ditemukan di hutan negara mana?",
+                "fact": "",
+                "answers": {
+                    "a": "India",
+                    "b": "Indonesia",
+                    "c": "Mesir",
+                    "d": "Afrika"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Apa yang paling mematikan dari King Kobra?",
+                "fact": "",
+                "answers": {
+                    "a": "Bisa",
+                    "b": "Gigi",
+                    "c": "Kulit",
+                    "d": "Ekor"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Yang mana yang tidak termasuk ciri-ciri dari King Kobra",
+                "fact": "Nama Latin King Kobra adalah Ophiophagus Hannah. Ophiophagus sendiri memiliki arti pemakan ular",
+                "answers": {
+                    "a": "Di Indonesia dikenal dengan nama ular Sendok",
+                    "b": "Memangsa ular lain seperti Kobra dan Sanca",
+                    "c": "Hewan yang pemalu dan menghindari manusia",
+                    "d": "Ukuran jantannya lebih besar dari betina"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Dengan cara apakah komodo membunuh mangsanya?",
+                "fact": "Air liur komodo mengandung bisa & juga memiliki aneka bakteri mematikan di dalamnya; lebih dari 28 bakteri Gram-negatif dan 29 Gram-positif telah diisolasi dari air liur ini. Jika gigitan komodo tidak langsung membunuh mangsa dan mangsa itu dapat melarikan diri, umumnya mangsa yang sial ini akan mati dalam waktu satu minggu akibat infeksi.",
+                "answers": {
+                    "a": "Digigit",
+                    "b": "Dililit",
+                    "c": "Dicakar",
+                    "d": "Disabet dengan ekor"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Apa warna lidah Komodo?",
+                "fact": "Komodo jantan lebih besar daripada komodo betina, dengan warna kulit dari abu-abu gelap sampai merah batu bata, sementara komodo betina lebih berwarna hijau buah zaitun, dan memiliki potongan kecil kuning pada tenggorokannya. Komodo muda lebih berwarna, dengan warna kuning, hijau dan putih pada latar belakang hitam.",
+                "answers": {
+                    "a": "Kuning",
+                    "b": "Putih",
+                    "c": "Hijau",
+                    "d": "Merah"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Sebutkan cara burung pelikan memakan mangsanya?",
+                "fact": "",
+                "answers": {
+                    "a": "Menelan hidup-hidup",
+                    "b": "Mematuk dengan paruhnya",
+                    "c": "Menyimpan makanannya didalam paruh",
+                    "d": "Dicabik oleh kakinya"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Apa makanan burung elang?",
+                "fact": "",
+                "answers": {
+                    "a": "Daging",
+                    "b": "Nasi",
+                    "c": "Biji-bijian",
+                    "d": "Rumput"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Yang mana yang termasuk ciri-ciri burung Beo",
+                "fact": "Hewan Omnivora berbulu hitam ini mampu menirukan suara manusia meskipun tidak memiliki pita suara",
+                "answers": {
+                    "a": "Sama seperti lebah, burung Beo juga meminum nektar bunga",
+                    "b": "Mampu menirukan suara manusia, karena memiliki pita suara",
+                    "c": "Memiliki warna bulu yang cerah, seperti hijau, biru, dan merah",
+                    "d": "Tidak memakan daging, hanya buah2an"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Terdapat Apakah diatas kepala Kasuari?",
+                "fact": "",
+                "answers": {
+                    "a": "Tanduk",
+                    "b": "Sayap",
+                    "c": "Kuku",
+                    "d": "Mata"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Berapa kali Burung Flamingo bertelur dalam satu tahun?",
+                "fact": "",
+                "answers": {
+                    "a": "1 kali",
+                    "b": "2 kali",
+                    "c": "3 kali",
+                    "d": "berkali-kali"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Apa warna lidah Jerapah?",
+                "fact": "Lidah Jerapah berwarna Biru kehitaman untuk menghindarii terbakar matahari, dan teksturnya kasar tebal agar tahan dari duri-duri pohon pada waktu mencari makan",
+                "answers": {
+                    "a": "Biru-Hitam",
+                    "b": "Cokelat-Kuning",
+                    "c": "Biru-Cokelat",
+                    "d": "Ungu"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Bagaimana caranya membedakan Jerapah Jantan dengan Jerapah Betina?",
+                "fact": "",
+                "answers": {
+                    "a": "Tingginya",
+                    "b": "Lorengnya",
+                    "c": "Tanduknya",
+                    "d": "Taringnya"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Yang mana yang tidak termasuk ciri-ciri dari Jerapah",
+                "fact": "Jerapah adalah binatang dengan leher tertinggi, meskipun demikian jumlah tulang lehernya sama seperti manusia yang hanya ada 7",
+                "answers": {
+                    "a": "Meskipun jarang, ada jenis Jerapah yang memiliki bercak berpola garis seperti zebra",
+                    "b": "Memiliki jumlah tulang leher yang sama seperti manusia yaitu 7",
+                    "c": "Pandai berenang",
+                    "d": "Nama latinnya camelopardalis yang berarti campuran camel dan leopard"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Burung kakak tua pernah dibuatkan film animasinya oleh The 20th Century Fox. Apakah judul film tersebut?",
+                "fact": "",
+                "answers": {
+                    "a": "RIO",
+                    "b": "Happy Feet",
+                    "c": "Madagascar",
+                    "d": "Finding Nemo"
+                },
+                "correct_answer": "a"
+            }
+        ],
+        "hard": [
+            {
+                "question": "Ahli Zoologi dan Etologi yang aktif dalam penelitian dan penyelamatan populasi Gorilla?",
+                "fact": "Dian Fossey adalah seorang ahli zoologi dan etologi yang mempelajari keluarga gorila selama bertahun-tahun di Rwanda (Salah satu Negara di Afrika Tengah). Berkat hasil jerih payah Fossey, manusia jadi lebih tahu bahwa kehidupan gorila sangat terancam dan butuh campur tangan manusia. Dan Dia juga merupakan Pendiri dari ",
+                "answers": {
+                    "a": "Dian Fossey",
+                    "b": "Charles Darwin",
+                    "c": "Steve Irwin",
+                    "d": "Jean-Henry Fabre"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Negara mana yang tidak memiliki singa sebagai simbol negaranya?",
+                "fact": "Singa yang dianggap sebagai raja rimba seringkali menjadi symbol sebuah negara",
+                "answers": {
+                    "a": "Belanda",
+                    "b": "Malaysia",
+                    "c": "Singapura",
+                    "d": "Macedonia"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Salah satu Subspesies Singa yang habitatnya di daerah India?",
+                "fact": "Habitat dari Panthera leo bleyenberghi adalah di daerah Kongo, Zimbabwe; Habitat dari Panthera leo krugeri adalah di daerah Afrika Selatan; Habitat Dari Panthera leo massaieus adalah di daerah Tanzania, Kenya.",
+                "answers": {
+                    "a": "Panthera leo persica",
+                    "b": "Panthera leo bleyenberghi",
+                    "c": "Panthera leo krugeri",
+                    "d": "Panthera leo massaieus"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Siapa nama zoologist Sri Lanka yang pertama kali menjelaskan tentang Sri Lanka Leopard?",
+                "fact": "",
+                "answers": {
+                    "a": "Deraniyagala",
+                    "b": "Edward Leopard",
+                    "c": "Leo Pardish",
+                    "d": "Leonardo Paradise"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Apakah Nama ilmiah untuk Rusa Tutul?",
+                "fact": "Orangutan nama lainnya adalah mawas.",
+                "answers": {
+                    "a": "Axis Axis",
+                    "b": "Umang",
+                    "c": "Amang",
+                    "d": "Kodok"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Chimpanzee merupakan Genus",
+                "fact": "Simpanse, (sering disingkat dalam Bahasa Inggris, chimp), adalah nama umum untuk dua spesies yang masih hidup dari kera dalam genus Pan",
+                "answers": {
+                    "a": "2",
+                    "b": "1",
+                    "c": "10",
+                    "d": "15"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Berapa lama Orangutan mengandung?",
+                "fact": "Orangutan betina biasanya melahirkan pada usia 7-10 tahun",
+                "answers": {
+                    "a": "8,5 - 9 Bulan",
+                    "b": "6 bulan",
+                    "c": "2-3 bulan",
+                    "d": "4 minggu"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Keturunan dari spesies apakah hewan Badak Jawa?",
+                "fact": "Spesies badak diyakini telah ada di muka bumi sejak jaman tertier (65 juta tahun yang lalu), satu masa dengan dinosaurus yang telah punah.",
+                "answers": {
+                    "a": "Ceratotherium",
+                    "b": "Rhinoceros",
+                    "c": "Dicerorhinus",
+                    "d": "Sondaicus"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Berapa lama umur badak jawa?",
+                "fact": "Orangutan nama lainnya adalah mawas.",
+                "answers": {
+                    "a": "45 Tahun",
+                    "b": "10 tahun",
+                    "c": "25 Tahun",
+                    "d": "80 Tahun"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Berapa lama gajah betina mengandung anaknya?",
+                "fact": "Periode kehamilan untuk bayi gajah sumatera adalah 22 bulan dengan umur rata-rata sampai 70 tahun.",
+                "answers": {
+                    "a": "22 Bulan",
+                    "b": "26 Bulan",
+                    "c": "9 Bulan",
+                    "d": "18 Bulan"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Apakah nama ilmiah dari komodo?",
+                "fact": "Orangutan nama lainnya adalah mawas.",
+                "answers": {
+                    "a": "Varanus Komodoensis",
+                    "b": "Pithecanthropus Erectus",
+                    "c": "Varanus Giganteus",
+                    "d": "Varanus Kadalensis"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Dimanakah Indra Perasa Komodo?",
+                "fact": "Di alam bebas, komodo dewasa biasanya memiliki berat sekitar 70 kilogram, namun komodo yang dipelihara di penangkaran sering memiliki bobot tubuh yang lebih besar",
+                "answers": {
+                    "a": "Lidah",
+                    "b": "buntut",
+                    "c": "Kepala",
+                    "d": "Mata"
+                },
+                "correct_answer": "d"
+            },
+            {
+                "question": "Di negara manakah Elang dijadikan simbol negara?",
+                "fact": "Orangutan nama lainnya adalah mawas.",
+                "answers": {
+                    "a": "Amerika",
+                    "b": "Indonesia",
+                    "c": "China",
+                    "d": "Inggris"
+                },
+                "correct_answer": "d"
+            },
+            {
+                "question": "Yang mana yang tidak termasuk ciri-ciri dari Elang",
+                "fact": "Elang dari ukuran tubuhnya, terbagi menjadi 2 genus. Yang besar seperti Eagle dari genus Aquila, sedangkan yang kecil seperti Hawk dari genus Accipiter",
+                "answers": {
+                    "a": "Memiliki tubuh yang lebih kecil dari Hawk (Elang-Alap)",
+                    "b": "Memiliki jantung dengan 4 bilik seperti manusia",
+                    "c": "Ikan termasuk dalam menu makanannya",
+                    "d": "Serangga termasuk dalam menu makanannya"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Termasuk Suku apakah Burung Kasuari?",
+                "fact": "Genus ini terdiri dari tiga spesies kasuari yang berukuran sangat besar dan tidak dapat terbang.",
+                "answers": {
+                    "a": "Casuariidae",
+                    "b": "komododae",
+                    "c": "Brontosaurus",
+                    "d": "Rhinosaurus"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Species Kasuari apakah yang hanya ada di Australia?",
+                "fact": "Daerah sebaran ketiga Spesies Kausari adalah di hutan tropis dan pegunungan di pulau Irian",
+                "answers": {
+                    "a": "Kasuari Gelambir-ganda",
+                    "b": "Kasuari Gambir",
+                    "c": "Kasuari Ganda",
+                    "d": "Kasuari Kerdil"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Ada berapa jari pada masing-masing kaki Burung Unta?",
+                "fact": "Masing-masing Kaki Burung Unta memiliki 2 jari, dibandingkan pada jenis burung lain yang memiliki 4 jari kaki.",
+                "answers": {
+                    "a": "2",
+                    "b": "1",
+                    "c": "3",
+                    "d": "4"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Yang mana yang tidak termasuk ciri-ciri dari Burung Unta",
+                "fact": "Merupakan jenis burung terbesar, yang melindungi diri dari bahaya dengan menurunkan kepala ke dekat tanah dan menendang predatornya",
+                "answers": {
+                    "a": "Menyembunyikan kepala ke dalam tanah saat menghadapi bahaya",
+                    "b": "Tidak bisa terbang, meskipun disebut burung",
+                    "c": "Tidak bisa menyimpan air. meskipun disebut unta",
+                    "d": "Burung yang berhabitat di gurun, oleh karenanya disebut Burung Unta"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Habitat terbesar Zebra ada di negara mana?",
+                "fact": "Belang-belang pada tubuh zebra dapat membantu sistem pertahanan zebra terhadap predator. Belang zebra dapat membingungkan predator",
+                "answers": {
+                    "a": "Afrika",
+                    "b": "Indonesia",
+                    "c": "Singapore",
+                    "d": "Malaysia"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Kapan Anak Zebra bisa langsung berdiri dan berlari?",
+                "fact": "Zebra betina melahirkan 1 anak",
+                "answers": {
+                    "a": "1 Jam Stelah dilahirkan",
+                    "b": "24 jam setelah dilahirkan",
+                    "c": "7 hari setelah dilahirkan",
+                    "d": "pada saat umur 17 tahun"
+                },
+                "correct_answer": "a"
+            },
+            {
+                "question": "Ada Berapakah Jenis Zebra di Dunia?",
+                "fact": "Ada tiga jenis zebra yaitu zebra gunung (Equus zebra), zebra dataran (Equus quagga) dan zebra primitif (Equus grevyi).",
+                "answers": {
+                    "a": "3",
+                    "b": "1",
+                    "c": "5",
+                    "d": "17"
+                },
+                "correct_answer": "a"
+            }
         ]
-    },
-    "medium": [
-        {
-            "question": "Yang mana yang tidak termasuk ciri-ciri dari Gajah Sumatera",
-            "fact": "Selain Gajah Sumatera, Indonesia juga memiliki Gajah Kalimantan dan Gajah Jawa",
-            "answers": {
-                "a": "Juga dapat ditemukan di pulau Jawa dan Kalimantan",
-                "b": "Mamalia terbesar di Indonesia",
-                "c": "Lebih kecil dari Gajah India",
-                "d": "Memiliki otak yang lebih besar daripada mamalia darat lain"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Anoa adalah binatang khas dari daerah mana?",
-            "fact": "",
-            "answers": {
-                "a": "Sulawesi",
-                "b": "Kalimantan",
-                "c": "Jawa",
-                "d": "Sumatera"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Apakah nama ilmiah untuk Gajah Sumatera?",
-            "fact": "",
-            "answers": {
-                "a": "Elephas maximus sumatranus",
-                "b": "Elephas maximus",
-                "c": "Elephas maximus indicus",
-                "d": "Elephas maximus borneensis"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Apa menu makanan utama dari Orangutan?",
-            "fact": "Sama seperti primata lainnya, Orangutan adalah hewan Omnivora",
-            "answers": {
-                "a": "Buah-Buahan",
-                "b": "Daun-Daunan",
-                "c": "Serangga",
-                "d": "Telur Unggas"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Orangutan pernah muncul sebagai simbol apa dari negara Indonesia?",
-            "fact": "Orangutan terpilih sebagai gambar pada lembar kertas mata uang 500an dengan warna hijau",
-            "answers": {
-                "a": "Mata Uang",
-                "b": "Cagar Alam",
-                "c": "Lagu Daerah",
-                "d": "Tugu Nasional"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Sebutkan nama lain dari Binturong?",
-            "fact": "",
-            "answers": {
-                "a": "Bearcat",
-                "b": "Kucing Hutan",
-                "c": "Tikus Sawah",
-                "d": "Tupai Jawa"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Chimpanzee termasuk binatang?",
-            "fact": "Chimpanzee termasuk salah satu binatang yang pernah dikirim oleh manusia ke luar angkasa",
-            "answers": {
-                "a": "Menyusui",
-                "b": "Memamah Biak",
-                "c": "Amphibi",
-                "d": "Berdarah Dingin"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Berapa Tinggi kebanyakan Chimpanzee Jantan saat berdiri?",
-            "fact": "Panjang tangan Chimpanzee umumnya, bila dilebarkan, memiliki rentang satu setengah kali tinggi badan dan tangan chimpanzee lebih panjang dari kakinya",
-            "answers": {
-                "a": "1.7 meter",
-                "b": "5 meter",
-                "c": "8 meter",
-                "d": "1 meter"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Di Indonesia Orang Utan banyak di temukan di wilayah mana?",
-            "fact": "",
-            "answers": {
-                "a": "Kalimantan",
-                "b": "Papua",
-                "c": "Sulawesi",
-                "d": "Jawa"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Apa nama lain dari Orangutan?",
-            "fact": "Orangutan nama lainnya adalah mawas.",
-            "answers": {
-                "a": "Mawas",
-                "b": "Simpanse",
-                "c": "Monyet",
-                "d": "Kera"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Berapa % kemiripan DNA Chimpanzee dengan manusia?",
-            "fact": "",
-            "answers": {
-                "a": "99%",
-                "b": "78%",
-                "c": "77%",
-                "d": "50%"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Termasuk Klasifikasi hewan apakah Rusa Tutul?",
-            "fact": "",
-            "answers": {
-                "a": "Mamalia",
-                "b": "Unggas",
-                "c": "Karnivora",
-                "d": "Omnivora"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Dari mana Chimpanzee berasal?",
-            "fact": "",
-            "answers": {
-                "a": "Afrika",
-                "b": "Indonesia",
-                "c": "India",
-                "d": "Eropa"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Apa sebutan bagi Sri Lanka Leopard dalam bahasa Tamil?",
-            "fact": "",
-            "answers": {
-                "a": "Chiruththai",
-                "b": "Kotiya",
-                "c": "Jaguar",
-                "d": "Tiger"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Apa warna bulu monyet Jawa jantan dewasa?",
-            "fact": "",
-            "answers": {
-                "a": "Hitam",
-                "b": "Perak",
-                "c": "Coklat",
-                "d": "Abu-Abu"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Dalam Klasifikasi Ilmiah, Harimau Sumatera termasuk dalam kelas?",
-            "fact": "Dalam Klasifikasi Ilmiah, Harimau Sumatera termasuk dalam Filum Chordata, Kelas Mammalia, Ordo Carnivora, Famili Felidae",
-            "answers": {
-                "a": "Mammalia",
-                "b": "Chordata",
-                "c": "Carnivora",
-                "d": "Felidae"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Warna bulu Beruang Madu mayoritas Hitam, pada bagian manakah yang berwana lebih terang?",
-            "fact": "",
-            "answers": {
-                "a": "Dada",
-                "b": "Hidung",
-                "c": "Tangan",
-                "d": "Punggung"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Yang tidak termasuk ciri-ciri Beruang Madu",
-            "fact": "Meskipun dinamakan Beruang Madu, tidak hanya madu yang menjadi menu makanan Beruang Madu. Mereka juga memakan serangga kecil dan burung",
-            "answers": {
-                "a": "Binatang Herbivora",
-                "b": "Tidak berhibernasi saat musim dingin",
-                "c": "Makhluk Nocturnal",
-                "d": "Tidak memiliki musim kawin"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Provinsi di Indonesia yang menggunakan Beruang Madu sebagai simbol adalah?",
-            "fact": "Beruang madu adalah fauna khas provinsi Bengkulu sekaligus dipakai sebagai simbol dari provinsi tersebut",
-            "answers": {
-                "a": "Bengkulu",
-                "b": "Sulawesi Utara",
-                "c": "Papua",
-                "d": "Sumatera Barat"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Yang tidak termasuk ciri-ciri dari Gorilla",
-            "fact": "",
-            "answers": {
-                "a": "Spesies binatang yang paling mendekati manusia",
-                "b": "Merupakan primata terbesar",
-                "c": "Gorilla adalah binatang yang pemalu",
-                "d": "Mampu berkomunikasi dengan bahasa sandi"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Dari mana gorilla berasal?",
-            "fact": "Gorila berasal dari hutan tropis di Afrika.",
-            "answers": {
-                "a": "Afrika",
-                "b": "India",
-                "c": "indonesia",
-                "d": "Eropa"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Dimana pertama kali harimau putih ditemukan?",
-            "fact": "Harimau putih ditemukan pertama kali sekitar satu abad lalu di hutan-hutan india",
-            "answers": {
-                "a": "India",
-                "b": "Afrika",
-                "c": "Cina",
-                "d": "Eropa"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Apa yang menyebabkan warna harimau putih menjadi putih?",
-            "fact": "Tim peneliti dari China mengungkapkan, warna putih pada bulu harimau itu disebabkan oleh perubahan pada gen pigmennya",
-            "answers": {
-                "a": "Gen Pigmen",
-                "b": "Adaptasi",
-                "c": "Bertahan Hidup",
-                "d": "Umur"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Hewan Proboscis dijadikan sebagai maskot apa?",
-            "fact": "",
-            "answers": {
-                "a": "Dunia Fantasi",
-                "b": "Tanah Abang",
-                "c": "Walt Disney",
-                "d": "Taman Mini"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Yang tidak termasuk keluarga Ape",
-            "fact": "",
-            "answers": {
-                "a": "King Kong",
-                "b": "Orangutan",
-                "c": "Simpanse",
-                "d": "Siamang"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Berikut ini adalah sebutan inggris untuk monyet jawa, kecuali?",
-            "fact": "Lutung jawa atau lutung budeng dalam bahasa Inggris dikenal sebagai Javan Lutung, Ebony Leaf Monkey, Javan Langur.",
-            "answers": {
-                "a": "Jawir Monkey",
-                "b": "Javan Lutung",
-                "c": "Ebony Leaf Monkey",
-                "d": "Javan Langur"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Apa warna bulu monyet Jawa jantan dewasa?",
-            "fact": "Warna bulu monyet jawa jantan yang sudah dewasa adalah hitam, sedangkan warna bulu yang betina adalah keperakan",
-            "answers": {
-                "a": "Hitam",
-                "b": "Perak",
-                "c": "Coklat",
-                "d": "Abu-Abu"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Berapa jumlah gigi Gorilla?",
-            "fact": "",
-            "answers": {
-                "a": "32",
-                "b": "3",
-                "c": "7",
-                "d": "2"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Berapa jumlah gigi Gorilla?",
-            "fact": "",
-            "answers": {
-                "a": "32",
-                "b": "3",
-                "c": "7",
-                "d": "2"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Berapa jumlah gigi Gorilla?",
-            "fact": "",
-            "answers": {
-                "a": "32",
-                "b": "3",
-                "c": "7",
-                "d": "2"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Berapa jumlah gigi Gorilla?",
-            "fact": "",
-            "answers": {
-                "a": "32",
-                "b": "3",
-                "c": "7",
-                "d": "2"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Berapa jumlah gigi Gorilla?",
-            "fact": "",
-            "answers": {
-                "a": "32",
-                "b": "3",
-                "c": "7",
-                "d": "2"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Berapa jumlah gigi Gorilla?",
-            "fact": "",
-            "answers": {
-                "a": "32",
-                "b": "3",
-                "c": "7",
-                "d": "2"
-            },
-            "correct_answer": "a"
-        },
-        {
-            "question": "Berapa jumlah gigi Gorilla?",
-            "fact": "",
-            "answers": {
-                "a": "32",
-                "b": "3",
-                "c": "7",
-                "d": "2"
-            },
-            "correct_answer": "a"
-        }
-    ]
+    }
 }

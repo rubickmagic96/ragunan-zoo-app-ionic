@@ -40,7 +40,8 @@ export class InGamePage {
 
     this.slides.lockSwipes(true);
 
-    this.quizProvider.load(this.level).then((data) => {
+    this.quizProvider.load(this.level).then((data: Array<any>) => {
+
       data.map((question) => {
         let answersKey = Object.keys(question.answers);
         let answers = Object.keys(question.answers).map(key => question.answers[key]);
@@ -166,14 +167,43 @@ export class InGamePage {
     document.getElementById('gameover').style.display = "block";
     this.isGameOver = false;
 
-    this.storage.get("easy_score").then((score) => {
-      if (score == 0 || score == undefined || score == null) {
-        this.storage.set("easy_score", 0);
+    this.storage.get("score").then((score) => {
+      if (score == undefined || score == null) {
+        this.storage.set("score", {
+          "easy": 0,
+          "medium": 0,
+          "hard": 0
+        });
       }
 
-      if (this.score > score) {
-        this.storage.set("easy_score", this.score);
-      }
+      this.storage.get("score").then((scr) => {
+        console.log(scr);
+        if (this.level == "easy") {
+          if (this.score > scr.easy) {
+            this.storage.set("score", {
+              "easy": this.score,
+              "medium": scr.medium,
+              "hard": scr.hard
+            });
+          }
+        } else if (this.level == "medium") {
+          if (this.score > scr.medium) {
+            this.storage.set("score", {
+              "easy": scr.easy,
+              "medium": this.score,
+              "hard": scr.hard
+            });
+          }
+        } else if (this.level == "hard") {
+          if (this.score > scr.hard) {
+            this.storage.set("score", {
+              "easy": scr.easy,
+              "medium": scr.medium,
+              "hard": this.score
+            });
+          }
+        }
+      })
     })
     
     if (this.score > 0 && this.score <= 4) {
