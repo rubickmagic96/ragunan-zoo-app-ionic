@@ -78,7 +78,6 @@ export class HomePage {
 
   slidesChanged() {
     let currentIndex = this.slides.getActiveIndex();
-    console.log(currentIndex);
     if (currentIndex > this.slideitemAnimals.length) {
       this.animalName = this.slideitemAnimals[0].name;
       this.shareFact = this.slideitemAnimals[0].share;

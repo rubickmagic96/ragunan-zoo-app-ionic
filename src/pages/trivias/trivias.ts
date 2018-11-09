@@ -10,7 +10,7 @@ import { NavController, NavParams } from 'ionic-angular';
 export class TriviasPage {
 
   constructor(
-    public navCtrl: NavController, 
+    public navCtrl: NavController,
     public navParams: NavParams,
     public storage: Storage) {
   }
@@ -19,25 +19,20 @@ export class TriviasPage {
     console.log('ionViewDidLoad TriviasPage');
 
     this.storage.get("score").then((score) => {
-     if (score != undefined || score != null) {
-       let scoreKey = Object.keys(score);
-       let scoreVal = Object.keys(score).map(key => score[key]);
+      if (score != undefined || score != null) {
+        let scoreKey = Object.keys(score);
+        let scoreVal = Object.keys(score).map(key => score[key]);
 
-       for (let i = 0; i < scoreKey.length; i++) {
-         for (let j = 0; j < scoreVal.length; j++) {
-           if (scoreKey[i] == "easy") {
-             console.log(scoreVal[j])
-             this.givingStar("easy", scoreVal[j]);
-           } else if (scoreKey[i] == "medium") {
-             console.log(scoreVal[j])
-             this.givingStar("medium", scoreVal[j]);
-           } else if (scoreKey[i] == "hard") {
-             console.log(scoreVal[j])
-             this.givingStar("hard", scoreVal[j]);
-           }
-         }
-       }
-     }
+        for (let i = 0; i < scoreKey.length; i++) {
+          if (scoreKey[i] == "easy") {
+            this.givingStar("easy", scoreVal[i]);
+          } else if (scoreKey[i] == "medium") {
+            this.givingStar("medium", scoreVal[i]);
+          } else if (scoreKey[i] == "hard") {
+            this.givingStar("hard", scoreVal[i]);
+          }
+        }
+      }
     });
   }
 
@@ -47,7 +42,8 @@ export class TriviasPage {
     });
   }
 
-  givingStar(level:string, score: number) {
+  givingStar(level: string, score: number) {
+    console.log(level + ": " + score);
     if (score > 0 && score <= 4) {
       let star = document.getElementById(`${level}-star1`);
       (star as HTMLImageElement).src = "assets/imgs/trivias/star_small.png";

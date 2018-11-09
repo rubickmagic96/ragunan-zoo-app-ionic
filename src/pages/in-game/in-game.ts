@@ -167,16 +167,16 @@ export class InGamePage {
     document.getElementById('gameover').style.display = "block";
     this.isGameOver = false;
 
-    this.storage.get("score").then((score) => {
+    this.storage.get("score").then(async (score) => {
       if (score == undefined || score == null) {
-        this.storage.set("score", {
+        await this.storage.set("score", {
           "easy": 0,
           "medium": 0,
           "hard": 0
         });
       }
 
-      this.storage.get("score").then((scr) => {
+      await this.storage.get("score").then((scr) => {
         console.log(scr);
         if (this.level == "easy") {
           if (this.score > scr.easy) {
