@@ -124,6 +124,12 @@ export class InGamePage {
       } else {
         this.width--;
         this.progress.style.width = this.width + "%";
+
+        if (this.width >= 30 && this.width < 60) {
+          this.progress.style.backgroundImage = "linear-gradient(to right, #fc6600, #ffff44)";
+        } else if (this.width < 30) {
+          this.progress.style.backgroundImage = "linear-gradient(to right, #ff2400, #fc6600)";
+        }
       }
     }
   }
@@ -225,6 +231,7 @@ export class InGamePage {
   }
 
   nextQuestion() {
+    this.progress.style.backgroundImage = "linear-gradient(to right, #06cd7a, #ffff44)";
     this.pauseOn = false;
     this.width = 100;
     if (this.currentQuestion == this.questions.length - 1) {
@@ -238,6 +245,7 @@ export class InGamePage {
   }
 
   playAgain() {
+    this.progress.style.backgroundImage = "linear-gradient(to right, #06cd7a, #ffff44)";
     document.getElementById('time-n-life').style.display = "block";
     document.getElementById('score').style.display = "block";
     document.getElementById('quiz').style.display = "block";
