@@ -19,26 +19,26 @@
 <ion-content style="background-color: #f2f2f2;">
     <ion-item no-lines>
       <ion-select interface="popover" #c (ionChange)="onChange(c.value)">
-        <ion-option value="all" selected>Showing All Animal</ion-option>
-        <ion-option value="mammal">Mammal</ion-option>
-        <ion-option value="reptile">Reptile</ion-option>
-        <ion-option value="aves">Aves</ion-option>
-        <ion-option value="fishes">Fishes</ion-option>
+        <ion-option value="all" selected>Showing All Animal ({{all}})</ion-option>
+        <ion-option value="mammal">Mammal ({{mammal}})</ion-option>
+        <ion-option value="reptile">Reptile ({{reptile}})</ion-option>
+        <ion-option value="aves">Aves ({{aves}})</ion-option>
+        <ion-option value="fishes">Fishes ({{fishes}})</ion-option>
       </ion-select>
     </ion-item>
   <ion-grid>
-    <ion-row *ngFor="let animal of animals">
+    <ion-row *ngFor="let animal of animalColl; let i = index">
       <ion-col>
         <div class="name">
           <span>{{animal[0].name}}</span>
         </div>
-        <img class="cover" src="{{animal[0].asset}}" alt="">
+        <img class="cover" src="{{animal[0].assets}}" alt="">
       </ion-col>
       <ion-col>
         <div class="name">
           <span>{{animal[1].name}}</span>
         </div>
-        <img src="{{animal[1].asset}}" alt="">
+        <img src="{{animal[1].assets}}" alt="">
       </ion-col>
     </ion-row>
   </ion-grid>

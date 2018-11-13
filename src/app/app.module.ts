@@ -33,6 +33,7 @@ import { InGamePage } from '../pages/in-game/in-game';
 import { IonicStorageModule } from '@ionic/storage';
 import { QuizProvider } from '../providers/quiz/quiz';
 import { GethereServiceProvider } from '../providers/gethere-service/gethere-service';
+import { AnimalcollectionServiceProvider } from '../providers/animalcollection-service/animalcollection-service';
 
 @NgModule({
   declarations: [
@@ -95,7 +96,8 @@ import { GethereServiceProvider } from '../providers/gethere-service/gethere-ser
     Camera,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     QuizProvider,
-    GethereServiceProvider
+    GethereServiceProvider,
+    AnimalcollectionServiceProvider
   ]
 })
 export class AppModule {}

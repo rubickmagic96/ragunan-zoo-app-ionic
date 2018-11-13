@@ -1,0 +1,319 @@
+{
+    "data": [
+        {
+            "assets": "assets/imgs/animals/thumb_11001.jpg",
+            "name": "Sumatran Tiger",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11002.jpg",
+            "name": "Bear",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11003.jpg",
+            "name": "Siamang",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11004.jpg",
+            "name": "Gorila",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11005.jpg",
+            "name": "Babi Rusa",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11006.jpg",
+            "name": "Tapir",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11007.jpg",
+            "name": "Lion",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11008.jpg",
+            "name": "White Tiger",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11009.jpg",
+            "name": "Proboscis",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11010.jpg",
+            "name": "Ape",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11011.jpg",
+            "name": "Slow Loris",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11012.jpg",
+            "name": "Monkey Budeng",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11013.jpg",
+            "name": "Monkey Kokah",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11014.jpg",
+            "name": "Monkey Boti",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11015.jpg",
+            "name": "Sambar Deer",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11016.jpg",
+            "name": "Nilgai",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11017.jpg",
+            "name": "Sri Lanka Leopard",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11018.jpg",
+            "name": "Jaguar",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11019.jpg",
+            "name": "Sitatunga",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11020.jpg",
+            "name": "Spotted Deer",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11021.jpg",
+            "name": "Shimpanzee",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11022.jpg",
+            "name": "Bornean Orangutan",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11023.jpg",
+            "name": "Binturong",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11024.jpg",
+            "name": "Anoa",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11025.jpg",
+            "name": "Java Bull",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11026.jpg",
+            "name": "Surili",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11027.jpg",
+            "name": "Simpai",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11028.jpg",
+            "name": "Yaki",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11029.jpg",
+            "name": "Sumatran Elephant",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11030.jpg",
+            "name": "Hippoptamus",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11031.jpg",
+            "name": "Camel",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_11034.jpg",
+            "name": "Giraffe",
+            "type": "mammal"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_12001.jpg",
+            "name": "Red Cheek Turtle",
+            "type": "reptile"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_12002.jpg",
+            "name": "Python Patola",
+            "type": "reptile"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_12003.jpg",
+            "name": "Python",
+            "type": "reptile"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_12004.jpg",
+            "name": "Green Lizard",
+            "type": "reptile"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_12005.jpg",
+            "name": "Python Albino",
+            "type": "reptile"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_12006.jpg",
+            "name": "Maluku Lizard",
+            "type": "reptile"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_12007.jpg",
+            "name": "Lizard Salvator",
+            "type": "reptile"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_12008.jpg",
+            "name": "Komodo",
+            "type": "reptile"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_12009.jpg",
+            "name": "King Kobra",
+            "type": "reptile"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_12010.jpg",
+            "name": "Blue Tongue Lizard",
+            "type": "reptile"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_12011.jpg",
+            "name": "Black Lizard",
+            "type": "reptile"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_13001.jpg",
+            "name": "Pelikan",
+            "type": "aves"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_13002.jpg",
+            "name": "Knobbed Hornbill",
+            "type": "aves"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_13003.jpg",
+            "name": "Grey-Headed Fish",
+            "type": "aves"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_13004.jpg",
+            "name": "Irian Eagle",
+            "type": "aves"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_13005.jpg",
+            "name": "Single Wattle",
+            "type": "aves"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_13006.jpg",
+            "name": "Brown Parrot",
+            "type": "aves"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_13007.jpg",
+            "name": "Chattering Lorry",
+            "type": "aves"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_13008.jpg",
+            "name": "Crested Partridge",
+            "type": "aves"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_13009.jpg",
+            "name": "Beo",
+            "type": "aves"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_13010.jpg",
+            "name": "Necklace Parrot",
+            "type": "aves"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_13011.jpg",
+            "name": "Scaly-breasted eagle",
+            "type": "aves"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_13012.jpg",
+            "name": "Blue Peacock",
+            "type": "aves"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_13013.jpg",
+            "name": "Double Wattle",
+            "type": "aves"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_13014.jpg",
+            "name": "King Parrot",
+            "type": "aves"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_13015.jpg",
+            "name": "Yellow-Crested",
+            "type": "aves"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_13016.jpg",
+            "name": "Crowned Cane",
+            "type": "aves"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_13017.jpg",
+            "name": "Flamingo",
+            "type": "aves"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_13018.jpg",
+            "name": "Victoria Crowned",
+            "type": "aves"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_13019.jpg",
+            "name": "Ostrich",
+            "type": "aves"
+        },
+        {
+            "assets": "assets/imgs/animals/thumb_14001.jpg",
+            "name": "Arapaima",
+            "type": "fishes"
+        }
+    ]
+}
