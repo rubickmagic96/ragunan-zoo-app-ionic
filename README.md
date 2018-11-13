@@ -1,11 +1,14 @@
 ## Ragunan Zoo
 Aplikasi kebun binatang
 
+### Todo 11 Nov, 2018
+- [ ] prevent user from clicking back in-game and show dialog
+- [ ] complete animal collection data and it's view, data should load from json file
 ### Todo 8 Nov, 2018
-- [ ] Random question
-- [ ] Medium level
-- [ ] Hard level
-- [ ] Gradient timebar
+- [x] Random question
+- [x] Medium level
+- [x] Hard level
+- [x] Gradient timebar
 
 ### Bugs Report
 - [x] Custom Marker terlalu besar

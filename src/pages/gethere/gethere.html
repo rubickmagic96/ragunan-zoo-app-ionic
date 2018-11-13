@@ -29,39 +29,18 @@
   </div>
   <div #car id="car-routes">
     <ion-list>
-      <ion-item>
-        <h2>From Cawang:</h2>
-        <p>Cawang - MT Haryono - Pancoran - Gatot Subroto - Kapten Tendean - Mampang Prapatan Raya - Warung Jati Barat
-          - Taman Margasatwa - Harsono RM - Kebon Binatang Ragunan</p>
-      </ion-item>
-      <ion-item>
-        <h2>From Cawang:</h2>
-        <p>Cawang - MT Haryono - Pancoran - Gatot Subroto - Kapten Tendean - Mampang Prapatan Raya - Warung Jati Barat
-          -
-          Taman Margasatwa - Harsono RM - Kebon Binatang Ragunan</p>
-      </ion-item>
-      <ion-item>
-        <h2>From Cawang:</h2>
-        <p>Cawang - MT Haryono - Pancoran - Gatot Subroto - Kapten Tendean - Mampang Prapatan Raya - Warung Jati Barat
-          -
-          Taman Margasatwa - Harsono RM - Kebon Binatang Ragunan</p>
+      <ion-item *ngFor="let car_route of bycar">
+        <h2>{{car_route.title}}</h2>
+        <p>{{car_route.routes}}</p>
       </ion-item>
     </ion-list>
   </div>
   <div #bus id="bus-routes">
     <ion-list>
-      <ion-item>
-        <h2>From Bandara Soekarno - Hatta:</h2>
+      <ion-item *ngFor="let bus_route of bybus">
+        <h2>{{bus_route.title}}</h2>
         <ol>
-          <li>Dari Bandara Soekarno Hatta naik Damri jurusan pasar Minggu turun di Termminal Pasar Minggu</li>
-          <li>Naik Mikrolet 17/17A turun di Kebun Binatang Ragunan Pintu Timur</li>
-        </ol>
-      </ion-item>
-      <ion-item>
-        <h2>From Bandara Soekarno - Hatta:</h2>
-        <ol>
-          <li>Dari Bandara Soekarno Hatta naik Damri jurusan pasar Minggu turun di Termminal Pasar Minggu</li>
-          <li>Naik Mikrolet 17/17A turun di Kebun Binatang Ragunan Pintu Timur</li>
+          <li *ngFor="let route of bus_route.routes"><p>{{route}}</p></li>
         </ol>
       </ion-item>
     </ion-list>

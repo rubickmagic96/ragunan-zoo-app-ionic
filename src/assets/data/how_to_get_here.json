@@ -1,0 +1,214 @@
+{
+    "data": {
+        "by_car": [
+            {
+                "title": "From Cawang",
+                "routes": "Cawang - MT Haryono - Pancoran - Gatot Subroto - Kapten Tendean - Mampang Prapatan Raya - Warung Jati Barat - Taman Margasatwa - Harsono RM - Kebon Binatang Ragunan"
+            },
+            {
+                "title": "From Cempaka Putih",
+                "routes": "Cempaka Putih - Ahmad yani - Gerbang Tol Cempaka Putih - Tol Dalam Kota - Interchange Chawang - Tol Jagorawi - Interchange Dukuh - Tol JORR - Exit Tanjung Barat - Flyover Tanjung Barat - TB Simatupang - Harsono RM - Kebon Binatang Ragunan"
+            },
+            {
+                "title": "From Grogol",
+                "routes": "Grogol - S.Parman - Slipi - Gatot Subroto - Terusan Kuningan - Mampang Prapatan Raya - Warung Jati Barat - Taman Margasatwa - Harsono RM - Kebon Binatang Ragunan"
+            },
+            {
+                "title": "From Monas",
+                "routes": "Monas - Medan Merdeka Barat - MH Thamrin - Bundaran HI - Sudirman - Semanggi - Gatot Subroto - Terusan Kuningan - Mampang Prapatan Raya - Warung Jati Barat - Taman Margasatwa - Harsono RM - Kebon Binatang Ragunan"
+            },
+            {
+                "title": "From Bandung",
+                "routes": "Bandung (Pasteur) - Gerbang Tol Pasteur - TOl Purbaleunyi (Cipularang) - Tol Jakarta - Cikampek - Interchange Cikunir - Tol JORR - Exit Tanjung Barat - Flyover Tanjung Barat - TB Simatupang - Harsono RM - Kebon Binatang Ragunan"
+            }
+        ],
+        "by_bus": [
+            {
+                "title": "From Bandara Soekarno - Hatta",
+                "routes": [
+                    "Dari Bandara Soekarno Hatta naik Damri jurusan Pasar Minggu turun di Terminal Pasar Minggu",
+                    "Naik Mikrolet 17/17A turun di Kebun Binatang Ragunan Pintu timur"
+                ]
+            },
+            {
+                "title": "From Bandara Halim Perdanakusumah",
+                "routes": [
+                    "Dari Bandara Halim Perdanakusumah naik angkot biru muda Trans Halim ke perempatan Cawang UKI",
+                    "Disana naik Mikrolet 06A Jatinegara-PGC-Gandaria turun di Pasar Rebo",
+                    "Dari Pasar Rebo naik KWK S15A TMII - Ragunan turun di Kebun Binatang Ragunan"
+                ]
+            },
+            {
+                "title": "From Stasiun Gambir",
+                "routes": [
+                    "Keluar Pelataran Timur (Jalan Medan meredeka Timur) terus nyebrang disebelah naik Kopaja 20 Senen - Lebak Bulus turun di perempatan Deptan",
+                    "Naik angkot KWK S15 A TMII - Ragunan turun di Kebun Binatang Ragunan"
+                ]
+            },
+            {
+                "title": "From Stasiun Jatinegara",
+                "routes": [
+                    "Dari depan stasiun Jatinegara naik Mikrolet 06A Jatinegara - PGC - Gandaria turun di perempatan Pasar Rebo",
+                    "Naik ANgkot KWK S15A TMII - Ragunan turun di Kebun Binatang Ragunan pintu utama."
+                ]
+            },
+            {
+                "title": "From Stasiun Pasar Senen",
+                "routes": [
+                    "Keluar Stasiun, seberangi jalan ke Terminal Senen, naik Kopaja 20 Senen - Lebak Bulus turun di perempatan Deptan.",
+                    "Naik angkot KWK S15 TMII - Ragunan turun di Kebun Binatang Ragunan Pintu Utama"
+                ]
+            },
+            {
+                "title": "From Stasiun Tanah Abang",
+                "routes": [
+                    "Dari stasiun Tanah Abang jalan ke depan Pasar Tanah Abang Blok A/B disana naik Kopaja 602 Tanah Abang-Ragunan turun di Kebun Binatang Ragunan Pintu Utama."
+                ]
+            },
+            {
+                "title": "From Terminal Blok M",
+                "routes": [
+                    "Dari terminal Blok M naik salah satu Kopaja 605A Blok M-Kemang Ragunan / Metromini 77 Blok M-Bangka-Ragunan turun di Kebun Binatang Ragunan."
+                ]
+            },
+            {
+                "title": "From Terminal Kalideres",
+                "routes": [
+                    "Dari Terminal Kalideres naik Mayasari AC81 Kalideres-depok turun seberang Terminal Pasar Minggu",
+                    "Sebrangi Sisi Barat, naik Mikrolet 17/17/A turun di Kebun Binatang Ragunan Pintu Timur"
+                ]
+            },
+            {
+                "title": "From Terminal Kampung Rambutan",
+                "routes": [
+                    "Dari Terminal Kampung Rambutan naik Metromini 53 Rambutan - Melayu Turun di Jalan Gedong.",
+                    "Naik ANgkot KWK S15A TMII - Ragunan turun di Kebun Binatang Ragunan pintu utama."
+                ]
+            },
+            {
+                "title": "From Terminal Lebak Bulus",
+                "routes": [
+                    "Dari Terminal Lebak Bulus naik Kopaja 20 Lebak Bulus-Senen turun di perempatan Deptan.",
+                    "Naik Angkot KWK S15A TMII - Ragunan turun di Kebun Binatang Ragunan pintu utama."
+                ]
+            },
+            {
+                "title": "From Terminal Pulo Gadung",
+                "routes": [
+                    "Dari Terminal Pulo Gadung naik TransJakarta jurusan Dukuh Atas turun di halte Dukuh Atas 2.",
+                    "Ganti Naik TransJakarta jurusan Raguan turun di Ragunan"
+                ]
+            },
+            {
+                "title": "From Terminal Rawamangun",
+                "routes": [
+                    "Dari Terminal Rawamangun naik salah satu Metromini 46 / Mikrolet 21 Pulo Gadung - Kampung Melayu turun di Terminal Kampung Melayu.",
+                    "Dari Kampung Melayu naik Kopaja 612 Kampung Melayu - Mampang - Ragunan turun di Kebun Binatang Ragunan."
+                ]
+            },
+            {
+                "title": "From Terminal / Pelabuhan Tanjung Priok",
+                "routes": [
+                    "Dari Terminal Tanjung Priok naik TransJakarta jurusan PGC turun di halte Cawang UKI.",
+                    "Naik TransJakarta jurusan Grogol / Pluit turun di halte Kuningan Barat.",
+                    "Transfer ke halte Kuningan Timur via jembatan busway disana naik Transjakarta jurusan Ragunan turun di Ragunan."
+                ]
+            },
+            {
+                "title": "From Bandung",
+                "routes": [
+                    "Dari Terminal Leuwipanjang Bandung naik bis Primajasa Bandung - Lebak Bulus - Ciputat turun di perempatan Cilandak Trakindo",
+                    "Disut naik salah satu Kopaja 19/605A, Angkot D61, Mikrolet 20/36 turun di Kebun Binatang Ragunan Pintu TImur"
+                ]
+            },
+            {
+                "title": "From Bekasi",
+                "routes": [
+                    "Dari Terminal Bekasi naik Agramas BT Bekasi-Tol Timur-BSD-Poris turun di menjelang masuk tol pasar di Tanjung Barat / Arkadia.",
+                    "Naik Mikrolet 17/17a turun di Kebun Binatang Ragunan Pintu Timur"
+                ]
+            },
+            {
+                "title": "From Bogor",
+                "routes": [
+                    "Dari Bogor naik KRL turun di stasiun Pasar Minggu.",
+                    "Keluar stasiun nyebrang ke Terminal pasar Minggu, disitu naik Mikrolet 17/17A turun di Kebun Binatang Ragunan Pintu Timur"
+                ]
+            },
+            {
+                "title": "From Ciawi",
+                "routes": [
+                    "Dari Perempatan Ciawi-Tol Jagorawi naik bis Sukabumi - Lebak Bulus (Parung Indah) turun di perempatan Cilandak Trakindo",
+                    "Disitu naik salah satu Kopaja 19/605A, Angkot D61, Mikrolet 20/36 turun di Kebun Binatang Ragunan Pintu Timur."
+                ]
+            },
+            {
+                "title": "From Cibinong",
+                "routes": [
+                    "Dari Cibinong naik Agramas CB Cibinong-BSD-Poris Plawd turun di perempatan Cilandak Trakindo.",
+                    "Naik salah satu Kopaja 19/605A, Angkot D61, Mikrolet 20/36 turun di Kebun Binatang Ragunan pintu Timur."
+                ]
+            },
+            {
+                "title": "From Cikarang",
+                "routes": [
+                    "Dari Cikarang naik Mayasari Bakti AC121 Cikarang-Blok M turun di Terminal Blok M.",
+                    "Dari Terminal Blok M naik salah satu Kopaja 605A Blok M-Kemang-Ragunan/Metromini 77 Blok M-Bangka Ragunan turun di Kebun Binatang Ragunan."
+                ]
+            },
+            {
+                "title": "From Ciledug",
+                "routes": [
+                    "Dari Ciledug naik Metromini 69 Ciledug - Blok M turun di Terminal Blok M.",
+                    "Dari Terminal Blok M naik salah satu Kopaja 605 A Blok M - Kemang Ragunan / Metromini 77 Blok M-Banka Ragunan turun di kebun Binatang Ragunan."
+                ]
+            },
+            {
+                "title": "From Cileungsi",
+                "routes": [
+                    "Dari cileungsi naik angkot 121 cilengusi - Kampung Rambuntan turun di Terminal Kampung Rambutan.",
+                    "Dari Terminal Kampung Rambutan naik Metromini 53 Rambutan - Melayu turun di Jalan Gedong.",
+                    "Disitu naik angkot KWK S15A TMII - Ragunan turun di Kebun Binatang Ragunan Pintu Utama."
+                ]
+            },
+            {
+                "title": "From Ciputat",
+                "routes": [
+                    "Dari ciputat naik angkot DO2 Ciputat - Pondok Labu turun di Citos.",
+                    "Dari citos Naik salah satu Koantasbima 509 Lebak Bulus -Kampung Rambutan / Kopaja 20 Lebak Bulus Senen turun di perempatan Cilandak Trakindo.",
+                    "Disitu naik salah satu Kopaja 19/605A, ANgkot D61, Mikrolet 20/36 turun di Kebun Binatang Ragunan Pintu Timur."
+                ]
+            },
+            {
+                "title": "From Depok",
+                "routes": [
+                    "Dari Depok Naik Kopaja 63 / Deborah Lebak Bulus / Kalideres turun di menjelang masuk tol pasar minggu di Tanjung Barat / Arkadia.",
+                    "Distu naik Mikrolet 17/17A turun di Kebun Binatang Ragunan pintu Timur."
+                ]
+            },
+            {
+                "title": "From JatiAsih",
+                "routes": [
+                    "Dari komsen Jati Asih naik Mikrolet 56 Komsen - Kampung Rambutan turun di Terminak Kampung Rambutan.",
+                    "Dari terminal Kampung Rambutan naik Metromini 53 Rambutan - Melayu turun di Jalan Gedong 53 Rambutan Melayu turun dijalan Gedong",
+                    "Disitu naik angkot KWK S15A TMII - Ragunan turun di Kebun Binatang Ragunan Pintu Utama."
+                ]
+            },
+            {
+                "title": "From Serpong",
+                "routes": [
+                    "Dari Serpong Naik Argamas C Poris - BSD Cibinong turun di perempatan CIlandak Trakindo.",
+                    "Disitu naik Kopja 19/612/605 A Aarah Ragunan turun di kebun Binatang Ragunan Pintu Belakang"
+                ]
+            },
+            {
+                "title": "From Tangerang",
+                "routes": [
+                    "Dari Tengah Air agamas C Prois - BSD cibinong turun diperempatan Cilandak Trekindo",
+                    "Distu naik kopja 19/612/695A arah ragunan di kebun Binatang Ragunan Pintu Belakang."
+                    
+                ]
+            }
+        ]
+    }
+}

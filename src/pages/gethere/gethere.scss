@@ -107,6 +107,17 @@ page-gethere {
             p {
                 white-space: normal !important;
             }
+
+            h2 {
+                font-size: 1em;
+                font-weight: bold;
+                margin: 8px 0;
+            }
+
+            ol {
+                margin: 0;
+                padding-left: 1em;
+            }
         }
     }
 }

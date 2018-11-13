@@ -32,6 +32,7 @@ import { HttpClient, HttpClientModule  } from '@angular/common/http';
 import { InGamePage } from '../pages/in-game/in-game';
 import { IonicStorageModule } from '@ionic/storage';
 import { QuizProvider } from '../providers/quiz/quiz';
+import { GethereServiceProvider } from '../providers/gethere-service/gethere-service';
 
 @NgModule({
   declarations: [
@@ -93,7 +94,8 @@ import { QuizProvider } from '../providers/quiz/quiz';
     Dialogs,
     Camera,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    QuizProvider
+    QuizProvider,
+    GethereServiceProvider
   ]
 })
 export class AppModule {}

@@ -1,3 +1,4 @@
+import { GethereServiceProvider } from './../../providers/gethere-service/gethere-service';
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {
@@ -21,12 +22,14 @@ export class GetherePage {
   busimg: any = null;
   carcontent: any = null;
   buscontent: any = null;
+  bybus: any;
+  bycar: any;
 
   @ViewChild("getdirection_maps") mapElement: ElementRef;
   map: GoogleMap;
   groundOverlay: GroundOverlay;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public getHereService: GethereServiceProvider) {
   }
 
   ionViewDidEnter(){
@@ -45,7 +48,11 @@ export class GetherePage {
 
   ionViewDidLoad() {
     this.loadMap();
-    console.log('ionViewDidLoad GetherePage');
+    this.getHereService.load().then((response) => {
+      console.log(response);
+      this.bybus = response['by_bus'];
+      this.bycar = response['by_car'];
+    });
   }
 
   loadMap() {
@@ -63,12 +70,6 @@ export class GetherePage {
     };
 
     this.map = GoogleMaps.create('getdirection_maps', mapOptions);
-    // this.groundOverlay = this.map.addGroundOverlaySync({
-    //   'url': 'assets/imgs/newark_nj_1922.jpg',
-    //   'bounds': bounds,
-    //   'opacity': 1.0,
-    // });
-
   }
 
   changeToRouteCar() {

@@ -14,8 +14,6 @@ export class QuizProvider {
       this.http.get('assets/data/quiz.json').subscribe(data => {
         this.data = data['questions'][level];
 
-        console.log(this.data);
-
         resolve(this.data);
       })
     })
