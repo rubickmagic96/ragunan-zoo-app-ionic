@@ -1,22 +1,97 @@
-<!--
-  Generated template for the DetailAnimalPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
   <ion-navbar color='primary'>
     <ion-title>
-      Ragunan Zoo
+      Detail Animal
     </ion-title>
   </ion-navbar>
 
 </ion-header>
 
-
-<ion-content padding>
-  <div class="under-construction">
-    <ion-icon style="font-size: 100px; color: orangered" name="construct"></ion-icon>
-    <h2>The Page is under construction, go back again later! <ion-icon name="thumbs-up"></ion-icon></h2>
+<ion-content style="background-color: #f2f2f2;">
+  <div id="section-1">
+    <h1>{{animal.name}}</h1>
+    <img src="assets/imgs/default_ing.jpg" alt="">
+    <div class="instruction">
+      <h6>scroll down</h6>
+      <ion-icon name="arrow-dropdown"></ion-icon>
+    </div>
+  </div>
+  <div id="section-2">
+    <div class="detail-nav">
+      <ul>
+        <li><a>Description</a></li>
+        <li><a>Gallery</a></li>
+        <li><a>Fun Facts</a></li>
+        <li><a>Map</a></li>
+      </ul>
+    </div>
+    <div class="animal-audio" (click)="listenAudio()">
+      <ion-icon name="volume-up"></ion-icon>
+      <p>Click here to listen to the audio</p>
+    </div>
+    <div class="animal-desc">
+      <p>{{animal.summary.description}}</p>
+      <div [ngStyle]="{'background-image': 'url('+animal.assets+')'}">
+        <div class="circle-audio">
+          <ion-icon name="volume-up"></ion-icon>
+        </div>
+      </div>
+    </div>
+    <div class="animal-summary">
+      <h3 class="title">Sumatran Tiger</h3>
+      <div class="subtitle">
+        <h6>population in the wild</h6>
+        <h3>{{animal.summary.population}}</h3>
+      </div>
+      <hr>
+      <div class="subtitle">
+        <h6>habitat</h6>
+        <h3>{{animal.summary.habitat}}</h3>
+      </div>
+      <hr>
+      <div class="subtitle">
+        <h6>age</h6>
+        <h3>{{animal.summary.age}}</h3>
+      </div>
+      <hr>
+      <div class="subtitle">
+        <h6>food</h6>
+        <h3>{{animal.summary.food}}</h3>
+      </div>
+    </div>
+    <div class="wiki-references">
+      <div class="title-segment">LEARN MORE</div>
+      <img src="assets/imgs/icon_wikipedia.png" alt="">
+      <p>Wikipedia</p>
+    </div>
+    <div class="animal-gallery">
+      <div class="title-segment">Gallery</div>
+      <div class="image-button">
+        <img src="assets/imgs/addbuttoneng.png" alt="" srcset="">
+      </div>
+    </div>
+    <div class="animal-location">
+      <p>You can find {{animal.name}} in Ragunan at</p>
+      <div #animal_location id="animal-loc"></div>
+    </div>
+    <div class="fun-facts">
+      <div class="title-segment">Fun Facts</div>
+      <ion-card>
+        <ion-slides #slides>
+          <ion-slide *ngFor="let fact of animal.fun_facts">
+            <ion-card-header>
+              <img class="normalin" src="{{animal.assets}}" alt="">
+              <img class="icon-funfact" src="assets/imgs/icon_funfacts.png" alt="">
+              <div class="funfact-content">
+                <p>{{fact}}</p>
+              </div>
+            </ion-card-header>
+          </ion-slide>
+        </ion-slides>
+        <ion-card-content>
+          <span class="share-text">SHARE</span>
+        </ion-card-content>
+      </ion-card>
+    </div>
   </div>
 </ion-content>

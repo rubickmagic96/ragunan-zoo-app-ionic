@@ -1,3 +1,4 @@
+import { DetailAnimalPage } from './../detail-animal/detail-animal';
 import { AnimalcollectionServiceProvider } from './../../providers/animalcollection-service/animalcollection-service';
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
@@ -16,7 +17,9 @@ export class AnimalCollectionPage {
   reptile: number = 0;
   aves: number = 0;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public animalService: AnimalcollectionServiceProvider) {
+  constructor(public navCtrl: NavController, 
+    public navParams: NavParams, 
+    public animalService: AnimalcollectionServiceProvider) {
   }
 
   ionViewDidLoad() {
@@ -25,31 +28,6 @@ export class AnimalCollectionPage {
 
       this.countingEachAnimal(this.animals);
       this.animalColl = this.getAllAnimal(this.animals);
-      // let ac = [];
-
-      // this.animals.forEach((animal, index) => {
-      //   if (ac.length != 2) {
-      //     if (index % 2 == 0) {
-      //       ac.push(animal);
-      //     } else {
-      //       ac.push(animal);
-      //     }
-      //   } else {
-      //     this.animalColl.push(ac);
-      //     ac = [];
-
-      //     if (index % 2 == 0) {
-      //       ac.push(animal);
-      //     } else {
-      //       ac.push(animal);
-      //     }
-
-      //     if (index == this.animals.length - 1) {
-      //       ac.push(animal);
-      //       this.animalColl.push(ac);
-      //     }
-      //   }
-      // });
     });
     console.log('ionViewDidLoad AnimalCollectionPage');
   }
@@ -57,7 +35,7 @@ export class AnimalCollectionPage {
   countingEachAnimal(animals: any) {
     this.all = animals.length - 1;
     animals.forEach((animal, index) => {
-      switch(animal.type) {
+      switch (animal.type) {
         case "mammal":
           this.mammal++;
           break;
@@ -137,7 +115,7 @@ export class AnimalCollectionPage {
   }
 
   onChange(value) {
-    switch(value) {
+    switch (value) {
       case 'all':
         this.animalColl = this.getAllAnimal(this.animals);
         break;
@@ -198,4 +176,36 @@ export class AnimalCollectionPage {
     }
   }
 
+  openDetailAnimal(animal) {
+    console.log(animal);
+    this.navCtrl.push(DetailAnimalPage, {
+      data: animal
+    })
+  }
 }
+
+// let ac = [];
+
+// this.animals.forEach((animal, index) => {
+//   if (ac.length != 2) {
+//     if (index % 2 == 0) {
+//       ac.push(animal);
+//     } else {
+//       ac.push(animal);
+//     }
+//   } else {
+//     this.animalColl.push(ac);
+//     ac = [];
+
+//     if (index % 2 == 0) {
+//       ac.push(animal);
+//     } else {
+//       ac.push(animal);
+//     }
+
+//     if (index == this.animals.length - 1) {
+//       ac.push(animal);
+//       this.animalColl.push(ac);
+//     }
+//   }
+// });

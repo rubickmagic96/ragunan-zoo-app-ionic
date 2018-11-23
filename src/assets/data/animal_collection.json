@@ -3,7 +3,35 @@
         {
             "assets": "assets/imgs/animals/thumb_11001.jpg",
             "name": "Sumatran Tiger",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                "One of their best tactics is to chase their prey into water, because they are fast swimmers!",
+                "The stripes on Sumatran Tiger let them easily blend in on habitat full of grass",
+                "They confuse their prey due to the white spots on back of their ears called \"eye spots\""
+            ],
+            "summary": {
+                "description": "Sumatran Tiger (Panthera tigris sumatre) is a tiger subspecies where its native habitat at the sumatera island. Sumateran tiger has a characterristic striped bark yellowish brown with vertical black stripes from head to tail. Can reach 60 cm high, with a length of 250 cm. It's the last tiger subspecies in Indonesia.",
+                "population": 679,
+                "habitat": "Tropical Forest to the Mountain",
+                "age": "Up to 20 years",
+                "food": "Carnivore (meat)",
+                "gallery_assets": [],
+                "sound": ""
+            },
+            "wikipedia": "https://en.wikipedia.org/wiki/Sumatran_tiger",
+            "location": {
+                "position": {
+                    "lat": -6.314698,
+                    "lng": 106.824617
+                },
+                "icon": {
+                    "url": "assets/imgs/icon/icon_11001.png",
+                    "size": {
+                        "width": 25,
+                        "height": 25
+                    }
+                }
+            }
         },
         {
             "assets": "assets/imgs/animals/thumb_11002.jpg",
