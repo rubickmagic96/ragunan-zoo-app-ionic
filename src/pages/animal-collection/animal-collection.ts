@@ -177,7 +177,6 @@ export class AnimalCollectionPage {
   }
 
   openDetailAnimal(animal) {
-    console.log(animal);
     this.navCtrl.push(DetailAnimalPage, {
       data: animal
     })

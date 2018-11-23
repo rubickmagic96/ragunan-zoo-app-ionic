@@ -15,7 +15,7 @@ import {
 })
 export class DetailAnimalPage {
   @ViewChild('slides') slides: Slides;
-  @ViewChild("animal_location") mapElement: ElementRef;
+  @ViewChild('animalloc') mapElement: ElementRef;
   map: GoogleMap;
   groundOverlay: GroundOverlay;
   animal: any;
@@ -29,7 +29,6 @@ export class DetailAnimalPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DetailAnimalPage');
-    console.log(this.navParams.get('data'));
     this.animal = this.navParams.get('data');
     this.loadMap();
   }
@@ -46,13 +45,13 @@ export class DetailAnimalPage {
 
     let mapOptions: GoogleMapOptions = {
       camera: {
-        target: { "lat": -6.311593, "lng": 106.819864 },
-        zoom: 14,
+        target: { "lat": this.animal.location.position.lat, "lng": this.animal.location.position.lng },
+        zoom: 15,
         tilt: 30
       },
     };
 
-    this.map = GoogleMaps.create('animal_location', mapOptions);
+    this.map = GoogleMaps.create('animalloc', mapOptions);
     this.groundOverlay = this.map.addGroundOverlaySync({
       'url': 'assets/imgs/ragunanmap.png',
       'bounds': bounds,
