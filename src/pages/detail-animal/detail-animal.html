@@ -17,12 +17,12 @@
     </div>
   </div>
   <div id="section-2">
-    <div class="detail-nav">
+    <div id="detail-nav" class="detail-nav">
       <ul>
-        <li><a>Description</a></li>
-        <li><a>Gallery</a></li>
-        <li><a>Fun Facts</a></li>
-        <li><a>Map</a></li>
+        <li (click)="scrollToDesc()" ><a>Description</a></li>
+        <li (click)="scrollToGal()"><a>Gallery</a></li>
+        <li (click)="scrollToFact()"><a>Fun Facts</a></li>
+        <li (click)="scrollToMap()"><a>Map</a></li>
       </ul>
     </div>
     <div class="animal-audio" (click)="listenAudio()">
@@ -104,7 +104,7 @@
       <ion-icon name="share"></ion-icon>
     </button>
     <ion-fab-list side="top">
-      <button ion-fab mini><ion-icon name="logo-facebook"></ion-icon></button>
+      <button (click)="tapToScoll()" ion-fab mini><ion-icon name="logo-facebook"></ion-icon></button>
       <button ion-fab mini><ion-icon name="logo-twitter"></ion-icon></button>
     </ion-fab-list>
   </ion-fab>
