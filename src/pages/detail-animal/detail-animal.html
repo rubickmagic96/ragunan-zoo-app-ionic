@@ -30,7 +30,7 @@
       <p>Click here to listen to the audio</p>
     </div>
     <div class="animal-desc">
-      <p>{{animal?.summary.description}}</p>
+      <p>{{animal?.description}}</p>
       <div [ngStyle]="{'background-image': 'url('+animal?.assets+')'}">
         <div class="circle-audio">
           <ion-icon name="volume-up"></ion-icon>
@@ -39,7 +39,14 @@
     </div>
     <div class="animal-summary">
       <h3 class="title">Sumatran Tiger</h3>
-      <div class="subtitle">
+      <div *ngFor="let item of animal?.summary">
+        <div class="subtitle">
+          <h6>{{item.key}}</h6>
+          <h3>{{item.value}}</h3>
+        </div>
+        <hr>
+      </div>
+      <!-- <div class="subtitle">
         <h6>population in the wild</h6>
         <h3>{{animal?.summary.population}}</h3>
       </div>
@@ -57,7 +64,7 @@
       <div class="subtitle">
         <h6>food</h6>
         <h3>{{animal?.summary.food}}</h3>
-      </div>
+      </div> -->
     </div>
     <div class="wiki-references">
       <div class="title-segment">LEARN MORE</div>

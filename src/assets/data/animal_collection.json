@@ -9,74 +9,451 @@
                 "The stripes on Sumatran Tiger let them easily blend in on habitat full of grass",
                 "They confuse their prey due to the white spots on back of their ears called \"eye spots\""
             ],
-            "summary": {
-                "description": "Sumatran Tiger (Panthera tigris sumatre) is a tiger subspecies where its native habitat at the sumatera island. Sumateran tiger has a characterristic striped bark yellowish brown with vertical black stripes from head to tail. Can reach 60 cm high, with a length of 250 cm. It's the last tiger subspecies in Indonesia.",
-                "population": 679,
-                "habitat": "Tropical Forest to the Mountain",
-                "age": "Up to 20 years",
-                "food": "Carnivore (meat)",
-                "gallery_assets": [],
-                "sound": ""
-            },
-            "wikipedia": "https://en.wikipedia.org/wiki/Sumatran_tiger",
-            "location": {
-                "position": {
-                    "lat": -6.314698,
-                    "lng": 106.824617
+            "description": "Sumatran Tiger (Panthera tigris sumatre) is a tiger subspecies where its native habitat at the sumatera island. Sumateran tiger has a characterristic striped bark yellowish brown with vertical black stripes from head to tail. Can reach 60 cm high, with a length of 250 cm. It's the last tiger subspecies in Indonesia.",
+            "summary": [
+                {
+                    "key": "population in the wild",
+                    "value": 679
                 },
-                "icon": {
-                    "url": "assets/imgs/icon/icon_11001.png",
-                    "size": {
-                        "width": 25,
-                        "height": 25
+                {
+                    "key": "habitat",
+                    "value": "Tropical Forest to the Mountain"
+                },
+                {
+                    "key": "age",
+                    "value": "Up to 20 years"
+                },
+                {
+                    "key": "food",
+                    "value": "Carnivore (meat)"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Sumatran_tiger",
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.314698,
+                        "lng": 106.824617
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11001.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
                     }
                 }
-            }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11002.jpg",
             "name": "Bear",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                "They are called honey bear because they really love to drink honey!",
+                "Honey Bear diet consist of Lizard, Little Birds, Rodents, Insects, termites, fruit and honey",
+                "Honey Bear have loose skin that allow them to twist when being bitten",
+                "They also have very strong legs that are great for climbing"
+            ],
+            "description": "Bear (Helarctos malayanus) has all shinny black body, short tail, gray muzzle, There is a yellowish white patches on the upper chest form the letter V or C. Body weight can reach 60kg.",
+            "summary": [
+                {
+                    "key": "habitat",
+                    "value": "Tropical Rainforests"
+                },
+                {
+                    "key": "age",
+                    "value": "Up to 15 years"
+                },
+                {
+                    "key": "food",
+                    "value": "Omnivore (fruit, veggies)"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Honey_bear",
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.313622,
+                        "lng": 106.824166
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11002.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                },
+                {
+                    "position": {
+                        "lat": -6.316348,
+                        "lng": 106.824527
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11002.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11003.jpg",
             "name": "Siamang",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                "Siamangs are highly territorial and defend their territory with daily singing rituals",
+                "Siamangs are the largest of all gibbon species and the loudest",
+                "50% of their waking time is spent resting, they are lying on their back or on their stomach",
+                "Siamang can't swim, therefore they avoid water"
+            ],
+            "description": "The siamang (Symphalangus syndactylus) is a tailess, arboreal, black-furred gibbon native to the forrests of Malaysia, Thailand, and Sumatra.",
+            "summary": [
+                {
+                    "key": "population in the wild",
+                    "value": 200000
+                },
+                {
+                    "key": "habitat",
+                    "value": "Lowland Forest to Mountain Forest"
+                },
+                {
+                    "key": "age",
+                    "value": "Up to 30 years"
+                },
+                {
+                    "key": "food",
+                    "value": "Omnivore (fruit, flowers, insects)"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Siamang",
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.313694,
+                        "lng": 106.821442
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11003.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11004.jpg",
             "name": "Gorila",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                "When gorilla walk with its hand and leg, its called 'kunckle walking'",
+                "A Gorilla can live for 40-50 years.",
+                "Gorillas are very intelligent, they are known for their use of tools and varied communication"
+            ],
+            "description": "Gorillas constitute the eponymous genus Gorilla, the largest extant genus of primates by physical size. They are ground-dwelling, predominantly herbivorous apes that inhabit the forests of central Africa. The genus is divided into two species: the eastern gorillas and the western gorillas, and either four or five subspecies",
+            "summary": [
+                {
+                    "key": "population in the wild",
+                    "value": 100000
+                },
+                {
+                    "key": "habitat",
+                    "value": "Montane Forests to Swamps"
+                },
+                {
+                    "key": "age",
+                    "value": "Up to 50 years"
+                },
+                {
+                    "key": "food",
+                    "value": "Omnivore (fruit, flowers, insects)"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Gorilla",
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.313694,
+                        "lng": 106.821442
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11004.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11005.jpg",
             "name": "Babi Rusa",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                "Babirusa is an excellent swimmer, it can travel from island to island to search food",
+                "Babirusa have awesome tusks. It can reach lengths of 17 inches and can actually grow back into the skull",
+                "But what the tusks are for remain mystery, Babirusa doesn't really fight using its tusks."
+            ],
+            "description": "Gorillas constitute the eponymous genus Gorilla, the largest extant genus of primates by physical size. They are ground-dwelling, predominantly herbivorous apes that inhabit the forests of central Africa. The genus is divided into two species: the eastern gorillas and the western gorillas, and either four or five subspecies",
+            "summary": [
+                {
+                    "key": "population in the wild",
+                    "value": 5000
+                },
+                {
+                    "key": "habitat",
+                    "value": "Tropical Rainforests"
+                },
+                {
+                    "key": "food",
+                    "value": "Omnivore (fruit, flowers, insects)"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Babirusa",
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.313694,
+                        "lng": 106.821442
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11005.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11006.jpg",
             "name": "Tapir",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                "Tapir sometime run to the water to escape its predators",
+                "Scientists belive that tapirs have not changed very much over tens of Millions of years.",
+                "The average lifespan of a tapir is 25 to 30 years"
+            ],
+            "description": "The Malayan tapir (Tapirus indicus), also called the Asian tapir, is the largest of the five species of tapir and the only one native to Asia. The scientific name refers to the East Indies, the species' natural habitat. In the Malay language, the tapir is commonly referred to as cipan, tenuk or badak tampung.",
+            "summary": [
+                {
+                    "key": "habitat",
+                    "value": "Tropical Lowland Rainforest"
+                },
+                {
+                    "key": "food",
+                    "value": "Herbivore (Tender shoots and leaves)"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Tapir",
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.313694,
+                        "lng": 106.821442
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11006.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11007.jpg",
             "name": "Lion",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                "In the wild, Lions rest for around 20 hours a day, lazy eh?",
+                "Lionesses are better hunters than males and do most hunting for the pride",
+                "The roar of a lion can be hard from 8 kilometers away.",
+                "For only short bursts, Lions can reach speeds of up to 81kph"
+            ],
+            "description": "The lion (panthera lio) is one of the five big cats in the genus Panthera and a member of the family Felidae. With some males exceeding 250kg (550 lb) in weight, it is the lions currently exists in sub-Saharan Africa and in Asia (where an endangered remnant population resides in Gir Forest National Park in India) while other types of lions have disappeared from North Africa and Southwest Asia in historic times.",
+            "summary": [
+                {
+                    "key": "habitat",
+                    "value": "Savana Grassland or Dry Savana Forest"
+                },
+                {
+                    "key": "age",
+                    "value": "Up to 20 years"
+                },
+                {
+                    "key": "food",
+                    "value": "Carnivore"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Lion",
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.308977,
+                        "lng": 106.821351
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11007.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11008.jpg",
             "name": "White Tiger",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                "White Tiger mark its territory with urine and scraping the bark of trees with tis sharp claws",
+                "A group of Tigers is known as an 'ambush' or 'streak'. Cool name.",
+                "Tigers usally hunt alone at night time.",
+                "Tigers can easly jump over 5 metres in length"
+            ],
+            "description": "The Bengal tiger (Panthera tigris tigris) is the most numerous tiger subspecies. Its populations have been estimated at 1,706 - 1909 in India, 440 in Bangladesh, 163 - 253 in Nepal and 67 - 81 in Bhutan.",
+            "summary": [
+                {
+                    "key": "population in the wild",
+                    "value": 1900
+                },
+                {
+                    "key": "habitat",
+                    "value": "Tropical Moist evergreen forest"
+                },
+                {
+                    "key": "food",
+                    "value": "Carnivore(meat)"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Lion",
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.308977,
+                        "lng": 106.821351
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11007.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11009.jpg",
             "name": "Proboscis",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                "Proboscis or baboon can interact with human quite well"
+            ],
+            "description": "The proboscis monkey (Nasalis larvatus) or long-nosed monkey, known as the bekantan in Malay, is a reddish-brown arboreal. Old World monkey that is endemic to the south-east Asian island of Borneo, this species co-exists with Bornean Orang-utan.",
+            "summary": [
+                {
+                    "key": "age",
+                    "value": "Up to 13 years"
+                },
+                {
+                    "key": "habitat",
+                    "value": "Coastal Areas, mangroves, the lowlands"
+                },
+                {
+                    "key": "food",
+                    "value": "Omnivore (fruits, flowers, insects)"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Proboscis",
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.311380,
+                        "lng": 106.820991
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11008.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11010.jpg",
             "name": "Ape",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                "Apes are more inteligent than monkeys, have you watched planet apes?"
+            ],
+            "description": "Ape (Macaca nemestrina) can reach a weight of 5-15 kg in large males. These monkeys are buff-brown with a darker back and lighter lower parts of the body. Their common name refers to the short tail held semi-erect and reminiscent of the tail of a pig.",
+            "summary": [
+                {
+                    "key": "population in the wild",
+                    "value": 500000
+                },
+                {
+                    "key": "age",
+                    "value": "Up to 26 years"
+                },
+                {
+                    "key": "habitat",
+                    "value": "Lowland forest, bush, swamp"
+                },
+                {
+                    "key": "food",
+                    "value": "Omnivore (fruits, flowers, insects)"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Ape",
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.311040,
+                        "lng": 106.824617
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11009.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11011.jpg",

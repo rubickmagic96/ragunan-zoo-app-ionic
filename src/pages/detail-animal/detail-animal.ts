@@ -20,16 +20,9 @@ export class DetailAnimalPage {
   map: GoogleMap;
   groundOverlay: GroundOverlay;
   animal: any;
+  scrollHeight: number;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-
-  // onPageScroll(event) {
-  //   console.log(event.target.scrollTop);
-  // }
-
-  tapToScoll() {
-    this.content.scrollToBottom();
   }
 
   ionViewDidEnter(){
@@ -41,13 +34,13 @@ export class DetailAnimalPage {
 
     let parent = document.querySelector('page-detail-animal ion-content .fixed-content');
     let realParent = document.getElementById('section-2');
-    console.log(realParent)
     let child = document.getElementById('detail-nav');
 
     this.animal = this.navParams.get('data');
     this.loadMap();
     this.content.ionScroll.subscribe((data) => {
-      console.log(data.scrollTop);
+      console.log(data);
+      this.scrollHeight = data.scrollHeight;
       if (data.scrollTop > 588) {
         child.style.position = 'absolute';
         child.style.zIndex = '999';
@@ -68,7 +61,7 @@ export class DetailAnimalPage {
 
     let mapOptions: GoogleMapOptions = {
       camera: {
-        target: { "lat": this.animal.location.position.lat, "lng": this.animal.location.position.lng },
+        target: { "lat": this.animal.location[0].position.lat, "lng": this.animal.location[0].position.lng },
         zoom: 15,
         tilt: 30
       },
@@ -80,7 +73,9 @@ export class DetailAnimalPage {
       'bounds': bounds,
       'opacity': 1.0,
     });
-    this.map.addMarker(this.animal.location);
+    for(let i = 0; i < this.animal.location.length; i++) {
+      this.map.addMarker(this.animal.location[0]);
+    }
   }
 
   listenAudio() {
@@ -88,11 +83,11 @@ export class DetailAnimalPage {
   }
 
   scrollToDesc() {
-    this.content.scrollTo(0, 615);
+    this.content.scrollTo(0, this.scrollHeight - this.scrollHeight * 0.7);
   }
 
   scrollToGal() {
-    this.content.scrollTo(0, 1255);
+    this.content.scrollTo(0, this.scrollHeight - this.scrollHeight * 0.36);
   }
 
   scrollToFact() {
@@ -100,6 +95,10 @@ export class DetailAnimalPage {
   }
 
   scrollToMap() {
-    this.content.scrollTo(0, 1305);
+    this.content.scrollTo(0, this.scrollHeight - this.scrollHeight * 0.33);
+  }
+
+  tapToScoll() {
+    this.content.scrollToBottom();
   }
 }
