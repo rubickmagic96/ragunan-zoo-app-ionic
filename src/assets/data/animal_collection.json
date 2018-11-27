@@ -458,32 +458,328 @@
         {
             "assets": "assets/imgs/animals/thumb_11011.jpg",
             "name": "Slow Loris",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                "Althought they are small, but some their home ranges can be the size of 35 football pitches"
+            ],
+            "description": "The Sunda slow loris (Nycticebus coucang) or great slow loris is a strepsirrhine primate and speicies of slow loris native in indonesia, western Malaysia, southern Thailand and Singapore",
+            "summary": [
+                {
+                    "key": "habitat",
+                    "value": "Primary or Secondary Forest"
+                },
+                {
+                    "key": "age",
+                    "value": "Up to 20 years"
+                },
+                {
+                    "key": "food",
+                    "value": "Omnivore (fruits, flowers, insects)"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Slow_loris",
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.311040,
+                        "lng": 106.824617
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11009.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11012.jpg",
             "name": "Monkey Budeng",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                "Group of monkeys are known as 'tribe', 'troop' or 'mission'"
+            ],
+            "description": "The Javan Lutung (Trachypithecusauratus), also known as the ebony lutung and Javan langur, is an Old World monkey from the Colobinae subfamily. It is most commonly glossy black with a brownish tinge to its legs, sides, and \"sideburns\". It is found on and endemic to the island of Java, as well as on several of the surrounding Indonesia islands. The Latin word auratus in its scientific name means \"golden\", and refers to a less common color variant",
+            "summary": [
+                {
+                    "key": "habitat",
+                    "value": "Mangrove Forests, lownland forests"
+                },
+                {
+                    "key": "food",
+                    "value": "Omnivore (Leaves, Fruits, Beans)"
+                }
+            ],
+            "gallery_assets": [], 
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Javan_lutung",
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.311040,
+                        "lng": 106.824617
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11009.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11013.jpg",
             "name": "Monkey Kokah",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                "Group of monkeys are known as 'tribe', 'troop' or 'mission'"
+            ],
+            "description": "Monkey kokah (Presbytis siamensis) is a species of primate in the family Cercopithecidae family. It isendemic to the Thai-Malay Peninsula, the Riau Archipelago and Sumatra. Four subspecies, siamensis (nominate), cana, paenutala and rhionis, are recognized here, but the taxonomyis disputed and in need of a review, and it has included P. natune as subspecies, or alternatively both have been considered subspices of P. fermoralis.",
+            "summary": [
+                {
+                    "key": "habitat",
+                    "value": "Tropical Rainforest"
+                },
+                {
+                    "key": "age",
+                    "value": "Up to 18 years"
+                },
+                {
+                    "key": "food",
+                    "value": "Omnivore (Leaves, Fruits, Beans)"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://id.wikipedia.org/wiki/Lutung_kokah",
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.311040,
+                        "lng": 106.824617
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11009.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11014.jpg",
             "name": "Monkey Boti",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                "unknown"
+            ],
+            "description": "Monkey boti (Macaca tonkeana) is a species of primate in the Cercopithecidae family. It is endemic to central sulawesi and the nearby Togian Islands in Indonesisa. It is threatened by habitat loss. Widespread mining in central Sulawesi and in the nearby privience of Gorontalo are believed to exacerbating the problems of habitat loss.",
+            "summary": [
+                {
+                    "key": "habitat",
+                    "value": "Tropical Rainforest"
+                },
+                {
+                    "key": "age",
+                    "value": "Up to 18 years"
+                },
+                {
+                    "key": "food",
+                    "value": "Omnivore (fruit, flowers, insects)"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Tonkean_macaque",
+            "need_remove": [
+                "location",
+                "fun_facts"
+            ],
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.311040,
+                        "lng": 106.824617
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11009.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11015.jpg",
             "name": "Sambar Deer",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                "Sambar deer produce barking calls in the case of danger, letting others know of its location"
+            ],
+            "description": "Sambar deer is a large deer native to the Indian Subcontinent, southern China and Southeast Asia. Although it primarily refers to R. unicolor, the name \"sambar\" is also sometimes used to refer to the Philippine deer (called Philippine sambar) and the rusa deer (called the Sunda sambar). The name is also spelled sambur, or sambhur.",
+            "summary": [
+                {
+                    "key": "habitat",
+                    "value": "Tropical Rainforest"
+                },
+                {
+                    "key": "age",
+                    "value": "Up to 18 years"
+                },
+                {
+                    "key": "food",
+                    "value": "Omnivore (fruit, flowers, insects)"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Sambar_deer",
+            "need_remove": [],
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.308170,
+                        "lng": 106.819385
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11015.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                },
+                {
+                    "position": {
+                        "lat": -6.309713,
+                        "lng": 106.824419
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11015.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                },
+                {
+                    "position": {
+                        "lat": -6.310538,
+                        "lng": 106.825195
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11015.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                },
+                {
+                    "position": {
+                        "lat": -6.311614,
+                        "lng": 106.824383
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11015.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11016.jpg",
             "name": "Nilgai",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                "Sambar deer produce barking calls in the case of danger, letting others know of its location"
+            ],
+            "description": "Sambar deer is a large deer native to the Indian Subcontinent, southern China and Southeast Asia. Although it primarily refers to R. unicolor, the name \"sambar\" is also sometimes used to refer to the Philippine deer (called Philippine sambar) and the rusa deer (called the Sunda sambar). The name is also spelled sambur, or sambhur.",
+            "summary": [
+                {
+                    "key": "habitat",
+                    "value": "Tropical Rainforest"
+                },
+                {
+                    "key": "age",
+                    "value": "Up to 18 years"
+                },
+                {
+                    "key": "food",
+                    "value": "Omnivore (fruit, flowers, insects)"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Sambar_deer",
+            "need_remove": [],
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.308170,
+                        "lng": 106.819385
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11015.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                },
+                {
+                    "position": {
+                        "lat": -6.309713,
+                        "lng": 106.824419
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11015.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                },
+                {
+                    "position": {
+                        "lat": -6.310538,
+                        "lng": 106.825195
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11015.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                },
+                {
+                    "position": {
+                        "lat": -6.311614,
+                        "lng": 106.824383
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11015.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11017.jpg",
