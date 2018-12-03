@@ -707,7 +707,7 @@
             "fun_facts": [
                 "Sambar deer produce barking calls in the case of danger, letting others know of its location"
             ],
-            "description": "Sambar deer is a large deer native to the Indian Subcontinent, southern China and Southeast Asia. Although it primarily refers to R. unicolor, the name \"sambar\" is also sometimes used to refer to the Philippine deer (called Philippine sambar) and the rusa deer (called the Sunda sambar). The name is also spelled sambur, or sambhur.",
+            "description": "The nilgai (Boselaphus tragocamela",
             "summary": [
                 {
                     "key": "habitat",
@@ -784,82 +784,702 @@
         {
             "assets": "assets/imgs/animals/thumb_11017.jpg",
             "name": "Sri Lanka Leopard",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                "Leopard don't need much water. They survive from the moisture they get from eating their prey"
+            ],
+            "description": "The leopard (Panthera pardus) is one of the five \"big cats\" in the genus Panthera. It is a member of the Felidae family with a wide range in some parts of sub- Saharan Africa West Asia, the Middle East, South and Southeast Asia to Siberia.",
+            "summary": [
+                {
+                    "key": "habitat",
+                    "value": "Varies from sea level to the area with an altitude of 4000m above sea level, rain forest"
+                },
+                {
+                    "key": "age",
+                    "value": "Up to 23 years"
+                },
+                {
+                    "key": "food",
+                    "value": "Omnivore (meat)"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Sri_Lankan_leopard",
+            "need_remove": [],
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.308170,
+                        "lng": 106.819385
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11015.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11018.jpg",
             "name": "Jaguar",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                "Sambar deer produce barking calls in the case of danger, letting others know of its location"
+            ],
+            "description": "The jaguar or Panthera onca, is a big cat, a feline in the Panthera genus, and is the only Panthera species found in the Americas. The jaguar is the third-largest feline after the tiger and the lion, and the largest in the Western Hemisphere.",
+            "summary": [
+                {
+                    "key": "population in the wild",
+                    "value": "15000"
+                },
+                {
+                    "key": "habitat",
+                    "value": "Areas of Dense Topical"
+                },
+                {
+                    "key": "age",
+                    "value": "Up to 23 years"
+                },
+                {
+                    "key": "food",
+                    "value": "Omnivore (meat)"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Jaguar",
+            "need_remove": [],
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.308170,
+                        "lng": 106.819385
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11015.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11019.jpg",
             "name": "Sitatunga",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                "Young sitatungas independent at young age. They are often seen grazing on their own"
+            ],
+            "description": "The sitatunga or marshbuck (Tragelaphus spekii) is a swamp-dwelling antelope found throughout Central Africa, centering on theDemocratic Republic of the Congo, Cameroon, parts of Southern Sudah, Ghana, Botswana, Zambia, Gabon, Tanzania, Uganda and Kenya.",
+            "summary": [
+                {
+                    "key": "population in the wild",
+                    "value": "170000"
+                },
+                {
+                    "key": "habitat",
+                    "value": "Papyrus Swamp, River Banks"
+                },
+                {
+                    "key": "age",
+                    "value": "Up to 20 years"
+                },
+                {
+                    "key": "food",
+                    "value": "Omnivore (grass, leaves, Bark, Fruit, Plants)"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Sitatunga",
+            "need_remove": [],
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.308170,
+                        "lng": 106.819385
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11015.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11020.jpg",
             "name": "Spotted Deer",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                "Deer diet consist of all kinds of vegetation but grass is the favorite."
+            ],
+            "description": "The chital or cheetal (Axis axis), alson known as chital deer, spotted deer oraxis deer, is a deer which commonly inhabits wooded regions of India, Sri Lanka, Nepal, Bangladesh, Bhutan, and in small numbers in Pakistan. It is the most common deer species in Indian forests. The name chital comes from the Bengali word chitral ????/chitra ????, which means \"spotted\"",
+            "summary": [
+                {
+                    "key": "population in the wild",
+                    "value": "2500"
+                },
+                {
+                    "key": "habitat",
+                    "value": "Meadows, Plains and Hills"
+                },
+                {
+                    "key": "age",
+                    "value": "Up to 20 years"
+                },
+                {
+                    "key": "food",
+                    "value": "Omnivore (grass, leaves, Bark, Fruit, Plants)"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Chital",
+            "need_remove": [],
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.308170,
+                        "lng": 106.819385
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11015.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11021.jpg",
-            "name": "Shimpanzee",
-            "type": "mammal"
+            "name": "Chimpanzee",
+            "type": "mammal",
+            "fun_facts": [
+                "Just like ancient human, Chimpanzee make and use tools to aid their daily life in wide variety of situations"
+            ],
+            "description": "Chimpanzees (Pan trglodytes) are members of the familyHominidae, alon with gorillas, human, andorangutans. Chimpanzees split from the human branch of the family about four to six million years ago. Chimpanzees are the closest living relatives to humans, being members of the trible Hominini (alon with extinct species of subtribe Hominina). Chimpanzees are the only known members of the subtribe Panina. The two Pan speices split only about one million years ago.",
+            "summary": [
+                {
+                    "key": "population in the wild",
+                    "value": "115000"
+                },
+                {
+                    "key": "habitat",
+                    "value": "Primary or Secondary Forest"
+                },
+                {
+                    "key": "age",
+                    "value": "Up to 50 years"
+                },
+                {
+                    "key": "food",
+                    "value": "Omnivore (fruits, small animals, birds)"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Chimpanzee",
+            "need_remove": [],
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.311380,
+                        "lng": 106.820991
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11021.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11022.jpg",
             "name": "Bornean Orangutan",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                "Orangutans can remember thing for years, just like humans",
+                "The Orangutan is the only Asian great Ape",
+                "Orangutans take a really long time to grow up"
+            ],
+            "description": "The Bornean Orangutan, (Pongo pygmaeus), is a species of orangutan native to the island of Borneo. Like the other great apes, orangutans are highly intelligent, displaying advanced tool use and distinct cultural patterns in the wild. Orangutans share approximately 97% of their DNA with humans.",
+            "summary": [
+                {
+                    "key": "habitat",
+                    "value": "Lowland Forest"
+                },
+                {
+                    "key": "age",
+                    "value": "Up to 59 years"
+                },
+                {
+                    "key": "food",
+                    "value": "Omnivore (fruits, flowers, insects)"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Bornean_orangutan",
+            "need_remove": [],
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.313407,
+                        "lng": 106.821225
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11022.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                },
+                {
+                    "position": {
+                        "lat": -6.313407,
+                        "lng": 106.821225
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11022.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11023.jpg",
             "name": "Binturong",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                "Just like ancient human, Chimpanzee make and use tools to aid their daily life in wide variety of situations"
+            ],
+            "description": "Binturong(Arctictis binturong), also known as bearcat, is a viverrid native to South and Southeast Asia.",
+            "summary": [
+                {
+                    "key": "habitat",
+                    "value": "Tropical Rainforests"
+                },
+                {
+                    "key": "age",
+                    "value": "Up to 15 years"
+                },
+                {
+                    "key": "food",
+                    "value": "Omnivore (fruits, small animals, birds)"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Binturong",
+            "need_remove": [],
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.311380,
+                        "lng": 106.820991
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11021.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11024.jpg",
             "name": "Anoa",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                "Male Anoa Horns can grow to about 30 cm in length"
+            ],
+            "description": "Anoa, also known as midget buffalo and sapiutan, are subgenus of Bubalus comprising two species native to Indonesia. They are live in undisturbed rainforest, bush, and swamp.",
+            "summary": [
+                {
+                    "key": "population in the wild",
+                    "value": 5000
+                },
+                {
+                    "key": "habitat",
+                    "value": "Lowland forests, bush, swamp"
+                },
+                {
+                    "key": "age",
+                    "value": "Up to 25 years"
+                },
+                {
+                    "key": "food",
+                    "value": "Herbivore (leaves, grass, fruits and vegetables)"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Anoa",
+            "need_remove": [],
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.311380,
+                        "lng": 106.820991
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11021.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11025.jpg",
             "name": "Java Bull",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                ""
+            ],
+            "description": "Bull (Bos javanicus) also known as tembadau, is a species of wild cattle found in Southeast Asia. Bulls are much more muscular than cows, with thicker bones, larger feet, a very muscular neck, and a large bony head with protective ridges over the eyes.",
+            "summary": [
+                {
+                    "key": "habitat",
+                    "value": "From the plans to undulating land"
+                },
+                {
+                    "key": "age",
+                    "value": "Up to 30 years"
+                },
+                {
+                    "key": "food",
+                    "value": "Herbivore (leaves, grass, fruits and vegetables)"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Banteng",
+            "need_remove": [],
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.311380,
+                        "lng": 106.820991
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11025.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11026.jpg",
             "name": "Surili",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                "When baby surili is born, all adult female in a group will help caring for the infants"
+            ],
+            "description": "Surilis are rather small, slim built primates. Their fur at the top brown, grey, black or orange, and at the lower surface whitish or greyish, sometimes also orange, with some speicies having fur designs at the head or at the hips.",
+            "summary": [
+                {
+                    "key": "habitat",
+                    "value": "Primary or Secondary Forest"
+                },
+                {
+                    "key": "food",
+                    "value": "Herbivore (leaves, grass, sBeans)"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Surili",
+            "need_remove": [],
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.311380,
+                        "lng": 106.820991
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11025.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11027.jpg",
             "name": "Simpai",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                ""
+            ],
+            "description": "The sumatran surili (Presbytis melalophos) is a species of primate in the Cercopithecidae family. It is endemic to Sumatran in Indonesia. Its natural habitat is subtropical or tropical dry forests. It is threatend by habitat loss",
+            "summary": [
+                {
+                    "key": "habitat",
+                    "value": "Primary Forests Lowlands"
+                },
+                {
+                    "key": "food",
+                    "value": "Omnivore (fruits, flowers, insects"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https: //en.wikipedia.org/wiki/Sumatran_surili",
+            "need_remove": [],
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.311380,
+                        "lng": 106.820991
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11025.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11028.jpg",
             "name": "Yaki",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                ""
+            ],
+            "description": "Yaki (Macca nigra), alson known as the crested black macaque, Sulawesi crested macaque, or the black ape, is an Old World monkey that lives in the Tankok reserve, notheast of the Indonesian island of Sulawesi(Celebes), as well as on smaller neighboring islands",
+            "summary": [
+                {
+                    "key": "habitat",
+                    "value": "Tropical Rainforests"
+                },
+                {
+                    "key": "age",
+                    "value": "Up to 30 years"
+                },
+                {
+                    "key": "food",
+                    "value": "Omnivore"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://id.wikipedia.org/wiki/Yaki",
+            "need_remove": [],
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.311380,
+                        "lng": 106.820991
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11025.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11029.jpg",
             "name": "Sumatran Elephant",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                "Elephants are very social, they sometimes 'hug' by wrapping their trunks together",
+                "Elephants purr like cats do, as a means of communication",
+                "Elephants have poor eyesight but an amazing sense of smell",
+                "An Elephant's skin is an inch thick!s",
+                "Only one mammal that can't jump - the Elephant"
+            ],
+            "description": "Sumatran elephant is a subspecies of Asian elephant where its habitat is only in the Sumatera island. Sumatran elephant has smaller body than the Indian elephant. Its population has declined and become highly thretened speicies",
+            "summary": [
+                {
+                    "key": "habitat",
+                    "value": "Tropical Rainforests"
+                },
+                {
+                    "key": "age",
+                    "value": "Up to 70 years"
+                },
+                {
+                    "key": "food",
+                    "value": "Herbivore (Leaves, Roots, Steams)"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Sumatran_elephant",
+            "need_remove": [],
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.310179,
+                        "lng": 106.819457
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11029.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11030.jpg",
             "name": "Hippoptamus",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                ""
+            ],
+            "description": "is a large, mostly herbivorous mammal in sub-Saharan Africa, and one of only two extant speicies in the family Hippopotamidae, the other being the pygymy hippotamus (Cheropsis liberiensis or Hexaprotodon liberiensis). THehe name comes from the ancient Greek for \"river horse\"(??????). After the elephant and rhinoceros, the common hippopotamus is the third-largest type of land mammal and the heaviest extant artiodactyl. The common hippopotamus is semiaquatic inhabiting rivers, lakes and mangrove swamps. Common hippos are recognizable by their barrel-shaped torsos, wide-opening mouths revealing large canine tusks, nearly hairless bodies, columnar-like legs and large size; adults average 1,500 kg (3,300 lb) and 1,300 kg (2,900 lb) for males and females respectively.",
+            "summary": [
+                {
+                    "key": "habitat",
+                    "value": "Rivers, Lakes and Mangrove Swamps"
+                },
+                {
+                    "key": "food",
+                    "value": "Herbivore (Fruites and Grass)"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Hippopotamus",
+            "need_remove": [],
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.307058,
+                        "lng": 106.823282
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11030.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                },
+                {
+                    "position": {
+                        "lat": -6.307542,
+                        "lng": 106.824004
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11030.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11031.jpg",
             "name": "Camel",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                ""
+            ],
+            "description": "A camel is an even-toed ungulate within the genus Camelus, bearing distinctive fatty deposits known as \"humps\" on its back. The two surviving speices of camel are the dromedary, or one humped camel (C. dromedarius), which inhabits the Middle Easts and the Horn of Africa; and the bactrian, or two-humped camel (C. bactrianus), which inhabits Central Asia. BOth species have been domesticated; they provide milk, meat, hair for textiles or goods such as felted pouches, and are working animals with tasks ranging from human transport to bearing loads.",
+            "summary": [
+                {
+                    "key": "habitat",
+                    "value": "Deserts"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Camel",
+            "need_remove": [],
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.311596,
+                        "lng": 106.823679
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11031.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_11034.jpg",
             "name": "Giraffe",
-            "type": "mammal"
+            "type": "mammal",
+            "fun_facts": [
+                ""
+            ],
+            "description": "The giraffe (Giraffa camelopardalis) is an African even -toad ungulate mammal, the tallest living terresetrial animal and the largest rumainant. ITs species name refers to its camel-like appearance and the patches of color on its fur. Its chief distinguishing characteristics are its extremely long neck and legs, its horn-like ossicones, and its distinctive coat patterns. It is classifed under the family Giraffiedae, along with its closets extant relative, the okapi. The nine subspiecies are distinguesthed by their coat patterns.",
+            "summary": [
+                {
+                    "key": "habitat",
+                    "value": "Deserts"
+                },
+                {
+                    "key": "food",
+                    "value": "Herbivore (Leaves, Fruits, branchs)"
+                }
+            ],
+            "gallery_assets": [],
+            "sound": "",
+            "wikipedia": "https://en.wikipedia.org/wiki/Giraffe",
+            "need_remove": [],
+            "location": [
+                {
+                    "position": {
+                        "lat": -6.311596,
+                        "lng": 106.823679
+                    },
+                    "icon": {
+                        "url": "assets/imgs/icon/icon_11031.png",
+                        "size": {
+                            "width": 25,
+                            "height": 25
+                        }
+                    }
+                }
+            ]
         },
         {
             "assets": "assets/imgs/animals/thumb_12001.jpg",
